@@ -55,7 +55,17 @@ def run_parser(pdf_path: str) -> Dict[str, Any]:
     try:
         # Копируем PDF в рабочую директорию как documentation.pdf
         import shutil
+        import os
         shutil.copy2(pdf_path, 'documentation.pdf')
+        
+        # Удаляем кэшированные файлы для корректной обработки нового PDF
+        cache_files = ['extracted_text.txt', 'ultimate_final_data/']
+        for cache_file in cache_files:
+            if os.path.exists(cache_file):
+                if os.path.isfile(cache_file):
+                    os.remove(cache_file)
+                elif os.path.isdir(cache_file):
+                    shutil.rmtree(cache_file)
         
         # Запускаем парсер
         result = subprocess.run(
@@ -226,4 +236,4 @@ if __name__ == '__main__':
     print("📊 Results folder:", RESULTS_FOLDER)
     print("🌐 Откройте: http://localhost:5000")
     
-    app.run(debug=True, host='0.0.0.0', port=8080)
+    app.run(debug=True, host='0.0.0.0', port=9000)

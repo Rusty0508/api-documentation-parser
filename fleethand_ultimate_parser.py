@@ -139,14 +139,48 @@ class FleethandUltimateParser:
             }
         }
 
+    def extract_text_from_pdf(self, pdf_path: str) -> str:
+        """Извлекает текст из PDF файла"""
+        try:
+            import fitz  # PyMuPDF
+            doc = fitz.open(pdf_path)
+            text = ""
+            
+            for page_num in range(len(doc)):
+                page = doc[page_num]
+                page_text = page.get_text()
+                # Добавляем разделитель страниц для лучшего парсинга
+                text += f"\n=== Страница {page_num + 1} ===\n\n{page_text}\n"
+            
+            doc.close()
+            return text.strip()
+            
+        except ImportError:
+            raise ImportError("PyMuPDF не установлен. Выполните: pip install PyMuPDF")
+        except Exception as e:
+            raise Exception(f"Ошибка извлечения текста из PDF: {e}")
+
     def parse(self, text_file: str = "extracted_text.txt") -> Dict:
         """Главная функция парсинга"""
         print("🏆 FLEETHAND ULTIMATE PARSER v8.0 - ФИНАЛЬНАЯ ВЕРСИЯ")
         print("=" * 70)
         
-        # Загружаем текст
-        with open(text_file, 'r', encoding='utf-8') as f:
-            text = f.read()
+        # Проверяем наличие извлеченного текста или PDF
+        import os
+        if not os.path.exists(text_file):
+            print(f"📄 Файл {text_file} не найден, извлекаем текст из documentation.pdf...")
+            if os.path.exists("documentation.pdf"):
+                text = self.extract_text_from_pdf("documentation.pdf")
+                # Сохраняем для последующего использования
+                with open(text_file, 'w', encoding='utf-8') as f:
+                    f.write(text)
+                print(f"💾 Текст сохранен в {text_file}")
+            else:
+                raise FileNotFoundError("Не найден ни extracted_text.txt, ни documentation.pdf!")
+        else:
+            # Загружаем готовый текст
+            with open(text_file, 'r', encoding='utf-8') as f:
+                text = f.read()
             
         print(f"📄 Загружено {len(text):,} символов")
         
