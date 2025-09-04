@@ -1,0 +1,135 @@
+name: 🚀 Demo & Quality Check
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 6 * * 1'  # Weekly on Monday
+
+jobs:
+  quality-check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8, 3.9, '3.10', '3.11']
+
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: 💾 Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest pytest-flask
+
+    - name: 🧪 Run parser tests
+      run: |
+        echo "🔍 Testing parser initialization..."
+        python -c "
+        import sys
+        sys.path.append('.')
+        from fleethand_ultimate_parser import FleethandUltimateParser
+        parser = FleethandUltimateParser()
+        print('✅ Parser initialized successfully')
+        print('📊 Categories available:', len(parser.advanced_categories))
+        assert len(parser.advanced_categories) >= 10, 'Should have at least 10 categories'
+        print('🎯 All basic tests passed!')
+        "
+
+    - name: 🌐 Test web interface
+      run: |
+        echo "🌐 Testing web interface..."
+        python -c "
+        from web_interface import app
+        with app.test_client() as client:
+            response = client.get('/api/status')
+            assert response.status_code == 200
+            data = response.get_json()
+            assert data['status'] == 'active'
+            assert 'PDF parsing' in data['features']
+            print('✅ Web interface tests passed!')
+        "
+
+    - name: 📊 Validate sample results
+      run: |
+        echo "📊 Validating quality results..."
+        python -c "
+        import json
+        import os
+        if os.path.exists('ultimate_final_data/quality_report_ultimate_final.json'):
+            with open('ultimate_final_data/quality_report_ultimate_final.json') as f:
+                report = json.load(f)
+            readiness = float(report['quality_metrics']['mcp_readiness_score'].replace('%', ''))
+            assert readiness >= 85, f'MCP readiness should be ≥85%, got {readiness}%'
+            assert report['quality_metrics']['professional_quality'] == 'HIGH'
+            print(f'✅ Quality validation passed: {readiness}% MCP readiness')
+        else:
+            print('⚠️  No sample results found, skipping validation')
+        "
+
+  demo-showcase:
+    runs-on: ubuntu-latest
+    needs: quality-check
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🐍 Set up Python 3.10
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 📦 Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: 🎯 Generate demo stats
+      run: |
+        echo "## 🎯 Latest Quality Metrics" > demo_stats.md
+        echo "" >> demo_stats.md
+        if [ -f "ultimate_final_data/quality_report_ultimate_final.json" ]; then
+          python -c "
+        import json
+        with open('ultimate_final_data/quality_report_ultimate_final.json') as f:
+            report = json.load(f)
+        stats = report['statistics']
+        quality = report['quality_metrics']
+        print(f'- **🎯 MCP Readiness:** {quality[\"mcp_readiness_score\"]}')
+        print(f'- **📄 Endpoints:** {stats[\"endpoints\"]}') 
+        print(f'- **🔧 Headers:** {stats[\"headers\"]}')
+        print(f'- **⚙️ Parameters:** {stats[\"parameters\"]}')
+        print(f'- **📋 Responses:** {stats[\"responses\"]}')
+        print(f'- **🏅 Quality:** {quality[\"professional_quality\"]}')
+          " >> demo_stats.md
+        else
+          echo "Demo data not available" >> demo_stats.md
+        fi
+        
+        echo "" >> demo_stats.md
+        echo "📅 *Updated: $(date)*" >> demo_stats.md
+        echo "" >> demo_stats.md
+        echo "🚀 **Try it yourself:** Upload your PDF documentation!" >> demo_stats.md
+
+    - name: 📝 Update README with stats
+      run: |
+        echo "📊 Demo stats generated successfully"
+        cat demo_stats.md

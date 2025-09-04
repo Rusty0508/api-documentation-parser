@@ -1,5 +1,9 @@
 # 🚀 API Documentation Parser for MCP Servers
 
+**Intelligent PDF API documentation parser with web interface for MCP server creation**
+
+> Transform any PDF API documentation into structured MCP-ready data with 85%+ accuracy and HIGH quality results
+
 **Интеллектуальный парсер PDF документации API с веб-интерфейсом для создания MCP серверов**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)

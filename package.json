@@ -1,0 +1,43 @@
+{
+  "name": "api-documentation-parser",
+  "version": "1.0.0",
+  "description": "🚀 Intelligent API documentation PDF parser for MCP servers with web interface. HIGH quality (85%+ MCP readiness), 13 API categories, automatic validation and JSON schema generation.",
+  "keywords": [
+    "api-documentation",
+    "pdf-parser", 
+    "mcp-server",
+    "python",
+    "flask",
+    "ai-parsing",
+    "openapi",
+    "json-schema",
+    "web-interface",
+    "automation",
+    "document-processing",
+    "api-tools",
+    "developer-tools",
+    "productivity"
+  ],
+  "main": "fleethand_ultimate_parser.py",
+  "scripts": {
+    "start": "python web_interface.py",
+    "parse": "python fleethand_ultimate_parser.py",
+    "demo": "python web_interface.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rusty0508/api-documentation-parser.git"
+  },
+  "homepage": "https://github.com/Rusty0508/api-documentation-parser",
+  "bugs": {
+    "url": "https://github.com/Rusty0508/api-documentation-parser/issues"
+  },
+  "license": "MIT",
+  "author": "API Documentation Parser Team",
+  "contributors": [
+    "Claude AI Assistant"
+  ],
+  "engines": {
+    "python": ">=3.8"
+  }
+}
