@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🚀 API Documentation Parser</title>
     <meta name="description" content="Intelligent PDF API documentation parser with HIGH quality MCP server creation capabilities">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -48,23 +49,6 @@
             margin-bottom: 20px;
         }
         
-        .badges {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-        
-        .badge {
-            background: #28a745;
-            color: white;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.9em;
-            font-weight: bold;
-        }
-        
         .github-link {
             display: inline-block;
             background: #333;
@@ -80,33 +64,7 @@
             background: #555;
         }
         
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-            margin-bottom: 40px;
-        }
-        
-        .feature {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        
-        .feature h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-        
-        .feature p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        .demo-section {
+        .parser-section {
             background: white;
             border-radius: 15px;
             padding: 30px;
@@ -114,7 +72,7 @@
             margin-bottom: 40px;
         }
         
-        .demo-section h2 {
+        .parser-section h2 {
             text-align: center;
             color: #333;
             margin-bottom: 20px;
@@ -142,6 +100,11 @@
             border-color: #2b6cb0;
         }
         
+        .upload-area.processing {
+            background: #fff3cd;
+            border-color: #ffc107;
+        }
+        
         .upload-icon {
             font-size: 4em;
             margin-bottom: 20px;
@@ -152,10 +115,6 @@
             font-size: 1.2em;
             color: #666;
             margin-bottom: 10px;
-        }
-        
-        .upload-subtext {
-            color: #999;
         }
         
         #fileInput {
@@ -172,11 +131,35 @@
             cursor: pointer;
             transition: all 0.3s;
             font-weight: bold;
+            margin: 10px;
         }
         
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .progress-bar {
+            display: none;
+            width: 100%;
+            height: 20px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s;
         }
         
         .result-area {
@@ -186,6 +169,75 @@
             padding: 20px;
             margin-top: 20px;
         }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        .result-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .stat-number {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .endpoints-list {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .endpoint {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .endpoint:last-child {
+            border-bottom: none;
+        }
+        
+        .method {
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            color: white;
+        }
+        
+        .method.GET { background: #28a745; }
+        .method.POST { background: #007bff; }
+        .method.PUT { background: #ffc107; color: #333; }
+        .method.DELETE { background: #dc3545; }
         
         .error {
             color: #dc3545;
@@ -203,33 +255,6 @@
             margin-top: 15px;
         }
         
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 30px;
-        }
-        
-        .stat {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 5px;
-        }
-        
-        .stat-label {
-            color: #666;
-            font-size: 0.9em;
-        }
-        
         .footer {
             text-align: center;
             padding: 30px;
@@ -243,12 +268,8 @@
                 font-size: 2em;
             }
             
-            .badges {
-                justify-content: center;
-            }
-            
-            .features {
-                grid-template-columns: 1fr;
+            .result-stats {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -257,140 +278,114 @@
     <div class="container">
         <div class="header">
             <h1>🚀 API Documentation Parser</h1>
-            <p>Intelligent PDF API documentation parser with HIGH quality MCP server creation capabilities</p>
-            
-            <div class="badges">
-                <span class="badge">Python 3.8+</span>
-                <span class="badge">HIGH Quality 85%+</span>
-                <span class="badge">13 API Categories</span>
-                <span class="badge">MCP Ready</span>
-                <span class="badge">Web Interface</span>
-            </div>
+            <p>Upload your PDF API documentation and get structured MCP data instantly</p>
             
             <a href="https://github.com/Rusty0508/api-documentation-parser" class="github-link" target="_blank">
                 🐙 View on GitHub
             </a>
         </div>
 
-        <div class="stats">
-            <div class="stat">
-                <div class="stat-number">85%+</div>
-                <div class="stat-label">MCP Readiness Score</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">13</div>
-                <div class="stat-label">API Categories</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">121</div>
-                <div class="stat-label">Endpoints Parsed</div>
-            </div>
-            <div class="stat">
-                <div class="stat-number">HIGH</div>
-                <div class="stat-label">Quality Rating</div>
-            </div>
-        </div>
-
-        <div class="features">
-            <div class="feature">
-                <h3>🧠 Intelligent Parsing</h3>
-                <p>Advanced algorithms automatically detect and categorize API endpoints, parameters, and responses with HIGH accuracy (85%+ MCP readiness score)</p>
-            </div>
+        <div class="parser-section">
+            <h2>📄 Upload & Parse PDF</h2>
             
-            <div class="feature">
-                <h3>🌐 Web Interface</h3>
-                <p>Drag & drop PDF upload with real-time processing status and interactive results display. No command line needed!</p>
-            </div>
-            
-            <div class="feature">
-                <h3>🎯 13 API Categories</h3>
-                <p>Automatic classification into specialized categories: Authentication, Users, Vehicles, Locations, Reports, and more</p>
-            </div>
-            
-            <div class="feature">
-                <h3>🔄 MCP Server Ready</h3>
-                <p>Generates production-ready MCP server data with proper JSON schemas, validation, and OpenAPI specifications</p>
-            </div>
-            
-            <div class="feature">
-                <h3>📊 Quality Reporting</h3>
-                <p>Comprehensive quality metrics, coverage analysis, and professional assessment reports for documentation completeness</p>
-            </div>
-            
-            <div class="feature">
-                <h3>🚀 Multiple Export Formats</h3>
-                <p>Export results as JSON, MCP server data, OpenAPI specs, and quality reports. Ready for immediate integration</p>
-            </div>
-        </div>
-
-        <div class="demo-section">
-            <h2>🧪 Try the Demo</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 30px;">
-                This is a static demo. For full functionality, clone the repository and run locally.
-            </p>
-            
-            <div class="upload-area" onclick="document.getElementById('fileInput').click()">
-                <div class="upload-icon">📄</div>
-                <div class="upload-text">Drop your PDF API documentation here</div>
-                <div class="upload-subtext">or click to browse files</div>
+            <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()">
+                <div class="upload-icon" id="uploadIcon">📄</div>
+                <div class="upload-text" id="uploadText">Drop your PDF API documentation here</div>
+                <div style="color: #999;">or click to browse files</div>
             </div>
             
             <input type="file" id="fileInput" accept=".pdf">
             
-            <div id="demo-result" class="result-area">
-                <h3>📊 Demo Results Preview:</h3>
-                <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 15px;">
-                    <h4>Fleethand API Analysis:</h4>
-                    <ul style="margin-left: 20px; margin-top: 10px;">
-                        <li>✅ <strong>121 endpoints</strong> successfully parsed</li>
-                        <li>✅ <strong>13 categories</strong> automatically detected</li>
-                        <li>✅ <strong>85.5% MCP readiness</strong> score achieved</li>
-                        <li>✅ <strong>HIGH quality</strong> professional rating</li>
-                        <li>✅ Complete JSON schemas and OpenAPI specs generated</li>
-                    </ul>
-                </div>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
             </div>
             
-            <div style="text-align: center; margin-top: 30px;">
-                <button class="btn" onclick="showDemo()">🚀 See Demo Results</button>
-                <a href="https://github.com/Rusty0508/api-documentation-parser" class="btn" style="margin-left: 15px; text-decoration: none; display: inline-block;">
-                    📥 Clone Repository
-                </a>
+            <div style="text-align: center;">
+                <button class="btn" id="parseBtn" onclick="parseDocument()" disabled>🚀 Parse Document</button>
+                <button class="btn" onclick="clearResults()">🗑️ Clear</button>
+            </div>
+            
+            <div id="resultArea" class="result-area">
+                <div class="result-header">
+                    <h3>📊 Parsing Results</h3>
+                    <button class="btn" onclick="downloadResults()">📥 Download JSON</button>
+                </div>
+                
+                <div class="result-stats" id="resultStats">
+                    <!-- Stats will be populated here -->
+                </div>
+                
+                <div class="endpoints-list" id="endpointsList">
+                    <!-- Endpoints will be populated here -->
+                </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>🤖 Generated with <a href="https://claude.ai/code" style="color: #fff;">Claude Code</a></p>
+            <p>🤖 Real-time PDF parsing in your browser • No server required</p>
             <p style="margin-top: 10px; opacity: 0.8;">
-                Open Source • MIT License • Star us on GitHub!
+                Open Source • MIT License • <a href="https://github.com/Rusty0508/api-documentation-parser" style="color: #fff;">Star us on GitHub!</a>
             </p>
         </div>
     </div>
 
     <script>
-        function showDemo() {
-            const resultArea = document.getElementById('demo-result');
-            resultArea.style.display = 'block';
-            resultArea.scrollIntoView({ behavior: 'smooth' });
+        let currentFile = null;
+        let parsedData = null;
+        
+        // PDF.js worker setup
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+        
+        // File input handling
+        const fileInput = document.getElementById('fileInput');
+        const uploadArea = document.getElementById('uploadArea');
+        const parseBtn = document.getElementById('parseBtn');
+        const resultArea = document.getElementById('resultArea');
+        
+        fileInput.addEventListener('change', handleFileSelect);
+        
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file && file.type === 'application/pdf') {
+                currentFile = file;
+                updateUploadArea(file.name, 'selected');
+                parseBtn.disabled = false;
+            }
         }
         
-        // File upload demo (visual only)
-        const fileInput = document.getElementById('fileInput');
-        const uploadArea = document.querySelector('.upload-area');
-        
-        fileInput.addEventListener('change', function(e) {
-            if (e.target.files.length > 0) {
-                const fileName = e.target.files[0].name;
-                uploadArea.innerHTML = `
-                    <div class="upload-icon">✅</div>
-                    <div class="upload-text">File selected: ${fileName}</div>
-                    <div class="upload-subtext">In full version, this would be processed automatically</div>
-                `;
-                showDemo();
+        function updateUploadArea(text, status = 'default') {
+            const uploadIcon = document.getElementById('uploadIcon');
+            const uploadText = document.getElementById('uploadText');
+            const uploadArea = document.getElementById('uploadArea');
+            
+            switch(status) {
+                case 'selected':
+                    uploadIcon.textContent = '✅';
+                    uploadText.textContent = `Selected: ${text}`;
+                    uploadArea.style.background = '#d4edda';
+                    uploadArea.style.borderColor = '#28a745';
+                    break;
+                case 'processing':
+                    uploadIcon.textContent = '⏳';
+                    uploadText.textContent = 'Processing PDF...';
+                    uploadArea.classList.add('processing');
+                    break;
+                case 'complete':
+                    uploadIcon.textContent = '🎉';
+                    uploadText.textContent = 'Parsing complete!';
+                    uploadArea.style.background = '#d1ecf1';
+                    uploadArea.style.borderColor = '#17a2b8';
+                    break;
+                default:
+                    uploadIcon.textContent = '📄';
+                    uploadText.textContent = 'Drop your PDF API documentation here';
+                    uploadArea.style.background = '#f8f9ff';
+                    uploadArea.style.borderColor = '#667eea';
+                    uploadArea.classList.remove('processing');
             }
-        });
+        }
         
-        // Drag & drop visual effects
+        // Drag & drop functionality
         uploadArea.addEventListener('dragover', function(e) {
             e.preventDefault();
             uploadArea.classList.add('dragover');
@@ -404,16 +399,214 @@
             e.preventDefault();
             uploadArea.classList.remove('dragover');
             
-            if (e.dataTransfer.files.length > 0) {
-                const fileName = e.dataTransfer.files[0].name;
-                uploadArea.innerHTML = `
-                    <div class="upload-icon">✅</div>
-                    <div class="upload-text">File dropped: ${fileName}</div>
-                    <div class="upload-subtext">In full version, this would be processed automatically</div>
-                `;
-                showDemo();
+            const files = e.dataTransfer.files;
+            if (files.length > 0 && files[0].type === 'application/pdf') {
+                currentFile = files[0];
+                fileInput.files = files;
+                updateUploadArea(files[0].name, 'selected');
+                parseBtn.disabled = false;
             }
         });
+        
+        // PDF parsing function
+        async function parseDocument() {
+            if (!currentFile) return;
+            
+            try {
+                parseBtn.disabled = true;
+                updateUploadArea('', 'processing');
+                showProgress(0);
+                
+                // Extract text from PDF
+                const text = await extractTextFromPDF(currentFile);
+                showProgress(50);
+                
+                // Parse API endpoints
+                const endpoints = parseAPIEndpoints(text);
+                showProgress(75);
+                
+                // Generate results
+                parsedData = generateResults(endpoints, text);
+                showProgress(100);
+                
+                displayResults(parsedData);
+                updateUploadArea('', 'complete');
+                
+            } catch (error) {
+                console.error('Parsing error:', error);
+                showError('Failed to parse PDF: ' + error.message);
+            } finally {
+                parseBtn.disabled = false;
+                hideProgress();
+            }
+        }
+        
+        // Extract text from PDF using PDF.js
+        async function extractTextFromPDF(file) {
+            const arrayBuffer = await file.arrayBuffer();
+            const pdf = await pdfjsLib.getDocument(arrayBuffer).promise;
+            
+            let fullText = '';
+            
+            for (let i = 1; i <= pdf.numPages; i++) {
+                const page = await pdf.getPage(i);
+                const textContent = await page.getTextContent();
+                const pageText = textContent.items.map(item => item.str).join(' ');
+                fullText += `\n=== Page ${i} ===\n${pageText}\n`;
+            }
+            
+            return fullText;
+        }
+        
+        // Parse API endpoints from text
+        function parseAPIEndpoints(text) {
+            const endpoints = [];
+            
+            // Common API patterns
+            const patterns = [
+                /(?:GET|POST|PUT|DELETE|PATCH)\s+([\/\w\-\{\}]+)/gi,
+                /(?:endpoint|url|path):\s*([\/\w\-\{\}]+)/gi,
+                /(?:api|rest)\/([\/\w\-\{\}]+)/gi
+            ];
+            
+            patterns.forEach(pattern => {
+                let match;
+                while ((match = pattern.exec(text)) !== null) {
+                    const method = match[0].match(/^(GET|POST|PUT|DELETE|PATCH)/i);
+                    endpoints.push({
+                        method: method ? method[0].toUpperCase() : 'GET',
+                        path: match[1] || match[0],
+                        description: extractDescription(text, match.index)
+                    });
+                }
+            });
+            
+            // Remove duplicates
+            const unique = endpoints.filter((endpoint, index, self) => 
+                index === self.findIndex(e => e.path === endpoint.path && e.method === endpoint.method)
+            );
+            
+            return unique.slice(0, 50); // Limit to first 50 endpoints
+        }
+        
+        function extractDescription(text, index) {
+            const start = Math.max(0, index - 100);
+            const end = Math.min(text.length, index + 200);
+            const context = text.substring(start, end);
+            
+            // Try to extract a meaningful description
+            const sentences = context.split(/[.!?]/);
+            return sentences.find(s => s.length > 10 && s.length < 100) || 'API endpoint';
+        }
+        
+        function generateResults(endpoints, text) {
+            const wordCount = text.split(/\s+/).length;
+            const quality = endpoints.length > 20 ? 'HIGH' : endpoints.length > 10 ? 'MEDIUM' : 'LOW';
+            
+            return {
+                statistics: {
+                    endpoints: endpoints.length,
+                    pages: text.split('=== Page').length - 1,
+                    words: wordCount,
+                    quality: quality
+                },
+                endpoints: endpoints,
+                mcpReadiness: Math.min(95, Math.round((endpoints.length / 100) * 100)),
+                generatedAt: new Date().toISOString()
+            };
+        }
+        
+        function displayResults(data) {
+            const statsContainer = document.getElementById('resultStats');
+            const endpointsContainer = document.getElementById('endpointsList');
+            
+            // Display statistics
+            statsContainer.innerHTML = `
+                <div class="stat">
+                    <div class="stat-number">${data.statistics.endpoints}</div>
+                    <div class="stat-label">Endpoints</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">${data.statistics.pages}</div>
+                    <div class="stat-label">Pages</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">${data.mcpReadiness}%</div>
+                    <div class="stat-label">MCP Ready</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">${data.statistics.quality}</div>
+                    <div class="stat-label">Quality</div>
+                </div>
+            `;
+            
+            // Display endpoints
+            if (data.endpoints.length > 0) {
+                endpointsContainer.innerHTML = `
+                    <h4 style="margin-bottom: 15px;">🔗 Discovered Endpoints:</h4>
+                    ${data.endpoints.map(endpoint => `
+                        <div class="endpoint">
+                            <div>
+                                <span class="method ${endpoint.method}">${endpoint.method}</span>
+                                <span style="margin-left: 10px; font-family: monospace;">${endpoint.path}</span>
+                            </div>
+                            <div style="color: #666; font-size: 0.9em; max-width: 300px; text-align: right;">
+                                ${endpoint.description.substring(0, 50)}...
+                            </div>
+                        </div>
+                    `).join('')}
+                `;
+            } else {
+                endpointsContainer.innerHTML = '<p style="color: #666; text-align: center;">No API endpoints detected in this document.</p>';
+            }
+            
+            resultArea.style.display = 'block';
+            resultArea.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function showProgress(percent) {
+            const progressBar = document.getElementById('progressBar');
+            const progressFill = document.getElementById('progressFill');
+            
+            progressBar.style.display = 'block';
+            progressFill.style.width = percent + '%';
+        }
+        
+        function hideProgress() {
+            setTimeout(() => {
+                document.getElementById('progressBar').style.display = 'none';
+            }, 1000);
+        }
+        
+        function showError(message) {
+            const errorDiv = document.createElement('div');
+            errorDiv.className = 'error';
+            errorDiv.textContent = message;
+            document.querySelector('.parser-section').appendChild(errorDiv);
+            
+            setTimeout(() => errorDiv.remove(), 5000);
+        }
+        
+        function clearResults() {
+            currentFile = null;
+            parsedData = null;
+            fileInput.value = '';
+            parseBtn.disabled = true;
+            resultArea.style.display = 'none';
+            updateUploadArea('', 'default');
+        }
+        
+        function downloadResults() {
+            if (!parsedData) return;
+            
+            const dataStr = JSON.stringify(parsedData, null, 2);
+            const dataBlob = new Blob([dataStr], {type: 'application/json'});
+            
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(dataBlob);
+            link.download = 'api-documentation-results.json';
+            link.click();
+        }
     </script>
 </body>
 </html>
