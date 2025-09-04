@@ -1,0 +1,722 @@
+[
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"code\": \"ANSWER_VIGNETE\", \n         \"value\": \"buy_vignette\", \n\n=== Страница 17 ===\n \n17 \n         \"questions\": [ \n           { \n             \"code\": \"QUESTION_COUNTRY\", \n             \"type\": \"SELECTION\", \n             \"answer\": { \n               \"code\": \"ANSWER_LUX\", \n               \"value\": \"buy_vignette_lux\", \n               \"questions\": [] \n             }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n               \"code\": \"ANSWER_SEVEN\", \n               \"value\": \"buy_vignette_seven_days\", \n               \"questions\": [ \n                 { \n                   \"code\": \"QUESTION_DATE\", \n                   \"type\": \"DAY_PICKER\", \n                   \"answer\": { \n                     \"code\": \"DAY_PICKER\", \n                     \"value\": \"2022-09-12\", \n                     \"questions\": [] \n                   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"code\": \"ANSWER_VIGNETE\", \n      \"value\": \"buy_vignette\", \n      \"questions\": [ \n         { \n          \"code\": \"QUESTION_COUNTRY\", \n          \"type\": \"SELECTION\", \n          \"answer\": { \n             \"code\": \"ANSWER_LUX\", \n\n=== Страница 20 ===\n \n20 \n             \"value\": \"buy_vignette_lux\", \n             \"questions\": [] \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n               \"code\": \"ANSWER_SEVEN\", \n               \"value\": \"buy_vignette_seven_days\", \n               \"questions\": [ \n                 { \n                  \"code\": \"QUESTION_DATE\", \n                  \"type\": \"DAY_PICKER\", \n                  \"answer\": { \n                    \"code\": \"DAY_PICKER\", \n                    \"value\": \"2022-09-12\", \n                    \"questions\": [] \n                   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"id\":1, \n            \"value\":\"UAB \\\"Company 1\\\"\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"id\":2, \n            \"value\":\"UAB \\\"Company 2\\\"\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"driverFiles\": [ \n            { \n                \"id\": 1, \n                \"imei\": null, \n                \"driverCardNumber\": \"1234567891234000\", \n                \"downloadDate\": \"2023-07-04T08:24:51.472\", \n                \"dateFrom\": \"2022-08-14T00:00:00\", \n                \"dateTill\": \"2023-05-31T20:30:00\" \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"OK\" \n    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"Group ID does not exist\" \n    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"Vehicle already belongs to this group\" \n    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"deviceKey\": \"352094089272196\", \n\n=== Страница 77 ===\n \n77 \n        \"totalData\": { \n            \"distance\": \"8938.57\", \n            \"gpsDistance\": \"8943.36\", \n            \"fuelUsed\": 2556.32, \n            \"fuelUsedIdling\": 39.31, \n            \"fuelUsage\": \"28.6\", \n            \"fuelUsageDriving\": \"28.16\", \n            \"noCargo\": \"12.89\", \n            \"lightCargo\": \"29.57\", \n            \"mediumCargo\": \"8.36\", \n            \"heavyCargo\": \"49.18\", \n            \"parkingBrake\": \"0\", \n            \"harshBraking\": \"0\", \n            \"freeRolling\": \"9.58\", \n            \"braking\": \"38.99\", \n            \"brakingDistance\": \"235.69\", \n            \"stopping\": \"12.64\", \n            \"numberOfStops\": 1130, \n            \"brakingStoppingScore\": 64, \n            \"rolling\": \"23.34\", \n            \"rollingScore\": 89, \n            \"economy\": \"0.19\", \n            \"economyScore\": 87, \n            \"engineLoad\": \"4\", \n            \"engineLoadScore\": 72, \n            \"overspeeding\": \"13.34\", \n            \"overspeedingScore\": 56, \n            \"cruiseControlDistance\": \"62.16\", \n            \"cruiseControlDistanceScore\": 49, \n            \"cruiseControlFuel\": \"25.8\", \n            \"cruiseControlInterruption\": \"4.15\", \n            \"cruiseControlFuelUsage\": \"6.94\", \n            \"cruiseControlFuelUsageScore\": 100, \n            \"idling\": \"6.5\", \n            \"idlingTime\": \"9h 13m\", \n            \"idlingScore\": 77, \n            \"averageScore\": 74, \n            \"averageWeight\": \"18319.94\", \n            \"speedData\": { \n                \"distanceTill80\": \"34.92\", \n                \"distance80To81\": \"11.05\", \n                \"distance82To83\": \"21.3\", \n                \"distance84To85\": \"26.48\", \n                \"distanceOver85\": \"6.26\", \n                \"speeds\": [ \n                    { \n                        \"type\": \"SPEED_1_5\", \n                        \"distancePercentage\": \"0.22\", \n                        \"fuelUsage\": \"118.16\" \n                    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"chartRpms\": [ \n                    { \n                        \"type\": \"RPM_500_900\", \n                        \"distancePercentage\": \"19.2\", \n                        \"fuelUsage\": \"18.25\" \n                    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"braking\": { \n                \"best\": 2.0, \n                \"worst\": 5.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 25.0, \n                \"worst\": 10.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 0.0, \n                \"worst\": 1.5, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 2.1, \n                \"worst\": 8.8, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 0.0, \n                \"worst\": 30.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 75.0, \n                \"worst\": 50.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 4.0, \n                \"worst\": 0.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 4.0, \n                \"worst\": 15.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"driver\": \"0000000005266000\", \n        \"totalData\": { \n            \"distance\": \"2480.01\", \n            \"gpsDistance\": \"2484.9\", \n            \"fuelUsed\": 682.5, \n            \"fuelUsedIdling\": 16.0, \n            \"fuelUsage\": \"27.52\", \n            \"fuelUsageDriving\": \"26.87\", \n            \"noCargo\": \"10.17\", \n            \"lightCargo\": \"22.53\", \n            \"mediumCargo\": \"24.26\", \n            \"heavyCargo\": \"43.05\", \n            \"parkingBrake\": \"0\", \n            \"harshBraking\": \"0\", \n            \"freeRolling\": \"10.89\", \n            \"braking\": \"13.95\", \n            \"brakingDistance\": \"14.26\", \n            \"stopping\": \"8.35\", \n            \"numberOfStops\": 207, \n            \"brakingStoppingScore\": 100, \n            \"rolling\": \"27.19\", \n            \"rollingScore\": 100, \n            \"economy\": \"0.03\", \n            \"economyScore\": 100, \n            \"engineLoad\": \"5.59\", \n            \"engineLoadScore\": 48, \n            \"overspeeding\": \"26.01\", \n            \"overspeedingScore\": 48, \n            \"cruiseControlDistance\": \"75.2\", \n            \"cruiseControlDistanceScore\": 100, \n            \"cruiseControlFuel\": \"31.37\", \n            \"cruiseControlInterruption\": \"0.15\", \n            \"cruiseControlFuelUsage\": \"-16.71\", \n            \"cruiseControlFuelUsageScore\": 0, \n            \"idling\": \"11.83\", \n            \"idlingTime\": \"6h 34m\", \n            \"idlingScore\": 61, \n            \"averageScore\": 70, \n            \"averageWeight\": \"26455.76\", \n            \"speedData\": { \n                \"distanceTill80\": \"34.85\", \n                \"distance80To81\": \"7.43\", \n                \"distance82To83\": \"8.85\", \n                \"distance84To85\": \"44.49\", \n\n=== Страница 89 ===\n \n89 \n                \"distanceOver85\": \"4.38\", \n                \"speeds\": [ \n                    { \n                        \"type\": \"SPEED_1_5\", \n                        \"distancePercentage\": \"0.16\", \n                        \"fuelUsage\": \"124.69\" \n                    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"chartRpms\": [ \n                    { \n                        \"type\": \"RPM_500_900\", \n                        \"distancePercentage\": \"13.27\", \n                        \"fuelUsage\": \"27.05\" \n                    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"braking\": { \n                \"best\": 4.0, \n                \"worst\": 44.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 18.0, \n                \"worst\": 0.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 0.5, \n                \"worst\": 3.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 2.1, \n                \"worst\": 8.8, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 0.0, \n                \"worst\": 50.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 71.4, \n                \"worst\": 4.7, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 4.0, \n                \"worst\": 0.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"best\": 4.0, \n                \"worst\": 24.0, \n                \"pct\": 12.5 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n   \"DONE\": { \n     \"formNameEn\": \"Form\", \n     \"formNameLt\": \"Forma\", \n     \"formNameRu\": \"Форма\", \n     \"formNameDe\": \"Formular\", \n     \"formNamePl\": \"Formularz\", \n     \"code\": \"DOCUMENTS\", \n     \"sections\": [ \n       { \n         \"sectionNameEn\": \"Section\", \n         \"sectionNameLt\": \"Sekcija\", \n         \"sectionNameRu\": \"Раздел\", \n\n=== Страница 100 ===\n \n100 \n         \"sectionNameDe\": \"Abschnitt\", \n         \"sectionNamePl\": \"Sekcja\", \n         \"options\": [ \n           { \n             \"type\": \"DOCUMENT\", \n             \"code\": \"CMR\", \n             \"optionNameEn\": \"Amazon request\", \n             \"optionNameLt\": \"Skaičių parinktis\", \n             \"optionNameRu\": \"CMR (VIlnius - Kaunas)\", \n             \"optionNameDe\": \"Zahlenoption\", \n             \"optionNamePl\": \"Opcja numeryczna\", \n             \"mandatory\": true \n           }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n     \"formNameLt\": \"Forma 2\", \n     \"formNamePl\": \"Formularz 2\", \n     \"code\": \"STARTUP_FORM\", \n     \"sections\": [ \n       { \n         \"sectionNameLt\": \"Sekcija 2\", \n         \"sectionNamePl\": \"Sekcja 2\", \n         \"options\": [ \n           { \n             \"type\": \"CHECKBOX\", \n             \"code\": \"APPROVAL\", \n             \"optionNameLt\": \"Žymėjimo laukelio parinktis\", \n             \"optionNamePl\": \"Opcja pola wyboru\", \n             \"mandatory\": true \n           }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"externalId\": 358, \n        \"taskId\": 3555, \n        \"code\": \"DOCUMENTS\", \n        \"nameEn\": \"Keitimosi forma\", \n        \"nameLt\": \"Keitimosi forma\", \n        \"nameRu\": \"Акт передачи\", \n        \"nameDe\": \"Keitimosi forma\", \n        \"namePl\": \"Keitimosi forma\", \n        \"filledAt\": \"2020-08-03T17:14:13.195\", \n        \"vehicleType\": \"TRUCK_STANDARD\", \n        \"driverId\": 355, \n        \"vehicleId\": 2701, \n        \"plateNumber\": \"JSU270\", \n        \"sections\": [ \n            { \n                \"id\": 1437, \n                \"idx\": 0, \n\n=== Страница 112 ===\n \n112 \n                \"nameEn\": \"Kelių aparatai\", \n                \"nameLt\": \"Kelių aparatai\", \n                \"nameRu\": \"Дорожные аппараты\", \n                \"nameDe\": \"Kelių aparatai\", \n                \"namePl\": \"Kelių aparatai\", \n                \"type\": \"USER\", \n                \"options\": [ \n                    { \n                        \"id\": 4805, \n                        \"filledSectionId\": 4805, \n                        \"type\": \"CHECKBOX\", \n                        \"code\": \"APROVAL\", \n                        \"nameEn\": \"TOLL COLLECT - Vokietijos kelių aparatas\", \n                        \"nameLt\": \"TOLL COLLECT - Vokietijos kelių aparatas\", \n                        \"nameRu\": \"TOLL COLLECT - Немецкий дарожный аппарат\", \n                        \"nameDe\": \"TOLL COLLECT - Vokietijos kelių aparatas\", \n                        \"namePl\": \"TOLL COLLECT - Vokietijos kelių aparatas\", \n                        \"values\": [ \n                            { \n                                \"text\": \"CHECKBOX\", \n                                \"value\": \"true\" \n                            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                            \"id\": 9, \n                            \"code\": \"HOLIDAYS_ANSWER_YES\", \n                            \"nameEn\": \"Yes\", \n                            \"nameLt\": \"Taip\", \n                            \"nameRu\": \"Yes\", \n                            \"nameDe\": \"Yes\", \n                            \"namePl\": \"Yes\", \n                            \"options\": [ \n                                { \n                                    \"id\": 4805, \n\n=== Страница 113 ===\n \n113 \n                                    \"filledSectionId\": 888, \n                                    \"type\": \"CHECKBOX\", \n                                    \"code\": \"HOLIDAY_INTERVAL\", \n                                    \"nameEn\": \"Pick dates\", \n                                    \"nameLt\": \"Pasirink datas\", \n                                    \"nameRu\": \"Pick dates\", \n                                    \"nameDe\": \"Pick dates\", \n                                    \"namePl\": \"Pick dates\", \n                                    \"values\": [ \n                                        { \n                                            \"text\": \"DATE_FROM\", \n                                            \"value\": \"2023-07-01\" \n                                        }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n     \"largestFormId\": 358, \n     \"forms\": [ \n       { \n         \"externalId\":358, \n         \"taskId\":3555, \n         \"code\":\"DOCUMENTS\", \n         \"nameEn\":\"Keitimosi forma\", \n         \"nameLt\":\"Keitimosi forma\", \n         \"nameRu\":\"Акт передачи\", \n         \"nameDe\":\"Keitimosi forma\", \n         \"namePl\":\"Keitimosi forma\", \n         \"filledAt\":\"2020-08-03T17:14:13.195\", \n         \"vehicleType\":\"TRUCK_STANDARD\", \n\n=== Страница 117 ===\n \n117 \n         \"driverId\":355, \n         \"vehicleId\":2701, \n         \"plateNumber\":\"JSU270\", \n         \"sections\":[ \n            { \n               \"id\":1437, \n               \"idx\":0, \n               \"nameEn\":\"Kelių aparatai\", \n               \"nameLt\":\"Kelių aparatai\", \n               \"nameRu\":\"Дорожные аппараты\", \n               \"nameDe\":\"Kelių aparatai\", \n               \"namePl\":\"Kelių aparatai\", \n               \"type\":\"USER\", \n               \"options\":[ \n                  { \n                     \"id\":4805, \n                     \"type\":\"CHECKBOX\", \n                     \"code\":\"APROVAL\", \n                     \"nameEn\":\"TOLL COLLECT - Vokietijos kelių aparatas\", \n                     \"nameLt\":\"TOLL COLLECT - Vokietijos kelių aparatas\", \n                     \"nameRu\":\"TOLL COLLECT - Немецкий дарожный аппарат\", \n                     \"nameDe\":\"TOLL COLLECT - Vokietijos kelių aparatas\", \n                     \"namePl\":\"TOLL COLLECT - Vokietijos kelių aparatas\", \n                     \"values\":[ \n                        { \n                           \"text\":\"CHECKBOX\", \n                           \"value\":\"true\" \n                        }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                         \"id\": 9, \n                         \"code\":\"HOLIDAYS_ANSWER_YES\", \n                         \"nameEn\":\"Yes\", \n                         \"nameLt\":\"Taip\", \n                         \"nameRu\":\"Yes\", \n                         \"nameDe\":\"Yes\", \n                         \"namePl\":\"Yes\", \n\n=== Страница 118 ===\n \n118 \n                         \"options\": [ \n                            { \n                              \"id\":4805, \n                              \"type\":\"CHECKBOX\", \n                              \"code\":\"HOLIDAY_INTERVAL\", \n                              \"nameEn\":\"Pick dates\", \n                              \"nameLt\":\"Pasirink datas\", \n                              \"nameRu\":\"Pick dates\", \n                              \"nameDe\":\"Pick dates\", \n                              \"namePl\":\"Pick dates\", \n                              \"values\":[ \n                                 { \n                                   \"text\":\"DATE_FROM\", \n                                   \"value\":\"2023-07-01\" \n                                 }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n\n=== Страница 132 ===\n \n132 \n         \"vehicleId\":12345, \n         \"vinCode\":\"W1T4565125554588\", \n         \"active\": true, \n         \"zslCode\":\"Z23-654652-P\" \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"orderId\": null, \n      \"orderNumber\":\"ABC123\", \n      \"clientId\":123, \n      \"clientOrderNumber\":\"abc123\", \n      \"manager\":\"manager@email.com\", \n      \"status\":\"PENDING\", \n      \"freight\":800.99, \n      \"currency\":\"EUR\", \n      \"vat\":\"VAT_NULL\", \n      \"distance\":513.5, \n      \"customerFullName\":\"Full customer name\", \n      \"customerEmail\":\"client@customer.com\", \n      \"customerPhone\":\"+37060000000\", \n      \"hazardousType\":\"B\", \n      \"paidKm\":1503.0, \n      \"emptyKm\":31.5, \n      \"loadedKm\":1225.8, \n      \"tripRoute\":\"g{~tHgejmA|L|YdG~KlDhFvEzFxAxA`F|EXVbRd\", \n      \"docsReceivedByEmail\":false, \n\n=== Страница 154 ===\n \n154 \n      \"plannerFullName\":\"Full planner name\", \n      \"plannerEmail\":\"planner@customer.com\", \n      \"plannerPhone \":\"+37060000000\", \n      \"comment\":\"Order comment\", \n      \"showCommentToDriver\":false, \n      \"link\":\" https://www.fleethand.com/en/\" \n   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"responsibleEmployee\":\"responsible.manager@email.com\", \n      \"carrierId\":null, \n      \"price\":800.99, \n      \"currency\":\"EUR\", \n      \"vehicleId\":12345, \n      \"trailerId\":null, \n      \"trailerRequired\":false \n   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"type\":\"LOADING\", \n            \"date\":\"2023-06-11 08:10\", \n            \"participant\":\"UAB Client\", \n            \"coordinates\":\"56.9516296, 24.2060855\", \n            \"point\":\"Rīga, Latvia\", \n            \"address\":\"Zvaigznāja gatve 8, LV-1082, Rīga, Latvia\", \n            \"postalCode\":\"ANSWER_VIGNETE\", \n            \"country\":\"LV-1082\", \n            \"city\":\"Rīga\", \n            \"stopId\":\"LOAD-012345\", \n            \"eta\":\"2023-06-11 08:00\", \n            \"comment\":\"Loading comment\", \n            \"workHours\":\"8:00-18:00\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"type\":\"UNLOADING\", \n            \"date\":\"2023-06-11 16:30\", \n            \"participant\":\"AB Partner\", \n            \"coordinates\":\"54.7101600, 25.2634556\", \n            \"point\":\"Vilnius, Vilnius City Municipality\", \n\n=== Страница 155 ===\n \n155 \n            \"address\":\"Ozo g. 25, 08217 Vilnius\", \n            \"postalCode\":\"08217\", \n            \"country\":\"Lithuania\", \n            \"city\":\"Vilnius\", \n            \"stopId\":\"UNLOAD-012345\", \n            \"eta\":\"2023-06-11 16:15\", \n            \"comment\":\"Unloading comment\", \n            \"workHours\":\"8:00-18:00\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"date\":\"2023-06-11 11:15\", \n            \"coordinates\":\"56.2744961, 24.3655892\", \n            \"point\":\"Bajorėliai, Lithuania\", \n            \"address\":\" Bajorėliai, Pasvalio r. sav. Saločių sen\", \n            \"postalCode\":\"LT-39421\", \n            \"country\":\"Lithuania\", \n            \"city\":\"Bajorėliai\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n        \"orderId\": 1111, \n        \"tripId\": 111 \n    }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"employees\":[ \n         { \n            \"id\":8218, \n            \"email\":\"partner.employee@fleethand.com\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"1\":[ \n         { \n            \"id\":1351, \n            \"vinCode\":\"VINCODE1\", \n            \"partnerTitle\":\"Partner1\", \n            \"activeFrom\":\"2019-02-04T22:00:00\", \n            \"activeTill\":\"2019-02-05T21:59:00\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"deviceKey\":\"123456789\", \n      \"entries\":[ \n         { \n            \"group\":\"de\", \n            \"gpsMoved\":41.38, \n            \"gpsStopped\":191.29, \n\n=== Страница 194 ===\n \n194 \n            \"gpsTotal\":232.67, \n            \"gpsDistance\":2619.15, \n            \"gpsFuelUsage\":24.49, \n            \"tachoMoved\":40.43, \n            \"tachoStopped\":192.24, \n            \"tachoTotal\":232.67, \n            \"odometerDistance\":2640.33, \n            \"fuelUsage\":24.3, \n            \"consumedFuel\":641.5, \n            \"counterFuelUsage\":0.0, \n            \"consumedCounterFuel\":0.0, \n            \"odometerAtStart\":426709.89, \n            \"odometerAtEnd\":430330.57, \n            \"fuelLevelAtStart\":960, \n            \"fuelLevelAtEnd\":737, \n            \"fuelFilled\":798.98 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"totalGpsMoved\":63.39, \n         \"totalGpsStopped\":255.49, \n         \"totalGpsTotal\":318.88, \n         \"totalGpsDistance\":3962.29, \n         \"totalGpsFuelUsage\":23.51, \n         \"totalTachoMoved\":61.52, \n         \"totalTachoStopped\":257.36, \n         \"totalTachoTotal\":318.88, \n         \"totalOdometerDistance\":3989.41, \n         \"totalOdometerFuelUsage\":23.35, \n         \"totalConsumedFuel\":931.5, \n         \"totalOdometerCounterFuelUsage\":0.0, \n         \"totalConsumedCounterFuel\":0.0, \n         \"firstOdometerAtStart\":426341.16, \n         \"lastOdometerAtEnd\":430330.57, \n         \"fuelLevelAtStart\":null, \n         \"fuelLevelAtEnd\":null, \n         \"totalfuelFilled\":798.98 \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"vehicleId\": 123456, \n      \"vinCode\": \"vinCode\", \n      \"totalDistance\": 2951.29, \n      \"tolls\": { \n\n=== Страница 198 ===\n \n198 \n         \"countryTolls\": [ \n            { \n               \"country\": \"FRA\", \n                             \"cost\": 342.0, \n                             \"distance\": 1397.36 \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                  \"year\":\"2022\", \n                  \"month\":\"06\", \n                  \"day\":\"01\", \n                  \"hours\":\"05\", \n                  \"minutes\":\"20\" \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                  \"year\":\"2022\", \n                  \"month\":\"06\", \n                  \"day\":\"01\", \n                  \"hours\":\"07\", \n                  \"minutes\":\"30\" \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                  \"year\":\"2022\", \n                  \"month\":\"06\", \n                  \"day\":\"01\", \n                  \"hours\":\"07\", \n                  \"minutes\":\"30\" \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                  \"year\":\"2022\", \n                  \"month\":\"06\", \n                  \"day\":\"01\", \n                  \"hours\":\"07\", \n                  \"minutes\":\"53\" \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"driver\":\"V100000112119000\", \n      \"dayDrivingExceeded\":{ \n\n=== Страница 210 ===\n \n210 \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":1, \n         \"violations\":[ \n            { \n               \"violation\":\"VERY_SERIOUS\", \n               \"date\":\"2023-06-19\", \n               \"country\":\"lt\", \n               \"vehicle\":\"MDY319\" \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n\n=== Страница 211 ===\n \n211 \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n         \"count\":0, \n         \"violations\":[ \n             \n         ] \n      }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"countryTolls\":[ \n         { \n            \"country\":\"LTU\", \n            \"amountInTargetCurrency\":12.45 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"countryTolls\":[ \n         { \n            \"country\":\"LTU\", \n            \"amountInTargetCurrency\":12.45 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n               \"countryTolls\":[ \n                  { \n                     \"country\":\"LTU\", \n                     \"amountInTargetCurrency\":12.45 \n                  }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n               \"countryTolls\":[ \n                  { \n                     \"country\":\"LTU\", \n                     \"amountInTargetCurrency\":12.45 \n                  }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n               \"countryTolls\":[ \n                  { \n                     \"country\":\"LTU\", \n                     \"amountInTargetCurrency\":16.21 \n                  }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":12.45 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":12.45 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":16.21 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"FRA\", \n                  \"amountInTargetCurrency\":15.64 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"FRA\", \n                  \"amountInTargetCurrency\":20.50 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"FRA\", \n                  \"amountInTargetCurrency\":20.21 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":15.80 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":12.45 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":16.21 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n                \"orderNumber\": \"order19\", \n                \"clientId\": 1234, \n                \"origin\": \"Lithuania\", \n                \"destination\": \"France\", \n                \"freight\": 21300.0, \n                \"actualAmount\": 382.688, \n                \"employee\": \"FleetHand\" \n            }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"countryTolls\":[ \n         { \n            \"country\":\"LTU\", \n            \"amountInTargetCurrency\":12.45 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n      \"countryTolls\":[ \n         { \n            \"country\":\"LTU\", \n            \"amountInTargetCurrency\":12.45 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"countryTolls\":[ \n               { \n                  \"country\":\"LTU\", \n                  \"amountInTargetCurrency\":12.45 \n               }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"address\": \"Train station ABC, Vilnius\", \n            \"lat\":54.670298, \n            \"lng\":25.284262 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n           \"DONE\": { \n             \"formNameEn\": \"Form\", \n             \"formNameLt\": \"Forma\", \n             \"formNameRu\": \"Форма\", \n             \"formNameDe\": \"Formular\", \n             \"formNamePl\": \"Formularz\", \n             \"code\": \"DOCUMENTS\", \n             \"sections\": [ \n               { \n                 \"sectionNameEn\": \"Section\", \n                 \"sectionNameLt\": \"Sekcija\", \n                 \"sectionNameRu\": \"Раздел\", \n                 \"sectionNameDe\": \"Abschnitt\", \n                 \"sectionNamePl\": \"Sekcja\", \n                 \"options\": [ \n                   { \n                     \"type\": \"DOCUMENT\", \n                     \"code\": \"CMR\", \n                     \"optionNameEn\": \"Amazon request\", \n                     \"optionNameLt\": \"Skaičių parinktis\", \n                     \"optionNameRu\": \"CMR (VIlnius - Kaunas)\", \n                     \"optionNameDe\": \"Zahlenoption\", \n                    \"optionNamePl\": \"Opcja numeryczna\", \n                     \"mandatory\": true \n                   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n             \"formNameLt\": \"Forma 2\", \n             \"formNamePl\": \"Formularz 2\", \n             \"code\": \"STARTUP_FORM\", \n             \"sections\": [ \n               { \n                 \"sectionNameLt\": \"Sekcija 2\", \n                 \"sectionNamePl\": \"Sekcja 2\", \n                 \"options\": [ \n                   { \n                     \"type\": \"CHECKBOX\", \n                     \"code\": \"APPROVAL\", \n                     \"optionNameLt\": \"Žymėjimo laukelio parinktis\", \n                     \"optionNamePl\": \"Opcja pola wyboru\", \n                     \"mandatory\": true \n                   }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"2021-01-01\":0, \n            \"2021-01-02\":600, \n            \"2021-01-03\":900, \n            \"2021-01-04\":250 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"2021-01-01\":3600, \n            \"2021-01-02\":3600, \n            \"2021-01-03\":3600, \n            \"2021-01-04\":3600 \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  },
+  {
+    "model_name": "Model",
+    "structure": "{ \n            \"2021-01-01\":\"FLH123\", \n            \"2021-01-02\":\"FLH123\", \n            \"2021-01-03\":\"FLH123\", \n            \"2021-01-04\":\"FLH123\" \n         }",
+    "fields": [],
+    "required_fields": [],
+    "relationships": [],
+    "validation_rules": []
+  }
+]

@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "example_1",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":OK \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_2",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_3",
+    "type": "response",
+    "content": "200 \n\"largestActivityId\": 1, \n\"activities\": [  \n  { \n   \"id\": 1, \n   \"vehicleId\": 1225, \n   \"vinCode\": \"ABC1234567891011\", \n   \"code\": \"ACTIVITY_BUY\", \n   \"filledAt\": \"2023-06-19T14:41:00\", \n   \"questions\": [ \n     { \n      \"code\": \"QUESTION_BUY_WHAT\", \n      \"type\": \"SELECTION\", \n      \"answer\": { \n         \"code\": \"ANSWER_VIGNETE\", \n         \"value\": \"buy_vignette\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_4",
+    "type": "response",
+    "content": "200 \n{ \n \"id\": 1, \n \"vehicleId\": 1225, \n \"vinCode\": \"ABC1234567891011\", \n \"code\": \"ACTIVITY_BUY\", \n \"filledAt\": \"2023-06-19T14:41:00\", \n \"questions\": [ \n   { \n    \"code\": \"QUESTION_BUY_WHAT\", \n    \"type\": \"SELECTION\", \n    \"answer\": { \n      \"code\": \"ANSWER_VIGNETE\", \n      \"value\": \"buy_vignette\", \n      \"questions\": [ \n         { \n          \"code\": \"QUESTION_COUNTRY\", \n          \"type\": \"SELECTION\", \n          \"answer\": { \n             \"code\": \"ANSWER_LUX\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_5",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_6",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_7",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"country\":\"de\", \n         \"distance\":205.00, \n         \"beginPosition\":\"48.98015, 8.158865\", \n         \"endPosition\":\"50.76395, 3.16532\", \n         \"beginMileage\":212793.525, \n         \"endMileage\":212998.525, \n         \"beginFuelLevel\":100, \n         \"beginFuelLevelLiters\":1200.0, \n         \"endFuelLevel\":66, \n         \"endFuelLevelLiters\":805.2, \n         \"startDate\":\"2021-01-31T11:56:10.464\", \n         \"endDate\":\"2021-02-02T14:56:10.464\", \n         \"vehiclePlateNumber\":\"ABC123\" \n      }, \n      { \n         \"country\":\"fr\", \n         \"distance\":200.00, \n         \"beginPosition\":\"48.98015, 8.158865\", \n         \"endPosition\":\"50.76395, 3.16532\", \n         \"beginMileage\":212998.525, \n         \"endMileage\":213198.525, \n         \"beginFuelLevel\":66, \n         \"beginFuelLevelLiters\":805.2, \n         \"endFuelLevel\":25, \n         \"endFuelLevelLiters\":305.0, \n         \"startDate\":\"2021-02-02T14:56:10.464\", \n         \"endDate\":\"2021-02-03T14:56:10.464\", \n         \"vehiclePlateNumber\":\"ABC123\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_8",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      {",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_9",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"Successfully canceled 2 driver .ddd initiations\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_10",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"Successfully canceled 2 vehicle .ddd initiations\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_11",
+    "type": "response",
+    "content": "200 { \n   \"status\":200, \n   \"payload\":\" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_12",
+    "type": "response",
+    "content": "200 { \n   \"status\":200, \n   \"payload\":\" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_13",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"cardNumber\":\"1234567891234000\", \n         \"connected\":null, \n         \"status\":\"NO_CONNECTION_DATA\", \n         \"client\":{ \n            \"id\":1, \n            \"value\":\"UAB \\\"Company 1\\\"\" \n         }, \n         \"physicalNumber\":\"0000000001\" \n      }, \n      { \n         \"cardNumber\":\"1234567891235000\", \n         \"connected\":true, \n         \"status\":\"CONNECTED\", \n         \"client\":{ \n            \"id\":2, \n            \"value\":\"UAB \\\"Company 2\\\"\" \n         }, \n         \"physicalNumber\":null \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_14",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"title\":\"UAB FLEETHAND\", \n         \"clientId\":-1, \n         \"country\":\"LTU\", \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_15",
+    "type": "response",
+    "content": "200 \n{ \n    \"status\": 200, \n    \"payload\": { \n        \"driverFiles\": [ \n            { \n                \"id\": 1, \n                \"imei\": null, \n                \"driverCardNumber\": \"1234567891234000\", \n                \"downloadDate\": \"2023-07-04T08:24:51.472\", \n                \"dateFrom\": \"2022-08-14T00:00:00\", \n                \"dateTill\": \"2023-05-31T20:30:00\" \n            } \n        ], \n        \"vehicleFiles\": [ \n            { \n                \"id\": 2, \n                \"imei\": \"00000000000001\", \n                \"driverCardNumber\": null, \n                \"downloadDate\": \"2023-07-03T11:41:15.825\", \n                \"dateFrom\": \"2023-03-30T23:59:59\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_16",
+    "type": "response",
+    "content": "200 \n{ \n    \"status\": 200, \n    \"payload\": [ \n        { \n            \"downloadTime\": \"2022-05-18T12:47:00\", \n            \"activitiesFrom\": \"2021-05-07T00:00:00\", \n            \"activitiesTill\": \"2022-05-18T01:38:00\", \n            \"driverCard\": \"0000000116754000\" \n        }, \n        { \n            \"downloadTime\": null, \n            \"activitiesFrom\": null, \n            \"activitiesTill\": null, \n            \"driverCard\": \"UAD0000004RWO000\" \n        } \n    ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_17",
+    "type": "response",
+    "content": "200 \n{ \n    \"status\": 200, \n    \"payload\": [ \n        { \n            \"vin\": \"YV2RT40C0MB325540\", \n            \"downloadTime\": \"2021-08-26T14:35:05\", \n            \"activitiesFrom\": \"2021-05-25T23:59:59\", \n            \"activitiesTill\": \"2021-08-25T13:02:15\" \n        }, \n        { \n            \"vin\": \"YV2RTY0A7MB322799\", \n            \"downloadTime\": null, \n            \"activitiesFrom\": null, \n            \"activitiesTill\": null \n        } \n    ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_18",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_19",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_20",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_21",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_22",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_23",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_24",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_25",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"externalId\":6, \n         \"vehicleId\":2701, \n         \"driverId\":355, \n         \"clientId\":950, \n         \"startedFilling\":\"2020-09-30T06:35:29.133\", \n         \"finishedFilling\":\"2020-09-30T06:35:29.133\", \n         \"signature\":\"iVBORw0AYAAACXJ2VEAAAABHNCSVQICAgIf\", \n         \"items\":[ \n            { \n               \"id\":212, \n               \"title\":\"title\", \n               \"fuelBefore\":99999, \n               \"fuelFilled\":0.889, \n               \"odometer\":0, \n               \"generalFuelUsage\":8755, \n               \"country\":\"LT\", \n               \"date\":\"2020-09-30T09:36:15\", \n               \"price\":855888,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_26",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"externalId\":14, \n         \"vehicleId\":10605, \n         \"driverId\":544, \n         \"clientId\":950, \n         \"startedFilling\":\"2020-11-20T13:19:10.834\", \n         \"finishedFilling\":\"2020-11-20T13:19:36.232\", \n         \"signature\":\"iVBORw0KGgoAAAANSUhEUgAHNCSVQICAgIf\", \n         \"items\":[ \n            { \n               \"id\":55, \n               \"dateFrom\":\"2020-11-20\", \n               \"countryFrom\":\"Germany\", \n               \"cityFrom\":\"Leipzig, 04158\", \n               \"odometerFrom\":205257, \n               \"dateTo\":\"2020-11-20\", \n               \"countryTo\":\"Germany\", \n               \"cityTo\":\"Leipzig, 04158\", \n               \"odometerTo\":205257, \n               \"cmrNumber\":\"cmr#456\", \n               \"cmrWeight\":205257, \n               \"distance\":0, \n               \"comments\":\"Comments\", \n               \"createdAt\":\"2020-11-20T13:19:10.834\"",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_27",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": 9999 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_28",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": 858558 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_29",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n    { \n        \"id\":1, \n        \"name\":\"Scanned passport”, \n        \"important\":false, \n        \"showToDriver\":false, \n        \"type\":\"OTHER\", \n        \"country\":\"en\" \n    }, \n    { \n        \"id\":2, \n        \"name\":\"Driver license”, \n        \"important\":true, \n        \"showToDriver\":true, \n        \"type\":\"OTHER\", \n        \"country\":\"en\" \n    },",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_30",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_31",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n    { \n        \"id\":1, \n        \"name\":\"Insurance”, \n        \"important\":false, \n        \"showToDriver\":false, \n    }, \n    { \n        \"id\":2, \n        \"name\":\"Taxed roads ticket”, \n        \"important\":true, \n        \"showToDriver\":true, \n    }, \n     ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_32",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_33",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"driverId\":\"1\", \n         \"driverCard\":\"1234567891234000\", \n         \"fullName\":\"name surname\", \n         \"address\":\"EXAMPLE ADDRESS\", \n         \"email\":\"EXAMPLE@EXAMPLE.COM\", \n         \"language\":\"LT\", \n         \"phoneNumber\":\"+37060012345\", \n         \"department\":\"DEPARTMENT EXAMPLE\", \n         \"tableNumber\":\"123\" \n      }, \n      { \n         \"driverId\":\"2\", \n         \"driverCard\":\"UAD0000011142000\", \n         \"fullName\":\"NAME SURNAME\", \n         \"address\":null, \n         \"email\":null,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_34",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"OK\" \n    } \n} \n200 \n{ \n   \"status\":200, \n   \"payload\":{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"Group ID does not exist\" \n    } \n} \n200 \n{ \n   \"status\":200, \n   \"payload\":{ \n        \"vinCode\":\"BBBBBBBB11111111\" \n        \"message\":\"Vehicle already belongs to this group\" \n    } \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_35",
+    "type": "response",
+    "content": "200 \n{ \n    \"status\": 200, \n    \"payload\": { \n        \"deviceKey\": \"352094089272196\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_36",
+    "type": "response",
+    "content": "200 \n{ \n    \"status\": 200, \n    \"payload\": { \n        \"driver\": \"0000000005266000\", \n        \"totalData\": { \n            \"distance\": \"2480.01\", \n            \"gpsDistance\": \"2484.9\", \n            \"fuelUsed\": 682.5, \n            \"fuelUsedIdling\": 16.0, \n            \"fuelUsage\": \"27.52\", \n            \"fuelUsageDriving\": \"26.87\", \n            \"noCargo\": \"10.17\", \n            \"lightCargo\": \"22.53\", \n            \"mediumCargo\": \"24.26\", \n            \"heavyCargo\": \"43.05\", \n            \"parkingBrake\": \"0\", \n            \"harshBraking\": \"0\", \n            \"freeRolling\": \"10.89\", \n            \"braking\": \"13.95\", \n            \"brakingDistance\": \"14.26\", \n            \"stopping\": \"8.35\", \n            \"numberOfStops\": 207, \n            \"brakingStoppingScore\": 100, \n            \"rolling\": \"27.19\", \n            \"rollingScore\": 100, \n            \"economy\": \"0.03\", \n            \"economyScore\": 100, \n            \"engineLoad\": \"5.59\", \n            \"engineLoadScore\": 48, \n            \"overspeeding\": \"26.01\", \n            \"overspeedingScore\": 48, \n            \"cruiseControlDistance\": \"75.2\", \n            \"cruiseControlDistanceScore\": 100, \n            \"cruiseControlFuel\": \"31.37\", \n            \"cruiseControlInterruption\": \"0.15\", \n            \"cruiseControlFuelUsage\": \"-16.71\", \n            \"cruiseControlFuelUsageScore\": 0, \n            \"idling\": \"11.83\", \n            \"idlingTime\": \"6h 34m\", \n            \"idlingScore\": 61, \n            \"averageScore\": 70, \n            \"averageWeight\": \"26455.76\", \n            \"speedData\": { \n                \"distanceTill80\": \"34.85\", \n                \"distance80To81\": \"7.43\", \n                \"distance82To83\": \"8.85\", \n                \"distance84To85\": \"44.49\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_37",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":1, \n         \"title\":\"MAN\", \n         \"vehicleCount\":32 \n      }, \n      { \n         \"id\":2, \n         \"title\":\"Volvo\", \n         \"vehicleCount\":45 \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_38",
+    "type": "response",
+    "content": "200 \n{ \n \"status\":200, \n \"payload\":[ \n   { \n     \"code\": \"DELIVERY_NOTE\", \n     \"id\": 11256 \n   } \n ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_39",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_40",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_41",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_42",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_43",
+    "type": "response",
+    "content": "200 \n{ \n  \"status\": 200, \n  \"payload\": { \n        \"externalId\": 358, \n        \"taskId\": 3555, \n        \"code\": \"DOCUMENTS\", \n        \"nameEn\": \"Keitimosi forma\", \n        \"nameLt\": \"Keitimosi forma\", \n        \"nameRu\": \"Акт передачи\", \n        \"nameDe\": \"Keitimosi forma\", \n        \"namePl\": \"Keitimosi forma\", \n        \"filledAt\": \"2020-08-03T17:14:13.195\", \n        \"vehicleType\": \"TRUCK_STANDARD\", \n        \"driverId\": 355, \n        \"vehicleId\": 2701, \n        \"plateNumber\": \"JSU270\", \n        \"sections\": [ \n            { \n                \"id\": 1437, \n                \"idx\": 0,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_44",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": { \n     \"largestFormId\": 358, \n     \"forms\": [ \n       { \n         \"externalId\":358, \n         \"taskId\":3555, \n         \"code\":\"DOCUMENTS\", \n         \"nameEn\":\"Keitimosi forma\", \n         \"nameLt\":\"Keitimosi forma\", \n         \"nameRu\":\"Акт передачи\", \n         \"nameDe\":\"Keitimosi forma\", \n         \"namePl\":\"Keitimosi forma\", \n         \"filledAt\":\"2020-08-03T17:14:13.195\", \n         \"vehicleType\":\"TRUCK_STANDARD\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_45",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_46",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_47",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": [ \n      { \n         \"id\":111, \n         \"plateNumber\":\"LTU000\", \n         \"zoneTitle\":\"Crossing zone\"",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_48",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": {",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_49",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":105, \n         \"deviceKey\":\"000000000000000\", \n         \"plateNumber\":\"FLH555\", \n         \"latitude\":54.894500, \n         \"longitude\":23.909960, \n         \"issuedOn\":\"2022-04-01T12:05:01.636\" \n      }, \n      { \n         \"id\":106, \n         \"deviceKey\":\"000000000000001\", \n         \"plateNumber\":\"FLH556\", \n         \"latitude\":52.894500, \n         \"longitude\":24.909960, \n         \"issuedOn\":\"2022-04-01T12:10:02.523\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_50",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":7976, \n         \"type\":\"OFF_ROUTE\", \n         \"time\":\"2020-11-17T12:04:46.414\", \n         \"plateNumber\":\"DDD111\", \n         \"openedBy\":\"Full Name\", \n         \"address\":\"27 Allée du Lac, 86580 Vouneuil-sous-Biard\", \n         \"latitude\":46.5682234, \n         \"longitude\":0.2653675, \n         \"vehicleId\":145392, \n         \"vinCode\":\"W1T4565125554588\" \n         \"driver\":\"driverCard\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_51",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":7976, \n         \"type\":\"OFF_ROUTE\", \n         \"time\":\"2020-11-17T12:04:46.414\", \n         \"plateNumber\":\"DDD111\", \n         \"openedBy\":\"Full Name\", \n         \"address\":\"27 Allée du Lac, 86580 Vouneuil-sous-Biard\", \n         \"latitude\":46.5682234, \n         \"longitude\":0.2653675, \n         \"vehicleId\":145392, \n         \"driver\":\"driverCard\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_52",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"vinCode\":null, \n         \"plateNumber\":\"FLH555\", \n         \"deviceKey\":\"000000000000000\", \n         \"doorsOpen\":false \n      }, \n      { \n         \"vinCode\":null, \n         \"plateNumber\":\"FLH556\", \n         \"deviceKey\":\"000000000000000\", \n         \"doorsOpen\":true \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_53",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"time\":\"2020-01-21T09:12:54\", \n         \"deviceKey\":\"000000000000000\", \n         \"vehicleId\":9999, \n         \"latitude\":45.4147833, \n         \"longitude\":10.9198083, \n         \"speed\":0, \n         \"course\":0, \n         \"driver\":\"EXAMPLE00000000\", \n         \"secondDriver\":\"EXAMPLE20000000\", \n         \"fuelLevel\":37.2, \n         \"float1Liters\":14, \n         \"float2Liters\":23, \n         \"adblueLevelPercent\":80, \n         \"engineRPM\":0, \n         \"axleWeight\":0, \n         \"axleWeight2\":null, \n         \"grossCombinationVehicleWeight\":null, \n         \"address\":null, \n         \"distance\":null, \n         \"engineHours\":null, \n         \"externalPowerV\":14809, \n         \"internalBatteryV\":9775,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_54",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"deviceKey\":\"000000000000000\", \n         \"plateNumber\":\"EXAMPLE 000\", \n         \"latitude\":54.651907, \n         \"longitude\":25.306837, \n         \"country\":\"lt\", \n         \"address\":\"Gatvių g., Vilnius, Lithuania, 01234\", \n         \"postCode\":\"01234\", \n         \"odometer\":123456.789 \n         \"time\":\"2000-01-01T12:12:08.339\" \n      }, \n      { \n         \"deviceKey\":\"111111111111111\", \n         \"plateNumber\":\"EXAMPLE 001\", \n         \"latitude\":54.651907, \n         \"longitude\":25.306837, \n         \"country\":\"lt\", \n         \"address\":\"Gatvių g., Vilnius, Lithuania, 01234\", \n         \"postCode\":\"01234\", \n         \"odometer\":234567.8 \n         \"time\":\"2000-01-01T15:15:01.400\" \n      } \n   ]",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_55",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"time\":\"2020-01-21T09:12:54\", \n         \"deviceKey\":\"000000000000000\", \n         \"driver1CardPresent\":true, \n         \"driver2CardPresent\":true, \n         \"distance\":null, \n         \"fullFirstDriver\":\"GUD0000000000000\", \n         \"fullSecondDriver\":\"GUD0000000000000\", \n         \"latestActivityType\":\"REST\", \n         \"latestActivityDuration\":\"2020-09-28T19:40:00\", \n         \"lastRestTime\":\"2020-10-04T04:40:00\", \n         \"tillNextBrakeOrRest\":0, \n         \"tillNextDayRest\":1, \n         \"tillThisRestEnd\":1, \n         \"tillNextWeekRest\":1, \n         \"todayDriving\":1, \n         \"thisWeekDriving\":1, \n         \"longerDrivingCount\":1, \n         \"shorterRestsCount\":1, \n         \"beforeBreakDrivingLeft\":1, \n         \"todayDrivingLeft\":1, \n         \"thisWeekDrivingLeft\":1, \n         \"twoWeeksDrivingLeft\":1, \n         \"tillNextDriving\":1,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_56",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": { \n        \"orderId\": 1111, \n        \"tripId\": 111 \n    } \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_57",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":1,        \n         \"taskId\":-1, \n         \"vehicleId\":-1 \n         \"action\":\"ADDED\" \n         \"orderNumber\":\"ORD#123\", \n         \"createdAt\":\"2020-09-03T11:15:10.101\" \n      }, \n      { \n         \"id\":2, \n         \"taskId\":-1, \n         \"vehicleId\":-1 \n         \"action\":\"REMOVED\" \n         \"orderNumber\":\"ORD#123\", \n         \"createdAt\":\"2020-09-03T11:17:10.101\" \n      },",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_58",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": \"PENDING\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_59",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"data\":[ \n      { \n         \"taskId\":1, \n         \"vehicleId\":100, \n         \"freight\":1000, \n         \"clientId\":\"VHT559685\", \n         \"clientOrderNumber\":\"VHT559685\", \n         \"clientKm\":\"1362\", \n         \"action\":\"ADD\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_60",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_61",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_62",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n      \"employees\":[ \n         { \n            \"id\":8218, \n            \"email\":\"partner.employee@fleethand.com\" \n         } \n      ], \n      \"errors\":[ \n         \"Email partner.partner@fleethand.com already in use\" \n      ] \n   } \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_63",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_64",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_65",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_66",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n      \"1\":[ \n         { \n            \"id\":1351, \n            \"vinCode\":\"VINCODE1\", \n            \"partnerTitle\":\"Partner1\", \n            \"activeFrom\":\"2019-02-04T22:00:00\", \n            \"activeTill\":\"2019-02-05T21:59:00\" \n         } \n      ], \n      \"2\":[ \n         { \n            \"id\":2750, \n            \"vinCode\":\"VINCODE2\", \n            \"partnerTitle\":\"Partner2\", \n            \"activeFrom\":\"2019-07-29T21:00:00\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_67",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":111, \n         \"vehicleId\":12345, \n         \"title\":\"payment card\", \n         \"cardNumber\":\"ABCDEFG\", \n         \"expiryDate\":\"20250828\", \n         \"type\":\"SHELL\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_68",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_69",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_70",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_71",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_72",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"poiId\":\"1\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_73",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"poiGroupId\":\"10\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_74",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"vehicleId\":12345, \n         \"date\":\"2022-06-01\", \n         \"country\":\"fr\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_75",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n      \"deviceKey\":\"123456789\", \n      \"entries\":[ \n         { \n            \"group\":\"de\", \n            \"gpsMoved\":41.38, \n            \"gpsStopped\":191.29,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_76",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n      \"vehicleId\": 123456, \n      \"vinCode\": \"vinCode\", \n      \"totalDistance\": 2951.29, \n      \"tolls\": {",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_77",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"driverCard\":\"V100000075665000\", \n         \"latestActivityType\":\"DRIVE\", \n         \"latestActivityStart\":\"2022-09-13T14:58:00\", \n         \"latestActivityDuration\":\"2460\", \n         \"drivingPeriodStarted\":\"2022-09-13T12:47:00\", \n         \"drivingBeforeBreak\":3060, \n         \"drivingLeftTillBreak\":6576,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_78",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"tachoChartItems\":[ \n            { \n               \"type\":\"RESTING\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_79",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":{ \n      \"driver\":\"V100000112119000\", \n      \"dayDrivingExceeded\":{",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_80",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_81",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_82",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_83",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_84",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_85",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_86",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_87",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_88",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"Id\":-1, \n         \"option\":\"TEMPERATURE\", \n         \"type\":\"LONG\", \n         \"enName\":\"Freezer temperature\", \n         \"deName\":\"Gefriertemperatur\", \n         \"plName\":\"Temperatura zamrażarki\", \n         \"ruName\":\"Температура морозильной камеры\", \n         \"ltName\":\"Šaldiklio temperatūra\", \n         \"frName\":\"Température du congélateur\", \n         \"lvName\":\"Saldētavas temperatūra\", \n         \"czName\":\"Teplota v mrazáku\", \n         \"esName\":\"Temperatura del congelador\", \n         \"itName\":\"Temperatura del congelatore\", \n         \"roName\":\"Temperatura congelatorului\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_89",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      [ \n         { \n            \"externalId\":2915, \n            \"type\":\"LOADING\", \n            \"address\":\"27 Allée du Lac, 86580 Vouneuil-sous-Biard\", \n            \"latitude\":46.56822349999999, \n            \"longitude\":0.2653675,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_90",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"2022-02-28 12:59\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_91",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"taskId\":9072, \n         \"partnerId\":1650, \n         \"distance\":1022, \n         \"plateNumber\":\"FLH233\", \n         \"orderNumber\":\"KJT123456\", \n         \"createdAt\":\"2023-02-09T09:26:11.146623\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_92",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"externalId\":2915, \n         \"idx\":0, \n         \"vehicleId\": 22569, \n         \"orderNumber\":\"ORDER123\" \n         \"type\":\"LOADING\", \n         \"status\":\"DONE\", \n         \"address\":\"27 Allée du Lac, 86580 Vouneuil-sous-Biard\", \n         \"latitude\":46.56822349999999, \n         \"longitude\":0.2653675, \n         \"poiId\":17699551, \n         \"plannedRoute\":\"c~s`H~wnB`@`E_Iz@eA\", \n         \"plannedDistance\":145392, \n         \"plannedDuration\":12367, \n         \"eta\":\"2020-11-17T12:04:46.414\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_93",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":2810, \n         \"idx\":0, \n         \"orderNumber\":\"ORDER123\", \n         \"date\":null, \n         \"type\":\"UNLOADING\", \n         \"status\":\"UNCONFIRMED\", \n         \"searchText\":\"Berliner Str. 22, 60311 Frankfurt am Main, Germany\", \n         \"address\":\"60311 Frankfurt am Main, Germany\", \n         \"lat\":50.1120958, \n         \"lng\":8.683402899999999, \n         \"poiId\": 17699551, \n         \"comments\":null, \n         \"polyline\":\"klb~Ge{kn@|DvF@t@n@PJp@ZlBh@f@VrAjAdBrBh@j@CR@j\", \n         \"distance\":411246, \n         \"tripId\":46,  \n         \"internalId\":64,  \n         \"additionalInfo\": [ \n            { \n               \"id\":-6, \n               \"value\":\"50\",   \n               \"option\":\"ADBLUE_AMOUNT\", \n             } \n          ], \n         \"eta\":\"2024-09-17 20:39\" \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_94",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n    { \n      \"taskId\":168968, \n      \"statuses\": [ \n       { \n         \"status\":\"EXECUTING\", \n         \"Latitude\":\"54.89522055\",   \n         \"longitude\":\"23.98839632\", \n         \"driverId\":8614, \n         \"taskId\":168968, \n         \"odometer\":1050205, \n         \"from\":\"2023-06-23T11:15:10.101\", \n         \"till\":\"2023-06-23T11:17:10.101\", \n         \"stopId\":\"LOAD-12345\" \n       } \n      ] \n    } \n  ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_95",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"id\":1275924, \n         \"status\":\"EXECUTING\", \n         \"time\":\"2020-09-03T11:15:10.101\", \n         \"latitude\":54.89522055, \n         \"longitude\":23.98839632, \n         \"driverId\":8614, \n         \"vehicleId\":6302, \n         \"vinCode\":null, \n         \"taskId\":168968, \n         \"odometer\":1050205 \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_96",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"externalId\":2915, \n         \"idx\": 0, \n         \"vehicleId\": 22569, \n         \"type\":\"LOADING\", \n         \"status\":\"DONE\", \n         \"address\":\"27 Allée du Lac, 86580 Vouneuil-sous-Biard\", \n         \"latitude\":46.56822349999999, \n         \"longitude\":0.2653675, \n         \"poiId\": 1755991, \n         \"stopId\": \"LOAD-12345\", \n         \"plannedRoute\":\"c~s`H~wnB`@`E_Iz@eA\", \n         \"plannedDistance\":145392, \n         \"plannedDuration\":12367, \n         \"eta\":\"2020-11-17T12:04:46.414\", \n         \"actualRoute\":\"a~s`HbxnBtPuWpAxAn@xD\", \n         \"actualDistance\":590,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_97",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\": 200, \n    \"payload\": [ \n        { \n            \"tripNumber\": 007, \n            \"vehicle\": \"FleetHand-Vehicle\", \n            \"startedAt\": \"2023-08-07T18:22:00\", \n            \"doneAt\": \"2023-08-21T08:07:33.476\", \n            \"fuelLevelAtEnd\": 580.561, \n            \"fuelConsumed\": 980.670, \n            \"fuelFilled\": 1562.639, \n            \"odometerAtStart\": 269382.295, \n            \"odometerAtEnd\": 273416.505, \n            \"plannedDistance\": 2261593, \n            \"actualDistance\": 1112215,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_98",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_99",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_100",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_101",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_102",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"internalId\":0, \n         \"externalId\":0, \n         \"message\":\"Task already marked as DONE and cannot be updated\" \n      }, \n      {",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_103",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"driverName\":\"Driver name\", \n         \"driverCard\":\"V100000111111000\", \n         \"tableNumber\":\"Table number\", \n         \"dayHoursGross\":{ \n            \"2021-01-01\":0, \n            \"2021-01-02\":600, \n            \"2021-01-03\":900, \n            \"2021-01-04\":250 \n         }, \n         \"dayHoursAtNight\":{ \n            \"2021-01-01\":3600, \n            \"2021-01-02\":3600, \n            \"2021-01-03\":3600, \n            \"2021-01-04\":3600 \n         }, \n         \"days\":4, \n         \"grossHours\":3600, \n         \"hoursAtNight\":3600, \n         \"vehiclesByDay\":{ \n            \"2021-01-01\":\"FLH123\", \n            \"2021-01-02\":\"FLH123\", \n            \"2021-01-03\":\"FLH123\", \n            \"2021-01-04\":\"FLH123\" \n         } \n      } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_104",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"deviceKey\":\"352600000000000\", \n         \"driver\":\"UAD000000AABB000\",",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_105",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_106",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":[ \n      { \n         \"licensePlateNumber\":\"LICENSEPLATE 123\", \n         \"plateNumber\":\"PLATE 123\", \n         \"imei\":\"00000000000000\", \n         \"model\":\"FMB640\", \n         \"simNumber\":\"37000000000\", \n         \"vinCode\":\"XXXXXXXXXXXXXXXXX\", \n         \"type\":\"TRUCK_MEGA\", \n         \"ownerName\":\"UAB FLEETHAND\", \n         \"vehicleId\":14653, \n         \"fakeVehicle\":true, \n         \"tabImei\":null, \n         \"tabSimNo\":null, \n         \"brand\":null, \n         \"fuelTankCapacity\":null, \n         \"adBlueCapacity\":null, \n         \"payerName\":\"UAB FLEETHAND\"  \n      }, \n      {          \n         \"licensePlateNumber\": \"LICENSEPLATE 345\",          \n         \"plateNumber\": \"PLATE 123\",          \n         \"imei\": \"00000000000001\", \n         \"model\": \"FMB640\", \n         \"simNumber\": \"37000000000\", \n         \"vinCode\": \"XXXXXXXXXXXXXXXXX\", \n         \"type\": \"TRUCK_MEGA, \n         \"ownerName\": \"UAB FLEETHAND\", \n         \"vehicleId\":14652, \n         \"fakeVehicle\":false, \n         \"tabImei\":\"bb34f67c6490cb41\", \n         \"tabSimNo\":\"651651651651\", \n         \"brand\":\"Renault\", \n         \"fuelTankCapacity\": 1500, \n         \"adBlueCapacity\":200, \n         \"payerName\":\"UAB OTHER FLEETHAND\" \n      } \n   ]",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_107",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200,",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_108",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\":\"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_109",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": [ \n        {  \n            \"groupId\": 1,  \n            \"title\": \"Two vehicles group\",  \n            \"vehiclesIds\": [ \n                11, \n                22, \n            ] \n        }, \n        {  \n            \"groupId\": 2,  \n            \"title\": \"Empty group\",  \n            \"vehiclesIds\": [] \n        }, \n        {  \n            \"groupId\": 3,  \n            \"title\": \"One vehicle group\",  \n            \"vehiclesIds\": [ \n                15 \n            ] \n        }",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_110",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\": 200, \n   \"payload\": 1 \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_111",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\": 200, \n   \"payload\": \"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_112",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\": 200, \n   \"payload\": \"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_113",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\": 200, \n   \"payload\": \"OK\" \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  },
+  {
+    "id": "example_114",
+    "type": "response",
+    "content": "200 \n{ \n   \"status\":200, \n   \"payload\": [ \n        {  \n            \"email\": \"fleethand@fleethand.com\",  \n            \"ipAddress\": \"00.111.111.111\",  \n            \"occurredAt\": \"2023-08-30T23:20:17.283\",  \n            \"type\": \"LOGIN\",  \n            \"successful\": false \n        }, \n        { \n            \"email\": \"fleethand@fleethand.com\", \n            \"ipAddress\": \"00.111.111.111\", \n            \"occurredAt\": \"2023-08-30T23:25:45.124\", \n            \"type\": \"CHANGE_PASSWORD\", \n            \"successful\": true \n        }, \n        { \n            \"email\": \"fleethand@fleethand.com\", \n            \"ipAddress\": \"00.111.111.111\", \n            \"occurredAt\": \"2023-08-30T23:26:26.751\", \n            \"type\": \"LOGIN\", \n            \"successful\": true \n        } \n   ] \n}",
+    "title": "Example",
+    "related_endpoint": null,
+    "category": "general",
+    "language": "json",
+    "description": ""
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "error_1",
+    "code": "ERR_001",
+    "description": ", ALARM_OFF,",
+    "type": "unknown",
+    "severity": "medium",
+    "retryable": false,
+    "solution": "",
+    "category": "general"
+  },
+  {
+    "id": "error_2",
+    "code": "ERR_002",
+    "description": ", ALARM_OFF,",
+    "type": "unknown",
+    "severity": "medium",
+    "retryable": false,
+    "solution": "",
+    "category": "general"
+  }
+]

@@ -1,0 +1,30 @@
+id,type,description,value,unit,scope
+limit_1,Limit,"Limit"": 84 ",unknown,requests,global
+limit_2,Limit,"Limit 
+integer ",unknown,requests,global
+limit_3,Limit,"Limit"": 84 ",unknown,requests,global
+limit_4,Limit,"Limit 
+integer ",unknown,requests,global
+limit_5,rate,rate form documents by provided option ids,unknown,requests,global
+limit_6,rate,rate form documents by provided task and form/option codes,unknown,requests,global
+limit_7,rate,rated ,unknown,requests,global
+limit_8,rate,rated tasks ,unknown,requests,global
+limit_9,Limit,"Limit"":5, ",unknown,requests,global
+limit_10,Limit,"Limit 
+Long ",unknown,requests,global
+limit_11,rAtE,"rAtEnd"":430330",unknown,requests,global
+limit_12,rAtE,"rAtEnd"":430330",unknown,requests,global
+limit_13,rAtE,rAtEnd ,unknown,requests,global
+limit_14,rAtE,rAtEnd ,unknown,requests,global
+limit_15,rAtE,"rAtEnd"":456218",unknown,requests,global
+limit_16,rAtE,rAtEnd ,unknown,requests,global
+limit_17,rate,rated from tasks and which are assigned to API key,unknown,requests,global
+limit_18,rAtE,"rAtEnd"":456218",unknown,requests,global
+limit_19,rAtE,rAtEnd ,unknown,requests,global
+limit_20,rAtE,"rAtEnd"":456218",unknown,requests,global
+limit_21,rAtE,"rAtEnd"":456218",unknown,requests,global
+limit_22,rAtE,rAtEnd ,unknown,requests,global
+limit_23,rAtE,"rAtEnd"": 273416",unknown,requests,global
+limit_24,rAtE,rAtEnd ,unknown,requests,global
+limit_25,rate,"rategy"":""FASTEST"", ",unknown,requests,global
+limit_26,rate,rategy ,unknown,requests,global

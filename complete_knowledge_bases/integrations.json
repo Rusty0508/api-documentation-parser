@@ -1,0 +1,44 @@
+[
+  {
+    "id": "integration_1",
+    "type": "integration",
+    "description": "data sending activity for vehicles",
+    "direction": "bidirectional",
+    "format": "JSON"
+  },
+  {
+    "id": "integration_2",
+    "type": "connect",
+    "description": "edTrailerExternalId\":null,",
+    "direction": "bidirectional",
+    "format": "JSON"
+  },
+  {
+    "id": "integration_3",
+    "type": "connect",
+    "description": "edTrailerExternalId\":null,",
+    "direction": "bidirectional",
+    "format": "JSON"
+  },
+  {
+    "id": "integration_4",
+    "type": "connect",
+    "description": "edVin\":FLH456225665YX656,",
+    "direction": "bidirectional",
+    "format": "JSON"
+  },
+  {
+    "id": "integration_5",
+    "type": "external",
+    "description": "orders that are generated from tasks and which are assigned to API key",
+    "direction": "bidirectional",
+    "format": "JSON"
+  },
+  {
+    "id": "integration_6",
+    "type": "external",
+    "description": "-tasks/external-orders",
+    "direction": "bidirectional",
+    "format": "JSON"
+  }
+]

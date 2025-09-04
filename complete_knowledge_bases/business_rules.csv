@@ -1,0 +1,21 @@
+id,type,description,severity,category,enforcement
+rule_1,must,be provided ISO 8601 (e,medium,general,soft
+rule_2,must,be provided ISO 8601 (e,medium,general,soft
+rule_3,must,be provided ISO 8601 (e,medium,general,soft
+rule_4,must,be provided ISO 8601 (e,medium,general,soft
+rule_5,should,be marked as important,medium,general,soft
+rule_6,Should,the document be shown for the driver,medium,general,soft
+rule_7,should,be marked as important,medium,general,soft
+rule_8,Should,the document be shown for the driver,medium,general,soft
+rule_9,must,be provided ISO 8601 (e,medium,general,soft
+rule_10,must,be provided ISO 8601 (e,medium,general,soft
+rule_11,Optional,"ly, add temporary task forms for each task by status (max 6 unique per task)",medium,general,soft
+rule_12,rule,s of a driver for a period of time,medium,general,soft
+rule_13,NOTE,"From API v2, the maximum days period for this call is 90 days",medium,general,soft
+rule_14,WARNING,", BATTERY_CHARGING_CONDITION,",medium,general,soft
+rule_15,NOTE,"From API v2, the maximum days period for this call is 90 days",medium,general,soft
+rule_16,NOTE,The maximum days period for this call is 14 days,medium,general,soft
+rule_17,NOTE,The maximum days period for this call is 30 days,medium,general,soft
+rule_18,NOTE,The maximum days period for this call is 30 days,medium,general,soft
+rule_19,NOTE,"From API v2, the maximum days period for this call is 1 year",medium,general,soft
+rule_20,NOTE,"From API v2, the maximum days period for this call is 90 days",medium,general,soft

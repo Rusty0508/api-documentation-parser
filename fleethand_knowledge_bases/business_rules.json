@@ -1,0 +1,134 @@
+[
+  {
+    "rule": "From API v2, the maximum days period for this call is 90 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "From API v2, the maximum days period for this call is 90 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "The maximum days period for this call is 14 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "s of a driver for a period of time.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "The maximum days period for this call is 30 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "The maximum days period for this call is 30 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "From API v2, the maximum days period for this call is 1 year.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "From API v2, the maximum days period for this call is 90 days.",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 90 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "be provided ISO 8601 (e",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "interval is 3 months)",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 90 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 14 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 30 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 30 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 1 year",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  },
+  {
+    "rule": "days period for this call is 90 days",
+    "category": "general",
+    "severity": "medium",
+    "affected_endpoints": []
+  }
+]

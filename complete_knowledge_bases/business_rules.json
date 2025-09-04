@@ -1,0 +1,162 @@
+[
+  {
+    "id": "rule_1",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_2",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_3",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_4",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_5",
+    "type": "should",
+    "description": "be marked as important",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_6",
+    "type": "Should",
+    "description": "the document be shown for the driver",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_7",
+    "type": "should",
+    "description": "be marked as important",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_8",
+    "type": "Should",
+    "description": "the document be shown for the driver",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_9",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_10",
+    "type": "must",
+    "description": "be provided ISO 8601 (e",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_11",
+    "type": "Optional",
+    "description": "ly, add temporary task forms for each task by status (max 6 unique per task)",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_12",
+    "type": "rule",
+    "description": "s of a driver for a period of time",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_13",
+    "type": "NOTE",
+    "description": "From API v2, the maximum days period for this call is 90 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_14",
+    "type": "WARNING",
+    "description": ", BATTERY_CHARGING_CONDITION,",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_15",
+    "type": "NOTE",
+    "description": "From API v2, the maximum days period for this call is 90 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_16",
+    "type": "NOTE",
+    "description": "The maximum days period for this call is 14 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_17",
+    "type": "NOTE",
+    "description": "The maximum days period for this call is 30 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_18",
+    "type": "NOTE",
+    "description": "The maximum days period for this call is 30 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_19",
+    "type": "NOTE",
+    "description": "From API v2, the maximum days period for this call is 1 year",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  },
+  {
+    "id": "rule_20",
+    "type": "NOTE",
+    "description": "From API v2, the maximum days period for this call is 90 days",
+    "severity": "medium",
+    "category": "general",
+    "enforcement": "soft"
+  }
+]

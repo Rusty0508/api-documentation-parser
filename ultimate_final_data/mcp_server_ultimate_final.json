@@ -1,0 +1,5213 @@
+{
+  "tools": [
+    {
+      "name": "fleethand_post__api_activities_assign",
+      "description": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Fleethand vehicle id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "POST",
+        "path": "/api/activities/assign",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_activities",
+      "description": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Fleethand vehicle id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "POST",
+        "path": "/api/activities",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_activities",
+      "description": "This method returns filled activity from the driver by providing the activity id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "lastActivityId": {
+            "type": "integer",
+            "description": "Last biggest received activity id. If it"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "lastActivityId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "GET",
+        "path": "/api/activities",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_activities_activity",
+      "description": "This method returns drivers filled activity file in pdf format by provided token.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "GET",
+        "path": "/api/activities/activity",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_activities_file_pdf",
+      "description": "This method returns drivers filled activity files which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "GET",
+        "path": "/api/activities/file-pdf",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_activities_files",
+      "description": "This method returns country crossings of a tracking object for a period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "POST",
+        "path": "/api/activities/files",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_country_change_crossings",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "general",
+        "method": "GET",
+        "path": "/api/country-change/crossings",
+        "quality_score": 0.6000000000000001,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_country_change",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "general",
+        "method": "GET",
+        "path": "/api/country-change",
+        "quality_score": 0.6000000000000001,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_put__api_ddd_cancel_driver",
+      "description": "This method allows to cancel initiated vehicle .ddd file downloads.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "PUT",
+        "path": "/api/ddd/cancel-driver",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_ddd_cancel_vehicle",
+      "description": "This method allows to download single driver .ddd file by file ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "deviceKey": {
+            "type": "string",
+            "description": "Parameter by which information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "deviceKey"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "PUT",
+        "path": "/api/ddd/cancel-vehicle",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_driver_file_download",
+      "description": "This method allows to download single vehicle .ddd file by file ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/driver-file/download",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_vehicle_file_download",
+      "description": "This method returns all company card statuses which are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/vehicle-file/download",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_cards",
+      "description": "This method returns all companies that are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/cards",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_companies",
+      "description": "This method returns .ddd files information which are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/companies",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_info",
+      "description": "This method returns .ddd files latest information for all the drivers that are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "month": {
+            "type": "string",
+            "description": "Requested month: JANUARY, FEBRUARY, MARCH, APRIL,"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "month"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/info",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_drivers_status",
+      "description": "This method returns .ddd files latest information for all the vehicles that are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/drivers-status",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_vehicles_status",
+      "description": "This method returns all drivers’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/vehicles-status",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_all_drivers_download",
+      "description": "This method returns all drivers’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "month": {
+            "type": "string",
+            "description": "Requested month: JANUARY, FEBRUARY, MARCH, APRIL,"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "month"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/all-drivers/download",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_all_drivers_download_period",
+      "description": "This method returns all trucks’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/all-drivers/download-period",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_all_vehicles_download",
+      "description": "This method returns all trucks’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "month": {
+            "type": "string",
+            "description": "Requested month: JANUARY, FEBRUARY, MARCH, APRIL,"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "month"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/all-vehicles/download",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_ddd_all_vehicles_download_period",
+      "description": "This method allows initiating driver .ddd file downloads.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/ddd/all-vehicles/download-period",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_ddd_init_driver",
+      "description": "This method allows initiating vehicle .ddd file downloads.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "PUT",
+        "path": "/api/ddd/init-driver",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_ddd_init_vehicle",
+      "description": "This method allows uploading a single driver’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "PUT",
+        "path": "/api/ddd/init-vehicle",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_ddd_upload_drivers",
+      "description": "This method allows uploading a single vehicle’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "POST",
+        "path": "/api/ddd/upload-drivers",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_ddd_upload_vehicles",
+      "description": "This method returns drivers filled expense sheets which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "POST",
+        "path": "/api/ddd/upload-vehicles",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_documents_expenses",
+      "description": "This method returns drivers filled trip sheets which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/documents/expenses",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_documents_trip",
+      "description": "This method inserts or updates driver document.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/documents/trip",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_document_driver",
+      "description": "This method inserts or updates vehicle document.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "driverCard": {
+            "type": "string",
+            "description": "Parameter by which information is taken."
+          },
+          "driverClientId": {
+            "type": "integer",
+            "description": "Driver client ID, to find specific driver"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "driverCard"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/document/driver",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_document_vehicle",
+      "description": "This method returns driver documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "email": {
+            "type": "string",
+            "description": "Document created by."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/document/vehicle",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_document_driver",
+      "description": "This method deletes driver documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/document/driver",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_document_driver",
+      "description": "This method returns vehicle documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "driverCard": {
+            "type": "string",
+            "description": "documentsIds List<Long>"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "driverCard"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "DELETE",
+        "path": "/api/document/driver",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_document_vehicle",
+      "description": "This method deletes vehicle documents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/document/vehicle",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_document_vehicle",
+      "description": "This method returns information about client drivers.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "documentsIds List<Long>"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "DELETE",
+        "path": "/api/document/vehicle",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_driver",
+      "description": "This method appends vehicle to eco group. Also possible to set default vehicle eco settings.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/driver",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_eco_append_to_group",
+      "description": "This method returns eco driving information by vehicle.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "eco",
+        "method": "POST",
+        "path": "/api/eco/append-to-group",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_eco_vehicle",
+      "description": "This method returns eco driving information by driver.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "eco",
+        "method": "GET",
+        "path": "/api/eco/vehicle",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_eco_driver",
+      "description": "This method returns eco groups.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "eco",
+        "method": "GET",
+        "path": "/api/eco/driver",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_eco_groups",
+      "description": "This method adds form to the task.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "eco",
+        "method": "GET",
+        "path": "/api/eco/groups",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_task_form",
+      "description": "This method allows you to change status to “Confirmed” for the provided form.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/task-form",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms_confirm",
+      "description": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms/confirm",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms_fill_form",
+      "description": "This method returns drivers filled forms file in pdf format by provided token.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms/fill-form",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_documents_forms_file_pdf",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/documents/forms/file-pdf",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms",
+      "description": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_documents_forms_form",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "formId": {
+            "type": "integer",
+            "description": "Filled form id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "formId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/documents/forms/form",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_documents_forms",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "GET",
+        "path": "/api/documents/forms",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms_reject",
+      "description": "This method allows you to reject separate form documents by provided option ids. This creates a new form with",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms/reject",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms_reject_documents",
+      "description": "This method allows you to reject separate form documents by provided task and form/option codes. This creates",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms/reject-documents",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_documents_forms_reject_documents_by_codes",
+      "description": "This method removes form from task.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "POST",
+        "path": "/api/documents/forms/reject-documents-by-codes",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_documents_task_form",
+      "description": "This method returns geozones crossings list by time range for all vehicles. Available filter results by vehicleId and",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "documents",
+        "method": "DELETE",
+        "path": "/api/documents/task-form",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_geo_zones_crossing",
+      "description": "This method toggle SENT integration data sending activity for vehicles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "locations",
+        "method": "POST",
+        "path": "/api/geo-zones/crossing",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_integrations_sent_state",
+      "description": "Monitoring    Get panic buttons  This method returns all activated panic buttons in GPS devices, that are assigned to the API key, within the last  hour.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "activities",
+        "method": "POST",
+        "path": "/api/integrations/sent-state",
+        "quality_score": 0.7,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_panic_button",
+      "description": "This method returns alarms for the chosen period.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-panic-button",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_alarms",
+      "description": "This method returns new alarms. That means if you received some alarms with the previous request these",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "general",
+        "method": "GET",
+        "path": "/api/alarms",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_alarms",
+      "description": "This method returns the doors states of the vehicles which are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-alarms",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_doors_info",
+      "description": "This method returns the latest information (gps position, time, speed, distance, etc.) of tracking objects which are",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-doors-info",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_info",
+      "description": "This method retrieves latest-info for vehicle and device management.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-info",
+        "quality_score": 0.65,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_position",
+      "description": "This method returns the latest tacho information of tracking objects which are assigned to API key account.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-position",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_latest_tacho",
+      "description": "This method will create order if orderId is not provided or orderId as null. When orderId is provided, order with",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/latest-tacho",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_orders",
+      "description": "This method returns 20 newest order actions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "orders",
+        "method": "POST",
+        "path": "/api/orders",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_orders_actions",
+      "description": "This method returns order status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "lastId": {
+            "type": "integer",
+            "description": "Last biggest received action id. If it is"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "lastId"
+        ]
+      },
+      "metadata": {
+        "category": "orders",
+        "method": "GET",
+        "path": "/api/orders/actions",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_orders_status",
+      "description": "This method returns tasks assigned to orders. Max interval 92 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "orders",
+        "method": "GET",
+        "path": "/api/orders/status",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_orders",
+      "description": "This method returns order status.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "lastId": {
+            "type": "integer",
+            "description": "Last biggest received action id. If it is"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "lastId"
+        ]
+      },
+      "metadata": {
+        "category": "orders",
+        "method": "GET",
+        "path": "/api/orders",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_orders",
+      "description": "This method creates clients’ partner. Returns created partner ID.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "orderId": {
+            "type": "integer",
+            "description": "Order ID to delete."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "orderId"
+        ]
+      },
+      "metadata": {
+        "category": "orders",
+        "method": "DELETE",
+        "path": "/api/orders",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_partner",
+      "description": "This method creates clients’ partner employees.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "POST",
+        "path": "/api/partner",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_post__api_partner_employee",
+      "description": "This method creates clients’ partner vehicles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "POST",
+        "path": "/api/partner/employee",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_post__api_partner_vehicles",
+      "description": "This method deletes clients’ partner.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "POST",
+        "path": "/api/partner/vehicles",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_partner",
+      "description": "This method deletes clients’ partner employee.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "DELETE",
+        "path": "/api/partner",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_partner_employee",
+      "description": "This method deletes clients’ partner vehicle.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "DELETE",
+        "path": "/api/partner/employee",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_partner_vehicles",
+      "description": "This method returns clients’ all partners vehicles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "DELETE",
+        "path": "/api/partner/vehicles",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_partner_vehicles",
+      "description": "This method returns payment cards.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "partnerId": {
+            "type": "integer",
+            "description": "If provided only specified client vehicles will"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "partners",
+        "method": "GET",
+        "path": "/api/partner/vehicles",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_payment_card_vehicle",
+      "description": "This method creates payment card.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "payments",
+        "method": "GET",
+        "path": "/api/payment-card/vehicle",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_post__api_payment_card_vehicle",
+      "description": "This method updates payment card.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "payments",
+        "method": "POST",
+        "path": "/api/payment-card/vehicle",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_put__api_payment_card_vehicle",
+      "description": "This method deletes payment card.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "payments",
+        "method": "PUT",
+        "path": "/api/payment-card/vehicle",
+        "quality_score": 1.0,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_payment_card_vehicle",
+      "description": "This method deletes POI by id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "cardId": {
+            "type": "integer",
+            "description": "Payment card ID."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "cardId"
+        ]
+      },
+      "metadata": {
+        "category": "payments",
+        "method": "DELETE",
+        "path": "/api/payment-card/vehicle",
+        "quality_score": 0.65,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_poi_poiId",
+      "description": "This method deletes POI group by id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "locations",
+        "method": "DELETE",
+        "path": "/api/poi/poiId",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_poi_group_poiGroupId",
+      "description": "This method inserts or updates instance of POI.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "locations",
+        "method": "DELETE",
+        "path": "/api/poi-group/poiGroupId",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_pois",
+      "description": "This method inserts or updates instance of POI group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "locations",
+        "method": "POST",
+        "path": "/api/pois",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_poi_group",
+      "description": "Reports    Get day-country driving summary  This method returns a driving summary by day and country for the selected vehicle and period of time (maximum  interval is 3 months).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "locations",
+        "method": "POST",
+        "path": "/api/poi-group",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_report_day_country",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "reports",
+        "method": "GET",
+        "path": "/api/report/day-country",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_report_period_summary",
+      "description": "NOTE: The maximum days period for this call is 14 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "reports",
+        "method": "GET",
+        "path": "/api/report/period-summary",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_report_period_tolls",
+      "description": "This method returns information of drivers’ activities for a provided period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "reports",
+        "method": "GET",
+        "path": "/api/report/period-tolls",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tacho_driver_activities",
+      "description": "This method returns current information of drivers’ activities by providing the device key of a telemetry device.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "till": {
+            "type": "string",
+            "description": "Time till which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "till"
+        ]
+      },
+      "metadata": {
+        "category": "tacho",
+        "method": "GET",
+        "path": "/api/tacho/driver-activities",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tacho_current",
+      "description": "This method returns tachograph information for a period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tacho",
+        "method": "GET",
+        "path": "/api/tacho/current",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_period_tacho",
+      "description": "This method returns a list of violated driving/resting rules of a driver for a period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "driverCard": {
+            "type": "string",
+            "description": "Parameter by which information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "driverCard"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/period-tacho",
+        "quality_score": 0.9000000000000001,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tacho_driver_faults",
+      "description": "This method is used to append a task to the vehicle’s task list. Method returns Fleethand system task ID, which",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tacho",
+        "method": "GET",
+        "path": "/api/tacho/driver-faults",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks",
+      "description": "This method is used to append a task to the vehicle’s task list with a file. Method returns Fleethand system task",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_file",
+      "description": "This method assigns trips to the selected tasks.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/file",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_assign_trips",
+      "description": "This method confirms tasks which are assigned to API key / taskId / vehicleId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/assign-trips",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_confirm_task",
+      "description": "This method confirms all tasks of the vehicle which are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "copy": {
+            "type": "boolean",
+            "description": "Add additional task information into the message"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/confirm-task",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_confirm_all",
+      "description": "This method deletes all tasks of the vehicle which are assigned to the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Vehicles id which executing task."
+          },
+          "copy": {
+            "type": "boolean",
+            "description": "Add additional task information into the message"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/confirm-all",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_delete_all",
+      "description": "This method is used to delete a task.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Vehicle’s id which executing task."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/delete-all",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_tasks",
+      "description": "This method deletes tasks by trip id.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "DELETE",
+        "path": "/api/tasks",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_tasks_trip",
+      "description": "This method returns a list of available additional task options.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "tripId": {
+            "type": "integer",
+            "description": "External trip id to delete."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "tripId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "DELETE",
+        "path": "/api/tasks/trip",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_additional_info",
+      "description": "NOTE: The maximum days period for this call is 30 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/additional-info",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_done",
+      "description": "This method returns ETA of the provided vehicle.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Fleethand vehicle id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/done",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_eta",
+      "description": "NOTE: The maximum days period for this call is 30 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Vehicles id which executing task."
+          },
+          "duration": {
+            "type": "integer",
+            "description": "Duration to the destination (seconds)."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId",
+          "duration"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/eta",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_external_tasks_external_orders",
+      "description": "This method returns task information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/external-tasks/external-orders",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_information",
+      "description": "This method returns a vehicle task queue. All not DONE tasks.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/information",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_queue",
+      "description": "This method returns task statuses for a selected period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/queue",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_status_intervals",
+      "description": "This method returns new or updated task statuses. That means if you received some task status with the",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "till": {
+            "type": "string",
+            "description": "Time till which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "till"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/status-intervals",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_status",
+      "description": "This method returns new or updated task statuses. That means if you received some task status with the",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "till": {
+            "type": "string",
+            "description": "Time till which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "till"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/status",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_tasks_trip",
+      "description": "This method returns order trips statistics. Request period max duration 30 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "tripId": {
+            "type": "integer",
+            "description": "Trip id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "tripId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/tasks/trip",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_trips_statistics",
+      "description": "This method marks tasks as done which are assigned to API key / taskId / vehicleId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "GET",
+        "path": "/api/trips/statistics",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_put__api_tasks_mark_as_done",
+      "description": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "email": {
+            "type": "string",
+            "description": "Email that is registered in fleethand and assigned"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "PUT",
+        "path": "/api/tasks/mark-as-done",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_put__api_tasks_mark_as_executing",
+      "description": "This method is used to update a task. Method returns Fleethand system task ID, which will be used further to get",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "email": {
+            "type": "string",
+            "description": "Email that is registered in fleethand and assigned"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "PUT",
+        "path": "/api/tasks/mark-as-executing",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_put__api_tasks",
+      "description": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "email": {
+            "type": "string",
+            "description": "Email that is registered in fleethand and assigned"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "PUT",
+        "path": "/api/tasks",
+        "quality_score": 1.0,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_update_file",
+      "description": "If smartUpsert is set to false then all the tasks with provided tripId will be deleted and new tasks will be created.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/update/file",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_post__api_tasks_trip",
+      "description": "NOTE: From API v2, the maximum days period for this call is 1 year.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "tasks",
+        "method": "POST",
+        "path": "/api/tasks/trip",
+        "quality_score": 0.8,
+        "priority": "medium"
+      }
+    },
+    {
+      "name": "fleethand_get__api_driver_driver_hours",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "drivers",
+        "method": "GET",
+        "path": "/api/driver/driver-hours",
+        "quality_score": 0.8,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_country_change_presence",
+      "description": "This method returns track information for a period of time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "forms",
+        "method": "GET",
+        "path": "/api/country-change/presence",
+        "quality_score": 0.9000000000000001,
+        "priority": "low"
+      }
+    },
+    {
+      "name": "fleethand_get__api_period_info",
+      "description": "This method deactivates the vehicle and unassigns all its attached devices.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period information is taken."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/period-info",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_vehicle_deactivate",
+      "description": "This method returns information about client vehicles.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vinCode": {
+            "type": "string",
+            "description": "Vehicle’s VIN code."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vinCode"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "PUT",
+        "path": "/api/vehicle/deactivate",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_vehicle",
+      "description": "This method updates information about the vehicle.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/vehicle",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_vehicle_update_vehicle_info",
+      "description": "This method updates vehicle registration information.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "PUT",
+        "path": "/api/vehicle/update-vehicle-info",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_vehicle_simple_update_vehicle_info",
+      "description": "This method returns all vehicles groups.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "vehicleId": {
+            "type": "integer",
+            "description": "Fleethand vehicle id."
+          },
+          "vinCode": {
+            "type": "string",
+            "description": "Vehicle’s VIN code."
+          },
+          "plateNumber": {
+            "type": "string",
+            "description": "Vehicle’s name."
+          },
+          "licensePlateNumber": {
+            "type": "string",
+            "description": "Vehicle’s license plate number."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "vehicleId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "PUT",
+        "path": "/api/vehicle/simple-update-vehicle-info",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_vehicles_group",
+      "description": "This method creates vehicles group or updates vehicles group title.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "GET",
+        "path": "/api/vehicles-group",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_post__api_vehicles_group",
+      "description": "This method adds vehicles to a vehicles group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "POST",
+        "path": "/api/vehicles-group",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_vehicles_group_add_vehicles",
+      "description": "This method removes vehicles from a vehicles group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "PUT",
+        "path": "/api/vehicles-group/add-vehicles",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_put__api_vehicles_group_remove_vehicles",
+      "description": "This method deletes vehicles group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "PUT",
+        "path": "/api/vehicles-group/remove-vehicles",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_delete__api_vehicles_group",
+      "description": "This method assigns a list of activities to the provided client.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId"
+        ]
+      },
+      "metadata": {
+        "category": "vehicles",
+        "method": "DELETE",
+        "path": "/api/vehicles-group",
+        "quality_score": 1.0,
+        "priority": "high"
+      }
+    },
+    {
+      "name": "fleethand_get__api_user_actions",
+      "description": "This method retrieves user-actions data via the API.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "apiKey": {
+            "type": "string",
+            "description": "Encoded api key."
+          },
+          "externalId": {
+            "type": "integer",
+            "description": "Provided external id."
+          },
+          "from": {
+            "type": "string",
+            "description": "Time from which period"
+          }
+        },
+        "required": [
+          "apiKey",
+          "externalId",
+          "from"
+        ]
+      },
+      "metadata": {
+        "category": "general",
+        "method": "GET",
+        "path": "/api/user-actions",
+        "quality_score": 0.2,
+        "priority": "medium"
+      }
+    }
+  ],
+  "resources": [
+    {
+      "uri": "fleethand://api/api/activities/assign",
+      "name": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "description": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/activities",
+      "name": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "description": "This method creates an activity configuration which can be later assigned and shown in the driver's application.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/activities",
+      "name": "This method returns filled activity from the driver by providing the activity id.",
+      "description": "This method returns filled activity from the driver by providing the activity id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/activities/activity",
+      "name": "This method returns drivers filled activity file in pdf format by provided token.",
+      "description": "This method returns drivers filled activity file in pdf format by provided token.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/activities/file-pdf",
+      "name": "This method returns drivers filled activity files which are assigned to API key account.",
+      "description": "This method returns drivers filled activity files which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/activities/files",
+      "name": "This method returns country crossings of a tracking object for a period of time.",
+      "description": "This method returns country crossings of a tracking object for a period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/country-change/crossings",
+      "name": "This method returns country crossings of a tracking object for a period of time.",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "general",
+        "description": "General API operations",
+        "priority": "medium",
+        "confidence": "low",
+        "matched_by": "default"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/country-change",
+      "name": "This method returns country crossings of a tracking object for a period of time.",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "general",
+        "description": "General API operations",
+        "priority": "medium",
+        "confidence": "low",
+        "matched_by": "default"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/cancel-driver",
+      "name": "This method allows to cancel initiated vehicle .ddd file downloads.",
+      "description": "This method allows to cancel initiated vehicle .ddd file downloads.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/cancel-vehicle",
+      "name": "This method allows to download single driver .ddd file by file ID.",
+      "description": "This method allows to download single driver .ddd file by file ID.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/driver-file/download",
+      "name": "This method allows to download single vehicle .ddd file by file ID.",
+      "description": "This method allows to download single vehicle .ddd file by file ID.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/vehicle-file/download",
+      "name": "This method returns all company card statuses which are assigned to the API key.",
+      "description": "This method returns all company card statuses which are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/cards",
+      "name": "This method returns all companies that are assigned to the API key.",
+      "description": "This method returns all companies that are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/companies",
+      "name": "This method returns .ddd files information which are assigned to the API key.",
+      "description": "This method returns .ddd files information which are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/info",
+      "name": "This method returns .ddd files latest information for all the drivers that are assigned to the API key.",
+      "description": "This method returns .ddd files latest information for all the drivers that are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/drivers-status",
+      "name": "This method returns .ddd files latest information for all the vehicles that are assigned to the API key.",
+      "description": "This method returns .ddd files latest information for all the vehicles that are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/vehicles-status",
+      "name": "This method returns all drivers’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "description": "This method returns all drivers’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/all-drivers/download",
+      "name": "This method returns all drivers’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "description": "This method returns all drivers’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/all-drivers/download-period",
+      "name": "This method returns all trucks’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "description": "This method returns all trucks’ .ddd files (that are downloaded in a requested year and month) in a .zip file.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/all-vehicles/download",
+      "name": "This method returns all trucks’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "description": "This method returns all trucks’ .ddd files (that are downloaded in a requested time period) in a .zip file.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/all-vehicles/download-period",
+      "name": "This method allows initiating driver .ddd file downloads.",
+      "description": "This method allows initiating driver .ddd file downloads.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/init-driver",
+      "name": "This method allows initiating vehicle .ddd file downloads.",
+      "description": "This method allows initiating vehicle .ddd file downloads.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/init-vehicle",
+      "name": "This method allows uploading a single driver’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "description": "This method allows uploading a single driver’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/upload-drivers",
+      "name": "This method allows uploading a single vehicle’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "description": "This method allows uploading a single vehicle’s .ddd file or multiple vehicles’ .ddd files in .zip file format.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/ddd/upload-vehicles",
+      "name": "This method returns drivers filled expense sheets which are assigned to API key account.",
+      "description": "This method returns drivers filled expense sheets which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/expenses",
+      "name": "This method returns drivers filled trip sheets which are assigned to API key account.",
+      "description": "This method returns drivers filled trip sheets which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/trip",
+      "name": "This method inserts or updates driver document.",
+      "description": "This method inserts or updates driver document.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/driver",
+      "name": "This method inserts or updates vehicle document.",
+      "description": "This method inserts or updates vehicle document.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/vehicle",
+      "name": "This method returns driver documents.",
+      "description": "This method returns driver documents.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/driver",
+      "name": "This method deletes driver documents.",
+      "description": "This method deletes driver documents.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/driver",
+      "name": "This method returns vehicle documents.",
+      "description": "This method returns vehicle documents.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/vehicle",
+      "name": "This method deletes vehicle documents.",
+      "description": "This method deletes vehicle documents.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/document/vehicle",
+      "name": "This method returns information about client drivers.",
+      "description": "This method returns information about client drivers.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/driver",
+      "name": "This method appends vehicle to eco group. Also possible to set default vehicle eco settings.",
+      "description": "This method appends vehicle to eco group. Also possible to set default vehicle eco settings.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/eco/append-to-group",
+      "name": "This method returns eco driving information by vehicle.",
+      "description": "This method returns eco driving information by vehicle.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "eco",
+        "description": "Environmental data",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/eco/vehicle",
+      "name": "This method returns eco driving information by driver.",
+      "description": "This method returns eco driving information by driver.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "eco",
+        "description": "Environmental data",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/eco/driver",
+      "name": "This method returns eco groups.",
+      "description": "This method returns eco groups.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "eco",
+        "description": "Environmental data",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/eco/groups",
+      "name": "This method adds form to the task.",
+      "description": "This method adds form to the task.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "eco",
+        "description": "Environmental data",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/task-form",
+      "name": "This method allows you to change status to “Confirmed” for the provided form.",
+      "description": "This method allows you to change status to “Confirmed” for the provided form.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/confirm",
+      "name": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "description": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/fill-form",
+      "name": "This method returns drivers filled forms file in pdf format by provided token.",
+      "description": "This method returns drivers filled forms file in pdf format by provided token.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/file-pdf",
+      "name": "This method returns drivers filled forms which are assigned to API key account.",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms",
+      "name": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "description": "This method allows you to create a fill form sub-task for the driver by provided form id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/form",
+      "name": "This method returns drivers filled forms which are assigned to API key account.",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms",
+      "name": "This method returns drivers filled forms which are assigned to API key account.",
+      "description": "This method returns drivers filled forms which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/reject",
+      "name": "these options for the driver to retake.",
+      "description": "This method allows you to reject separate form documents by provided option ids. This creates a new form with",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/reject-documents",
+      "name": "a new form with these options for the driver to retake.",
+      "description": "This method allows you to reject separate form documents by provided task and form/option codes. This creates",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/forms/reject-documents-by-codes",
+      "name": "This method removes form from task.",
+      "description": "This method removes form from task.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/documents/task-form",
+      "name": "by driverCard.",
+      "description": "This method returns geozones crossings list by time range for all vehicles. Available filter results by vehicleId and",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "documents",
+        "description": "Document management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/geo-zones/crossing",
+      "name": "This method toggle SENT integration data sending activity for vehicles.",
+      "description": "This method toggle SENT integration data sending activity for vehicles.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "locations",
+        "description": "Location and geofencing",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/integrations/sent-state",
+      "name": "This method returns all activated panic buttons in GPS devices, that are assigned to the API key, within the last",
+      "description": "Monitoring    Get panic buttons  This method returns all activated panic buttons in GPS devices, that are assigned to the API key, within the last  hour.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "activities",
+        "description": "Activity management operations",
+        "priority": "high",
+        "confidence": "medium",
+        "matched_by": "keywords"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-panic-button",
+      "name": "Get the alarms",
+      "description": "This method returns alarms for the chosen period.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/alarms",
+      "name": "Get the latest alarms",
+      "description": "This method returns new alarms. That means if you received some alarms with the previous request these",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "general",
+        "description": "General API operations",
+        "priority": "medium",
+        "confidence": "low",
+        "matched_by": "default"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-alarms",
+      "name": "This method returns the doors states of the vehicles which are assigned to the API key.",
+      "description": "This method returns the doors states of the vehicles which are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-doors-info",
+      "name": "assigned to API key accounts.",
+      "description": "This method returns the latest information (gps position, time, speed, distance, etc.) of tracking objects which are",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-info",
+      "name": "objects which are assigned to an API key account.",
+      "description": "This method retrieves latest-info for vehicle and device management.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-position",
+      "name": "This method returns the latest tacho information of tracking objects which are assigned to API key account.",
+      "description": "This method returns the latest tacho information of tracking objects which are assigned to API key account.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/latest-tacho",
+      "name": "This method returns TripId and OrderId.",
+      "description": "This method will create order if orderId is not provided or orderId as null. When orderId is provided, order with",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/orders",
+      "name": "Get order actions",
+      "description": "This method returns 20 newest order actions.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "orders",
+        "description": "Order and trip management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/orders/actions",
+      "name": "Get orders status",
+      "description": "This method returns order status.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "orders",
+        "description": "Order and trip management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/orders/status",
+      "name": "This method returns tasks assigned to orders. Max interval 92 days.",
+      "description": "This method returns tasks assigned to orders. Max interval 92 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "orders",
+        "description": "Order and trip management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/orders",
+      "name": "Get orders status",
+      "description": "This method returns order status.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "orders",
+        "description": "Order and trip management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/orders",
+      "name": "This method creates clients’ partner. Returns created partner ID.",
+      "description": "This method creates clients’ partner. Returns created partner ID.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "orders",
+        "description": "Order and trip management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner",
+      "name": "This method creates clients’ partner employees.",
+      "description": "This method creates clients’ partner employees.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner/employee",
+      "name": "This method creates clients’ partner vehicles.",
+      "description": "This method creates clients’ partner vehicles.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner/vehicles",
+      "name": "This method deletes clients’ partner.",
+      "description": "This method deletes clients’ partner.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner",
+      "name": "This method deletes clients’ partner employee.",
+      "description": "This method deletes clients’ partner employee.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner/employee",
+      "name": "This method deletes clients’ partner vehicle.",
+      "description": "This method deletes clients’ partner vehicle.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner/vehicles",
+      "name": "This method returns clients’ all partners vehicles.",
+      "description": "This method returns clients’ all partners vehicles.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/partner/vehicles",
+      "name": "This method returns payment cards.",
+      "description": "This method returns payment cards.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "partners",
+        "description": "Partner management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/payment-card/vehicle",
+      "name": "This method creates payment card.",
+      "description": "This method creates payment card.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "payments",
+        "description": "Payment management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/payment-card/vehicle",
+      "name": "This method updates payment card.",
+      "description": "This method updates payment card.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "payments",
+        "description": "Payment management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/payment-card/vehicle",
+      "name": "This method deletes payment card.",
+      "description": "This method deletes payment card.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "payments",
+        "description": "Payment management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/payment-card/vehicle",
+      "name": "This method deletes POI by id.",
+      "description": "This method deletes POI by id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "payments",
+        "description": "Payment management",
+        "priority": "low",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/poi/poiId",
+      "name": "This method deletes POI group by id.",
+      "description": "This method deletes POI group by id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "locations",
+        "description": "Location and geofencing",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/poi-group/poiGroupId",
+      "name": "This method inserts or updates instance of POI.",
+      "description": "This method inserts or updates instance of POI.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "locations",
+        "description": "Location and geofencing",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/pois",
+      "name": "This method inserts or updates instance of POI group.",
+      "description": "This method inserts or updates instance of POI group.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "locations",
+        "description": "Location and geofencing",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/poi-group",
+      "name": "This method returns a driving summary by day and country for the selected vehicle and period of time (maximum",
+      "description": "Reports    Get day-country driving summary  This method returns a driving summary by day and country for the selected vehicle and period of time (maximum  interval is 3 months).",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "locations",
+        "description": "Location and geofencing",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/report/day-country",
+      "name": "This method returns a driving period summary by vehicle for selected grouping type and period.",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "reports",
+        "description": "Reporting and analytics",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/report/period-summary",
+      "name": "This method returns approximate tolls by vehicle route in specified period.",
+      "description": "NOTE: The maximum days period for this call is 14 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "reports",
+        "description": "Reporting and analytics",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/report/period-tolls",
+      "name": "This method returns information of drivers’ activities for a provided period of time.",
+      "description": "This method returns information of drivers’ activities for a provided period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "reports",
+        "description": "Reporting and analytics",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tacho/driver-activities",
+      "name": "This method returns current information of drivers’ activities by providing the device key of a telemetry device.",
+      "description": "This method returns current information of drivers’ activities by providing the device key of a telemetry device.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tacho",
+        "description": "Tachograph operations",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tacho/current",
+      "name": "This method returns tachograph information for a period of time.",
+      "description": "This method returns tachograph information for a period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tacho",
+        "description": "Tachograph operations",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/period-tacho",
+      "name": "This method returns a list of violated driving/resting rules of a driver for a period of time.",
+      "description": "This method returns a list of violated driving/resting rules of a driver for a period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "medium",
+        "matched_by": "keywords"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tacho/driver-faults",
+      "name": "will be used further to get task data.",
+      "description": "This method is used to append a task to the vehicle’s task list. Method returns Fleethand system task ID, which",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tacho",
+        "description": "Tachograph operations",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks",
+      "name": "ID, which will be used further to get task data.",
+      "description": "This method is used to append a task to the vehicle’s task list with a file. Method returns Fleethand system task",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/file",
+      "name": "This method assigns trips to the selected tasks.",
+      "description": "This method assigns trips to the selected tasks.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/assign-trips",
+      "name": "This method confirms tasks which are assigned to API key / taskId / vehicleId.",
+      "description": "This method confirms tasks which are assigned to API key / taskId / vehicleId.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/confirm-task",
+      "name": "This method confirms all tasks of the vehicle which are assigned to the API key.",
+      "description": "This method confirms all tasks of the vehicle which are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/confirm-all",
+      "name": "This method deletes all tasks of the vehicle which are assigned to the API key.",
+      "description": "This method deletes all tasks of the vehicle which are assigned to the API key.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/delete-all",
+      "name": "This method is used to delete a task.",
+      "description": "This method is used to delete a task.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks",
+      "name": "This method deletes tasks by trip id.",
+      "description": "This method deletes tasks by trip id.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/trip",
+      "name": "This method returns a list of available additional task options.",
+      "description": "This method returns a list of available additional task options.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/additional-info",
+      "name": "This method returns completed vehicle’s tasks for a selected period of time.",
+      "description": "NOTE: The maximum days period for this call is 30 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/done",
+      "name": "This method returns ETA of the provided vehicle.",
+      "description": "This method returns ETA of the provided vehicle.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/eta",
+      "name": "This method returns external orders that are generated from tasks and which are assigned to API key.",
+      "description": "NOTE: The maximum days period for this call is 30 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/external-tasks/external-orders",
+      "name": "This method returns task information.",
+      "description": "This method returns task information.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/information",
+      "name": "This method returns a vehicle task queue. All not DONE tasks.",
+      "description": "This method returns a vehicle task queue. All not DONE tasks.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/queue",
+      "name": "Get task status intervals",
+      "description": "This method returns task statuses for a selected period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/status-intervals",
+      "name": "previous request these task statuses won't be in the next request unless they have been updated.",
+      "description": "This method returns new or updated task statuses. That means if you received some task status with the",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/status",
+      "name": "previous request these task statuses won't be in the next request unless they have been updated.",
+      "description": "This method returns new or updated task statuses. That means if you received some task status with the",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/trip",
+      "name": "This method returns order trips statistics. Request period max duration 30 days.",
+      "description": "This method returns order trips statistics. Request period max duration 30 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/trips/statistics",
+      "name": "This method marks tasks as done which are assigned to API key / taskId / vehicleId.",
+      "description": "This method marks tasks as done which are assigned to API key / taskId / vehicleId.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "keywords"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/mark-as-done",
+      "name": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "description": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/mark-as-executing",
+      "name": "This method is used to update a task. Method returns Fleethand system task ID, which will be used further to get",
+      "description": "This method is used to update a task. Method returns Fleethand system task ID, which will be used further to get",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks",
+      "name": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "description": "This method marks tasks as executing which are assigned to API key / taskId / vehicleId.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/update/file",
+      "name": "system then task will be updated. If taskId is not sent at all but it was created earlier for this trip then it will be",
+      "description": "If smartUpsert is set to false then all the tasks with provided tripId will be deleted and new tasks will be created.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/tasks/trip",
+      "name": "This method returns driver activities for a selected period of time.",
+      "description": "NOTE: From API v2, the maximum days period for this call is 1 year.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "tasks",
+        "description": "Task management",
+        "priority": "medium",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/driver/driver-hours",
+      "name": "This method returns time spent in countries for the requested period by the driver.",
+      "description": "NOTE: From API v2, the maximum days period for this call is 90 days.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "drivers",
+        "description": "Driver management operations",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/country-change/presence",
+      "name": "This method returns track information for a period of time.",
+      "description": "This method returns track information for a period of time.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "forms",
+        "description": "Forms and questionnaires",
+        "priority": "low",
+        "confidence": "medium",
+        "matched_by": "keywords"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/period-info",
+      "name": "This method deactivates the vehicle and unassigns all its attached devices.",
+      "description": "This method deactivates the vehicle and unassigns all its attached devices.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicle/deactivate",
+      "name": "This method returns information about client vehicles.",
+      "description": "This method returns information about client vehicles.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicle",
+      "name": "This method updates information about the vehicle.",
+      "description": "This method updates information about the vehicle.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicle/update-vehicle-info",
+      "name": "This method updates vehicle registration information.",
+      "description": "This method updates vehicle registration information.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicle/simple-update-vehicle-info",
+      "name": "This method returns all vehicles groups.",
+      "description": "This method returns all vehicles groups.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicles-group",
+      "name": "This method creates vehicles group or updates vehicles group title.",
+      "description": "This method creates vehicles group or updates vehicles group title.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicles-group",
+      "name": "This method adds vehicles to a vehicles group.",
+      "description": "This method adds vehicles to a vehicles group.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicles-group/add-vehicles",
+      "name": "This method removes vehicles from a vehicles group.",
+      "description": "This method removes vehicles from a vehicles group.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicles-group/remove-vehicles",
+      "name": "This method deletes vehicles group.",
+      "description": "This method deletes vehicles group.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/vehicles-group",
+      "name": "This method assigns a list of activities to the provided client.",
+      "description": "This method assigns a list of activities to the provided client.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "vehicles",
+        "description": "Vehicle and device management",
+        "priority": "high",
+        "confidence": "high",
+        "matched_by": "url_pattern"
+      }
+    },
+    {
+      "uri": "fleethand://api/api/user-actions",
+      "name": "GET user-actions",
+      "description": "This method retrieves user-actions data via the API.",
+      "mimeType": "application/json",
+      "metadata": {
+        "name": "general",
+        "description": "General API operations",
+        "priority": "medium",
+        "confidence": "low",
+        "matched_by": "default"
+      }
+    }
+  ],
+  "metadata": {
+    "version": "ultimate_final_v8.0",
+    "total_tools": 121,
+    "total_resources": 121,
+    "categories": [
+      "partners",
+      "payments",
+      "reports",
+      "documents",
+      "vehicles",
+      "general",
+      "forms",
+      "activities",
+      "orders",
+      "eco",
+      "drivers",
+      "locations",
+      "tasks",
+      "tacho"
+    ],
+    "generation_timestamp": "2025-09-04T12:21:57.918816"
+  }
+}

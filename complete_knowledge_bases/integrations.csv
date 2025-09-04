@@ -1,0 +1,7 @@
+id,type,description,direction,format
+integration_1,integration,data sending activity for vehicles,bidirectional,JSON
+integration_2,connect,"edTrailerExternalId"":null,",bidirectional,JSON
+integration_3,connect,"edTrailerExternalId"":null,",bidirectional,JSON
+integration_4,connect,"edVin"":FLH456225665YX656,",bidirectional,JSON
+integration_5,external,orders that are generated from tasks and which are assigned to API key,bidirectional,JSON
+integration_6,external,-tasks/external-orders,bidirectional,JSON

@@ -1,0 +1,11 @@
+id,name,description,format,validation,examples
+type_1,array,Data type: array,standard,[],[]
+type_2,boolean,Data type: boolean,standard,[],[]
+type_3,datetime,Data type: datetime,standard,[],[]
+type_4,email,Data type: email,standard,[],[]
+type_5,integer,Data type: integer,standard,[],[]
+type_6,object,Data type: object,standard,[],[]
+type_7,phone,Data type: phone,standard,[],[]
+type_8,string,Data type: string,standard,[],[]
+type_9,url,Data type: url,standard,[],[]
+type_10,uuid,Data type: uuid,standard,[],[]

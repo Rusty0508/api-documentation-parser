@@ -1,0 +1,210 @@
+[
+  {
+    "id": "limit_1",
+    "type": "Limit",
+    "description": "Limit\": 84 ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_2",
+    "type": "Limit",
+    "description": "Limit \ninteger ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_3",
+    "type": "Limit",
+    "description": "Limit\": 84 ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_4",
+    "type": "Limit",
+    "description": "Limit \ninteger ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_5",
+    "type": "rate",
+    "description": "rate form documents by provided option ids",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_6",
+    "type": "rate",
+    "description": "rate form documents by provided task and form/option codes",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_7",
+    "type": "rate",
+    "description": "rated ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_8",
+    "type": "rate",
+    "description": "rated tasks ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_9",
+    "type": "Limit",
+    "description": "Limit\":5, ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_10",
+    "type": "Limit",
+    "description": "Limit \nLong ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_11",
+    "type": "rAtE",
+    "description": "rAtEnd\":430330",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_12",
+    "type": "rAtE",
+    "description": "rAtEnd\":430330",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_13",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_14",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_15",
+    "type": "rAtE",
+    "description": "rAtEnd\":456218",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_16",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_17",
+    "type": "rate",
+    "description": "rated from tasks and which are assigned to API key",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_18",
+    "type": "rAtE",
+    "description": "rAtEnd\":456218",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_19",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_20",
+    "type": "rAtE",
+    "description": "rAtEnd\":456218",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_21",
+    "type": "rAtE",
+    "description": "rAtEnd\":456218",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_22",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_23",
+    "type": "rAtE",
+    "description": "rAtEnd\": 273416",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_24",
+    "type": "rAtE",
+    "description": "rAtEnd ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_25",
+    "type": "rate",
+    "description": "rategy\":\"FASTEST\", ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  },
+  {
+    "id": "limit_26",
+    "type": "rate",
+    "description": "rategy ",
+    "value": "unknown",
+    "unit": "requests",
+    "scope": "global"
+  }
+]

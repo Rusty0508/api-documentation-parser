@@ -1,0 +1,3 @@
+id,type,description,level,scope
+permission_1,manager,""":""manager@email",user,resource
+permission_2,manager,varchar(255),user,resource

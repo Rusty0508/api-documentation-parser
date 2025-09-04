@@ -1,0 +1,112 @@
+{
+  "generation_time": "2025-09-04T12:21:57.919447",
+  "parser_version": "ultimate_final_v8.0",
+  "statistics": {
+    "endpoints": 121,
+    "headers": 242,
+    "parameters": 47,
+    "responses": 110,
+    "errors": 0
+  },
+  "quality_metrics": {
+    "total_endpoints": 121,
+    "coverage": {
+      "headers": "100.0%",
+      "parameters": "33.1%",
+      "responses": "90.9%",
+      "request_body": "27.3%"
+    },
+    "quality_improvements": {
+      "title_quality": "99.2%",
+      "description_quality": "90.9%",
+      "valid_titles": 120,
+      "valid_descriptions": 110,
+      "avg_endpoint_quality": "0.962"
+    },
+    "categories": {
+      "activities": {
+        "count": 7,
+        "avg_quality": 0.9571428571428572,
+        "priority": "high"
+      },
+      "general": {
+        "count": 4,
+        "avg_quality": 0.55,
+        "priority": "medium"
+      },
+      "drivers": {
+        "count": 19,
+        "avg_quality": 0.9894736842105264,
+        "priority": "high"
+      },
+      "documents": {
+        "count": 19,
+        "avg_quality": 1.0,
+        "priority": "medium"
+      },
+      "eco": {
+        "count": 4,
+        "avg_quality": 1.0,
+        "priority": "low"
+      },
+      "locations": {
+        "count": 5,
+        "avg_quality": 0.96,
+        "priority": "medium"
+      },
+      "vehicles": {
+        "count": 17,
+        "avg_quality": 0.973529411764706,
+        "priority": "high"
+      },
+      "orders": {
+        "count": 5,
+        "avg_quality": 1.0,
+        "priority": "medium"
+      },
+      "partners": {
+        "count": 7,
+        "avg_quality": 1.0,
+        "priority": "low"
+      },
+      "payments": {
+        "count": 4,
+        "avg_quality": 0.9125,
+        "priority": "low"
+      },
+      "reports": {
+        "count": 3,
+        "avg_quality": 0.8666666666666667,
+        "priority": "medium"
+      },
+      "tacho": {
+        "count": 3,
+        "avg_quality": 1.0,
+        "priority": "medium"
+      },
+      "tasks": {
+        "count": 23,
+        "avg_quality": 0.9652173913043479,
+        "priority": "medium"
+      },
+      "forms": {
+        "count": 1,
+        "avg_quality": 0.9000000000000001,
+        "priority": "low"
+      }
+    },
+    "data_completeness": "78.5%",
+    "mcp_readiness_score": "85.5%",
+    "professional_quality": "HIGH"
+  },
+  "enhancements": {
+    "intelligent_descriptions": "ENABLED",
+    "advanced_categorization": "ENABLED",
+    "json_validation": "ENABLED",
+    "quality_scoring": "ENABLED",
+    "smart_fallbacks": "ENABLED"
+  },
+  "recommendations": [
+    "Парсер показывает отличные результаты!"
+  ]
+}

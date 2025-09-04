@@ -1,0 +1,22 @@
+{
+  "total_endpoints": 121,
+  "categories": {
+    "activities": 7,
+    "general": 27,
+    "drivers": 14,
+    "vehicles": 27,
+    "documents": 11,
+    "reports": 5,
+    "tasks": 24,
+    "locations": 1,
+    "partners": 4,
+    "users": 1
+  },
+  "methods": {
+    "POST": 33,
+    "GET": 62,
+    "PUT": 13,
+    "DELETE": 13
+  },
+  "generated_at": "2025-09-04T11:07:19.208090"
+}

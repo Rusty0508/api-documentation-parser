@@ -1,0 +1,1338 @@
+id,type,content,title,related_endpoint,category,language,description
+example_1,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":OK 
+}",Example,,general,json,
+example_2,response,"200 
+{ 
+   ""status"":200,",Example,,general,json,
+example_3,response,"200 
+""largestActivityId"": 1, 
+""activities"": [  
+  { 
+   ""id"": 1, 
+   ""vehicleId"": 1225, 
+   ""vinCode"": ""ABC1234567891011"", 
+   ""code"": ""ACTIVITY_BUY"", 
+   ""filledAt"": ""2023-06-19T14:41:00"", 
+   ""questions"": [ 
+     { 
+      ""code"": ""QUESTION_BUY_WHAT"", 
+      ""type"": ""SELECTION"", 
+      ""answer"": { 
+         ""code"": ""ANSWER_VIGNETE"", 
+         ""value"": ""buy_vignette"",",Example,,general,json,
+example_4,response,"200 
+{ 
+ ""id"": 1, 
+ ""vehicleId"": 1225, 
+ ""vinCode"": ""ABC1234567891011"", 
+ ""code"": ""ACTIVITY_BUY"", 
+ ""filledAt"": ""2023-06-19T14:41:00"", 
+ ""questions"": [ 
+   { 
+    ""code"": ""QUESTION_BUY_WHAT"", 
+    ""type"": ""SELECTION"", 
+    ""answer"": { 
+      ""code"": ""ANSWER_VIGNETE"", 
+      ""value"": ""buy_vignette"", 
+      ""questions"": [ 
+         { 
+          ""code"": ""QUESTION_COUNTRY"", 
+          ""type"": ""SELECTION"", 
+          ""answer"": { 
+             ""code"": ""ANSWER_LUX"",",Example,,general,json,
+example_5,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+}",Example,,general,json,
+example_6,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+}",Example,,general,json,
+example_7,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""country"":""de"", 
+         ""distance"":205.00, 
+         ""beginPosition"":""48.98015, 8.158865"", 
+         ""endPosition"":""50.76395, 3.16532"", 
+         ""beginMileage"":212793.525, 
+         ""endMileage"":212998.525, 
+         ""beginFuelLevel"":100, 
+         ""beginFuelLevelLiters"":1200.0, 
+         ""endFuelLevel"":66, 
+         ""endFuelLevelLiters"":805.2, 
+         ""startDate"":""2021-01-31T11:56:10.464"", 
+         ""endDate"":""2021-02-02T14:56:10.464"", 
+         ""vehiclePlateNumber"":""ABC123"" 
+      }, 
+      { 
+         ""country"":""fr"", 
+         ""distance"":200.00, 
+         ""beginPosition"":""48.98015, 8.158865"", 
+         ""endPosition"":""50.76395, 3.16532"", 
+         ""beginMileage"":212998.525, 
+         ""endMileage"":213198.525, 
+         ""beginFuelLevel"":66, 
+         ""beginFuelLevelLiters"":805.2, 
+         ""endFuelLevel"":25, 
+         ""endFuelLevelLiters"":305.0, 
+         ""startDate"":""2021-02-02T14:56:10.464"", 
+         ""endDate"":""2021-02-03T14:56:10.464"", 
+         ""vehiclePlateNumber"":""ABC123"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_8,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      {",Example,,general,json,
+example_9,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""Successfully canceled 2 driver .ddd initiations"" 
+}",Example,,general,json,
+example_10,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""Successfully canceled 2 vehicle .ddd initiations"" 
+}",Example,,general,json,
+example_11,response,"200 { 
+   ""status"":200, 
+   ""payload"":"" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB",Example,,general,json,
+example_12,response,"200 { 
+   ""status"":200, 
+   ""payload"":"" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB",Example,,general,json,
+example_13,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""cardNumber"":""1234567891234000"", 
+         ""connected"":null, 
+         ""status"":""NO_CONNECTION_DATA"", 
+         ""client"":{ 
+            ""id"":1, 
+            ""value"":""UAB \""Company 1\"""" 
+         }, 
+         ""physicalNumber"":""0000000001"" 
+      }, 
+      { 
+         ""cardNumber"":""1234567891235000"", 
+         ""connected"":true, 
+         ""status"":""CONNECTED"", 
+         ""client"":{ 
+            ""id"":2, 
+            ""value"":""UAB \""Company 2\"""" 
+         }, 
+         ""physicalNumber"":null 
+      } 
+   ] 
+}",Example,,general,json,
+example_14,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""title"":""UAB FLEETHAND"", 
+         ""clientId"":-1, 
+         ""country"":""LTU"", 
+      } 
+   ] 
+}",Example,,general,json,
+example_15,response,"200 
+{ 
+    ""status"": 200, 
+    ""payload"": { 
+        ""driverFiles"": [ 
+            { 
+                ""id"": 1, 
+                ""imei"": null, 
+                ""driverCardNumber"": ""1234567891234000"", 
+                ""downloadDate"": ""2023-07-04T08:24:51.472"", 
+                ""dateFrom"": ""2022-08-14T00:00:00"", 
+                ""dateTill"": ""2023-05-31T20:30:00"" 
+            } 
+        ], 
+        ""vehicleFiles"": [ 
+            { 
+                ""id"": 2, 
+                ""imei"": ""00000000000001"", 
+                ""driverCardNumber"": null, 
+                ""downloadDate"": ""2023-07-03T11:41:15.825"", 
+                ""dateFrom"": ""2023-03-30T23:59:59"",",Example,,general,json,
+example_16,response,"200 
+{ 
+    ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""downloadTime"": ""2022-05-18T12:47:00"", 
+            ""activitiesFrom"": ""2021-05-07T00:00:00"", 
+            ""activitiesTill"": ""2022-05-18T01:38:00"", 
+            ""driverCard"": ""0000000116754000"" 
+        }, 
+        { 
+            ""downloadTime"": null, 
+            ""activitiesFrom"": null, 
+            ""activitiesTill"": null, 
+            ""driverCard"": ""UAD0000004RWO000"" 
+        } 
+    ] 
+}",Example,,general,json,
+example_17,response,"200 
+{ 
+    ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""vin"": ""YV2RT40C0MB325540"", 
+            ""downloadTime"": ""2021-08-26T14:35:05"", 
+            ""activitiesFrom"": ""2021-05-25T23:59:59"", 
+            ""activitiesTill"": ""2021-08-25T13:02:15"" 
+        }, 
+        { 
+            ""vin"": ""YV2RTY0A7MB322799"", 
+            ""downloadTime"": null, 
+            ""activitiesFrom"": null, 
+            ""activitiesTill"": null 
+        } 
+    ] 
+}",Example,,general,json,
+example_18,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ"" 
+}",Example,,general,json,
+example_19,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ"" 
+}",Example,,general,json,
+example_20,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ"" 
+}",Example,,general,json,
+example_21,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""xRQe8LptTfWRK8qsshY8fJkx5st2yYvfieWj1q4YUS364GVpv/KynZ"" 
+}",Example,,general,json,
+example_22,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_23,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_24,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_25,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":6, 
+         ""vehicleId"":2701, 
+         ""driverId"":355, 
+         ""clientId"":950, 
+         ""startedFilling"":""2020-09-30T06:35:29.133"", 
+         ""finishedFilling"":""2020-09-30T06:35:29.133"", 
+         ""signature"":""iVBORw0AYAAACXJ2VEAAAABHNCSVQICAgIf"", 
+         ""items"":[ 
+            { 
+               ""id"":212, 
+               ""title"":""title"", 
+               ""fuelBefore"":99999, 
+               ""fuelFilled"":0.889, 
+               ""odometer"":0, 
+               ""generalFuelUsage"":8755, 
+               ""country"":""LT"", 
+               ""date"":""2020-09-30T09:36:15"", 
+               ""price"":855888,",Example,,general,json,
+example_26,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":14, 
+         ""vehicleId"":10605, 
+         ""driverId"":544, 
+         ""clientId"":950, 
+         ""startedFilling"":""2020-11-20T13:19:10.834"", 
+         ""finishedFilling"":""2020-11-20T13:19:36.232"", 
+         ""signature"":""iVBORw0KGgoAAAANSUhEUgAHNCSVQICAgIf"", 
+         ""items"":[ 
+            { 
+               ""id"":55, 
+               ""dateFrom"":""2020-11-20"", 
+               ""countryFrom"":""Germany"", 
+               ""cityFrom"":""Leipzig, 04158"", 
+               ""odometerFrom"":205257, 
+               ""dateTo"":""2020-11-20"", 
+               ""countryTo"":""Germany"", 
+               ""cityTo"":""Leipzig, 04158"", 
+               ""odometerTo"":205257, 
+               ""cmrNumber"":""cmr#456"", 
+               ""cmrWeight"":205257, 
+               ""distance"":0, 
+               ""comments"":""Comments"", 
+               ""createdAt"":""2020-11-20T13:19:10.834""",Example,,general,json,
+example_27,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": 9999 
+}",Example,,general,json,
+example_28,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": 858558 
+}",Example,,general,json,
+example_29,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+    { 
+        ""id"":1, 
+        ""name"":""Scanned passport”, 
+        ""important"":false, 
+        ""showToDriver"":false, 
+        ""type"":""OTHER"", 
+        ""country"":""en"" 
+    }, 
+    { 
+        ""id"":2, 
+        ""name"":""Driver license”, 
+        ""important"":true, 
+        ""showToDriver"":true, 
+        ""type"":""OTHER"", 
+        ""country"":""en"" 
+    },",Example,,general,json,
+example_30,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_31,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+    { 
+        ""id"":1, 
+        ""name"":""Insurance”, 
+        ""important"":false, 
+        ""showToDriver"":false, 
+    }, 
+    { 
+        ""id"":2, 
+        ""name"":""Taxed roads ticket”, 
+        ""important"":true, 
+        ""showToDriver"":true, 
+    }, 
+     ] 
+}",Example,,general,json,
+example_32,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_33,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""driverId"":""1"", 
+         ""driverCard"":""1234567891234000"", 
+         ""fullName"":""name surname"", 
+         ""address"":""EXAMPLE ADDRESS"", 
+         ""email"":""EXAMPLE@EXAMPLE.COM"", 
+         ""language"":""LT"", 
+         ""phoneNumber"":""+37060012345"", 
+         ""department"":""DEPARTMENT EXAMPLE"", 
+         ""tableNumber"":""123"" 
+      }, 
+      { 
+         ""driverId"":""2"", 
+         ""driverCard"":""UAD0000011142000"", 
+         ""fullName"":""NAME SURNAME"", 
+         ""address"":null, 
+         ""email"":null,",Example,,general,json,
+example_34,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""OK"" 
+    } 
+} 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""Group ID does not exist"" 
+    } 
+} 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""Vehicle already belongs to this group"" 
+    } 
+}",Example,,general,json,
+example_35,response,"200 
+{ 
+    ""status"": 200, 
+    ""payload"": { 
+        ""deviceKey"": ""352094089272196"",",Example,,general,json,
+example_36,response,"200 
+{ 
+    ""status"": 200, 
+    ""payload"": { 
+        ""driver"": ""0000000005266000"", 
+        ""totalData"": { 
+            ""distance"": ""2480.01"", 
+            ""gpsDistance"": ""2484.9"", 
+            ""fuelUsed"": 682.5, 
+            ""fuelUsedIdling"": 16.0, 
+            ""fuelUsage"": ""27.52"", 
+            ""fuelUsageDriving"": ""26.87"", 
+            ""noCargo"": ""10.17"", 
+            ""lightCargo"": ""22.53"", 
+            ""mediumCargo"": ""24.26"", 
+            ""heavyCargo"": ""43.05"", 
+            ""parkingBrake"": ""0"", 
+            ""harshBraking"": ""0"", 
+            ""freeRolling"": ""10.89"", 
+            ""braking"": ""13.95"", 
+            ""brakingDistance"": ""14.26"", 
+            ""stopping"": ""8.35"", 
+            ""numberOfStops"": 207, 
+            ""brakingStoppingScore"": 100, 
+            ""rolling"": ""27.19"", 
+            ""rollingScore"": 100, 
+            ""economy"": ""0.03"", 
+            ""economyScore"": 100, 
+            ""engineLoad"": ""5.59"", 
+            ""engineLoadScore"": 48, 
+            ""overspeeding"": ""26.01"", 
+            ""overspeedingScore"": 48, 
+            ""cruiseControlDistance"": ""75.2"", 
+            ""cruiseControlDistanceScore"": 100, 
+            ""cruiseControlFuel"": ""31.37"", 
+            ""cruiseControlInterruption"": ""0.15"", 
+            ""cruiseControlFuelUsage"": ""-16.71"", 
+            ""cruiseControlFuelUsageScore"": 0, 
+            ""idling"": ""11.83"", 
+            ""idlingTime"": ""6h 34m"", 
+            ""idlingScore"": 61, 
+            ""averageScore"": 70, 
+            ""averageWeight"": ""26455.76"", 
+            ""speedData"": { 
+                ""distanceTill80"": ""34.85"", 
+                ""distance80To81"": ""7.43"", 
+                ""distance82To83"": ""8.85"", 
+                ""distance84To85"": ""44.49"",",Example,,general,json,
+example_37,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1, 
+         ""title"":""MAN"", 
+         ""vehicleCount"":32 
+      }, 
+      { 
+         ""id"":2, 
+         ""title"":""Volvo"", 
+         ""vehicleCount"":45 
+      } 
+   ] 
+}",Example,,general,json,
+example_38,response,"200 
+{ 
+ ""status"":200, 
+ ""payload"":[ 
+   { 
+     ""code"": ""DELIVERY_NOTE"", 
+     ""id"": 11256 
+   } 
+ ] 
+}",Example,,general,json,
+example_39,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_40,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_41,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+}",Example,,general,json,
+example_42,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+}",Example,,general,json,
+example_43,response,"200 
+{ 
+  ""status"": 200, 
+  ""payload"": { 
+        ""externalId"": 358, 
+        ""taskId"": 3555, 
+        ""code"": ""DOCUMENTS"", 
+        ""nameEn"": ""Keitimosi forma"", 
+        ""nameLt"": ""Keitimosi forma"", 
+        ""nameRu"": ""Акт передачи"", 
+        ""nameDe"": ""Keitimosi forma"", 
+        ""namePl"": ""Keitimosi forma"", 
+        ""filledAt"": ""2020-08-03T17:14:13.195"", 
+        ""vehicleType"": ""TRUCK_STANDARD"", 
+        ""driverId"": 355, 
+        ""vehicleId"": 2701, 
+        ""plateNumber"": ""JSU270"", 
+        ""sections"": [ 
+            { 
+                ""id"": 1437, 
+                ""idx"": 0,",Example,,general,json,
+example_44,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": { 
+     ""largestFormId"": 358, 
+     ""forms"": [ 
+       { 
+         ""externalId"":358, 
+         ""taskId"":3555, 
+         ""code"":""DOCUMENTS"", 
+         ""nameEn"":""Keitimosi forma"", 
+         ""nameLt"":""Keitimosi forma"", 
+         ""nameRu"":""Акт передачи"", 
+         ""nameDe"":""Keitimosi forma"", 
+         ""namePl"":""Keitimosi forma"", 
+         ""filledAt"":""2020-08-03T17:14:13.195"", 
+         ""vehicleType"":""TRUCK_STANDARD"",",Example,,general,json,
+example_45,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_46,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_47,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": [ 
+      { 
+         ""id"":111, 
+         ""plateNumber"":""LTU000"", 
+         ""zoneTitle"":""Crossing zone""",Example,,general,json,
+example_48,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": {",Example,,general,json,
+example_49,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":105, 
+         ""deviceKey"":""000000000000000"", 
+         ""plateNumber"":""FLH555"", 
+         ""latitude"":54.894500, 
+         ""longitude"":23.909960, 
+         ""issuedOn"":""2022-04-01T12:05:01.636"" 
+      }, 
+      { 
+         ""id"":106, 
+         ""deviceKey"":""000000000000001"", 
+         ""plateNumber"":""FLH556"", 
+         ""latitude"":52.894500, 
+         ""longitude"":24.909960, 
+         ""issuedOn"":""2022-04-01T12:10:02.523"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_50,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":7976, 
+         ""type"":""OFF_ROUTE"", 
+         ""time"":""2020-11-17T12:04:46.414"", 
+         ""plateNumber"":""DDD111"", 
+         ""openedBy"":""Full Name"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.5682234, 
+         ""longitude"":0.2653675, 
+         ""vehicleId"":145392, 
+         ""vinCode"":""W1T4565125554588"" 
+         ""driver"":""driverCard"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_51,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":7976, 
+         ""type"":""OFF_ROUTE"", 
+         ""time"":""2020-11-17T12:04:46.414"", 
+         ""plateNumber"":""DDD111"", 
+         ""openedBy"":""Full Name"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.5682234, 
+         ""longitude"":0.2653675, 
+         ""vehicleId"":145392, 
+         ""driver"":""driverCard"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_52,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""vinCode"":null, 
+         ""plateNumber"":""FLH555"", 
+         ""deviceKey"":""000000000000000"", 
+         ""doorsOpen"":false 
+      }, 
+      { 
+         ""vinCode"":null, 
+         ""plateNumber"":""FLH556"", 
+         ""deviceKey"":""000000000000000"", 
+         ""doorsOpen"":true 
+      } 
+   ] 
+}",Example,,general,json,
+example_53,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""time"":""2020-01-21T09:12:54"", 
+         ""deviceKey"":""000000000000000"", 
+         ""vehicleId"":9999, 
+         ""latitude"":45.4147833, 
+         ""longitude"":10.9198083, 
+         ""speed"":0, 
+         ""course"":0, 
+         ""driver"":""EXAMPLE00000000"", 
+         ""secondDriver"":""EXAMPLE20000000"", 
+         ""fuelLevel"":37.2, 
+         ""float1Liters"":14, 
+         ""float2Liters"":23, 
+         ""adblueLevelPercent"":80, 
+         ""engineRPM"":0, 
+         ""axleWeight"":0, 
+         ""axleWeight2"":null, 
+         ""grossCombinationVehicleWeight"":null, 
+         ""address"":null, 
+         ""distance"":null, 
+         ""engineHours"":null, 
+         ""externalPowerV"":14809, 
+         ""internalBatteryV"":9775,",Example,,general,json,
+example_54,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""deviceKey"":""000000000000000"", 
+         ""plateNumber"":""EXAMPLE 000"", 
+         ""latitude"":54.651907, 
+         ""longitude"":25.306837, 
+         ""country"":""lt"", 
+         ""address"":""Gatvių g., Vilnius, Lithuania, 01234"", 
+         ""postCode"":""01234"", 
+         ""odometer"":123456.789 
+         ""time"":""2000-01-01T12:12:08.339"" 
+      }, 
+      { 
+         ""deviceKey"":""111111111111111"", 
+         ""plateNumber"":""EXAMPLE 001"", 
+         ""latitude"":54.651907, 
+         ""longitude"":25.306837, 
+         ""country"":""lt"", 
+         ""address"":""Gatvių g., Vilnius, Lithuania, 01234"", 
+         ""postCode"":""01234"", 
+         ""odometer"":234567.8 
+         ""time"":""2000-01-01T15:15:01.400"" 
+      } 
+   ]",Example,,general,json,
+example_55,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""time"":""2020-01-21T09:12:54"", 
+         ""deviceKey"":""000000000000000"", 
+         ""driver1CardPresent"":true, 
+         ""driver2CardPresent"":true, 
+         ""distance"":null, 
+         ""fullFirstDriver"":""GUD0000000000000"", 
+         ""fullSecondDriver"":""GUD0000000000000"", 
+         ""latestActivityType"":""REST"", 
+         ""latestActivityDuration"":""2020-09-28T19:40:00"", 
+         ""lastRestTime"":""2020-10-04T04:40:00"", 
+         ""tillNextBrakeOrRest"":0, 
+         ""tillNextDayRest"":1, 
+         ""tillThisRestEnd"":1, 
+         ""tillNextWeekRest"":1, 
+         ""todayDriving"":1, 
+         ""thisWeekDriving"":1, 
+         ""longerDrivingCount"":1, 
+         ""shorterRestsCount"":1, 
+         ""beforeBreakDrivingLeft"":1, 
+         ""todayDrivingLeft"":1, 
+         ""thisWeekDrivingLeft"":1, 
+         ""twoWeeksDrivingLeft"":1, 
+         ""tillNextDriving"":1,",Example,,general,json,
+example_56,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": { 
+        ""orderId"": 1111, 
+        ""tripId"": 111 
+    } 
+}",Example,,general,json,
+example_57,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1,        
+         ""taskId"":-1, 
+         ""vehicleId"":-1 
+         ""action"":""ADDED"" 
+         ""orderNumber"":""ORD#123"", 
+         ""createdAt"":""2020-09-03T11:15:10.101"" 
+      }, 
+      { 
+         ""id"":2, 
+         ""taskId"":-1, 
+         ""vehicleId"":-1 
+         ""action"":""REMOVED"" 
+         ""orderNumber"":""ORD#123"", 
+         ""createdAt"":""2020-09-03T11:17:10.101"" 
+      },",Example,,general,json,
+example_58,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": ""PENDING"" 
+}",Example,,general,json,
+example_59,response,"200 
+{ 
+   ""status"":200, 
+   ""data"":[ 
+      { 
+         ""taskId"":1, 
+         ""vehicleId"":100, 
+         ""freight"":1000, 
+         ""clientId"":""VHT559685"", 
+         ""clientOrderNumber"":""VHT559685"", 
+         ""clientKm"":""1362"", 
+         ""action"":""ADD"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_60,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_61,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":1 
+}",Example,,general,json,
+example_62,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""employees"":[ 
+         { 
+            ""id"":8218, 
+            ""email"":""partner.employee@fleethand.com"" 
+         } 
+      ], 
+      ""errors"":[ 
+         ""Email partner.partner@fleethand.com already in use"" 
+      ] 
+   } 
+}",Example,,general,json,
+example_63,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_64,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_65,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_66,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""1"":[ 
+         { 
+            ""id"":1351, 
+            ""vinCode"":""VINCODE1"", 
+            ""partnerTitle"":""Partner1"", 
+            ""activeFrom"":""2019-02-04T22:00:00"", 
+            ""activeTill"":""2019-02-05T21:59:00"" 
+         } 
+      ], 
+      ""2"":[ 
+         { 
+            ""id"":2750, 
+            ""vinCode"":""VINCODE2"", 
+            ""partnerTitle"":""Partner2"", 
+            ""activeFrom"":""2019-07-29T21:00:00"",",Example,,general,json,
+example_67,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":111, 
+         ""vehicleId"":12345, 
+         ""title"":""payment card"", 
+         ""cardNumber"":""ABCDEFG"", 
+         ""expiryDate"":""20250828"", 
+         ""type"":""SHELL"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_68,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_69,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_70,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_71,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_72,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""poiId"":""1"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_73,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""poiGroupId"":""10"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_74,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""vehicleId"":12345, 
+         ""date"":""2022-06-01"", 
+         ""country"":""fr"",",Example,,general,json,
+example_75,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""deviceKey"":""123456789"", 
+      ""entries"":[ 
+         { 
+            ""group"":""de"", 
+            ""gpsMoved"":41.38, 
+            ""gpsStopped"":191.29,",Example,,general,json,
+example_76,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""vehicleId"": 123456, 
+      ""vinCode"": ""vinCode"", 
+      ""totalDistance"": 2951.29, 
+      ""tolls"": {",Example,,general,json,
+example_77,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""driverCard"":""V100000075665000"", 
+         ""latestActivityType"":""DRIVE"", 
+         ""latestActivityStart"":""2022-09-13T14:58:00"", 
+         ""latestActivityDuration"":""2460"", 
+         ""drivingPeriodStarted"":""2022-09-13T12:47:00"", 
+         ""drivingBeforeBreak"":3060, 
+         ""drivingLeftTillBreak"":6576,",Example,,general,json,
+example_78,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""tachoChartItems"":[ 
+            { 
+               ""type"":""RESTING"",",Example,,general,json,
+example_79,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""driver"":""V100000112119000"", 
+      ""dayDrivingExceeded"":{",Example,,general,json,
+example_80,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":1 
+}",Example,,general,json,
+example_81,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":1 
+}",Example,,general,json,
+example_82,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_83,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_84,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_85,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_86,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_87,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_88,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""Id"":-1, 
+         ""option"":""TEMPERATURE"", 
+         ""type"":""LONG"", 
+         ""enName"":""Freezer temperature"", 
+         ""deName"":""Gefriertemperatur"", 
+         ""plName"":""Temperatura zamrażarki"", 
+         ""ruName"":""Температура морозильной камеры"", 
+         ""ltName"":""Šaldiklio temperatūra"", 
+         ""frName"":""Température du congélateur"", 
+         ""lvName"":""Saldētavas temperatūra"", 
+         ""czName"":""Teplota v mrazáku"", 
+         ""esName"":""Temperatura del congelador"", 
+         ""itName"":""Temperatura del congelatore"", 
+         ""roName"":""Temperatura congelatorului"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_89,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      [ 
+         { 
+            ""externalId"":2915, 
+            ""type"":""LOADING"", 
+            ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+            ""latitude"":46.56822349999999, 
+            ""longitude"":0.2653675,",Example,,general,json,
+example_90,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""2022-02-28 12:59"" 
+}",Example,,general,json,
+example_91,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""taskId"":9072, 
+         ""partnerId"":1650, 
+         ""distance"":1022, 
+         ""plateNumber"":""FLH233"", 
+         ""orderNumber"":""KJT123456"", 
+         ""createdAt"":""2023-02-09T09:26:11.146623"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_92,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":2915, 
+         ""idx"":0, 
+         ""vehicleId"": 22569, 
+         ""orderNumber"":""ORDER123"" 
+         ""type"":""LOADING"", 
+         ""status"":""DONE"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.56822349999999, 
+         ""longitude"":0.2653675, 
+         ""poiId"":17699551, 
+         ""plannedRoute"":""c~s`H~wnB`@`E_Iz@eA"", 
+         ""plannedDistance"":145392, 
+         ""plannedDuration"":12367, 
+         ""eta"":""2020-11-17T12:04:46.414"",",Example,,general,json,
+example_93,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":2810, 
+         ""idx"":0, 
+         ""orderNumber"":""ORDER123"", 
+         ""date"":null, 
+         ""type"":""UNLOADING"", 
+         ""status"":""UNCONFIRMED"", 
+         ""searchText"":""Berliner Str. 22, 60311 Frankfurt am Main, Germany"", 
+         ""address"":""60311 Frankfurt am Main, Germany"", 
+         ""lat"":50.1120958, 
+         ""lng"":8.683402899999999, 
+         ""poiId"": 17699551, 
+         ""comments"":null, 
+         ""polyline"":""klb~Ge{kn@|DvF@t@n@PJp@ZlBh@f@VrAjAdBrBh@j@CR@j"", 
+         ""distance"":411246, 
+         ""tripId"":46,  
+         ""internalId"":64,  
+         ""additionalInfo"": [ 
+            { 
+               ""id"":-6, 
+               ""value"":""50"",   
+               ""option"":""ADBLUE_AMOUNT"", 
+             } 
+          ], 
+         ""eta"":""2024-09-17 20:39"" 
+      } 
+   ] 
+}",Example,,general,json,
+example_94,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+    { 
+      ""taskId"":168968, 
+      ""statuses"": [ 
+       { 
+         ""status"":""EXECUTING"", 
+         ""Latitude"":""54.89522055"",   
+         ""longitude"":""23.98839632"", 
+         ""driverId"":8614, 
+         ""taskId"":168968, 
+         ""odometer"":1050205, 
+         ""from"":""2023-06-23T11:15:10.101"", 
+         ""till"":""2023-06-23T11:17:10.101"", 
+         ""stopId"":""LOAD-12345"" 
+       } 
+      ] 
+    } 
+  ] 
+}",Example,,general,json,
+example_95,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1275924, 
+         ""status"":""EXECUTING"", 
+         ""time"":""2020-09-03T11:15:10.101"", 
+         ""latitude"":54.89522055, 
+         ""longitude"":23.98839632, 
+         ""driverId"":8614, 
+         ""vehicleId"":6302, 
+         ""vinCode"":null, 
+         ""taskId"":168968, 
+         ""odometer"":1050205 
+      } 
+   ] 
+}",Example,,general,json,
+example_96,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":2915, 
+         ""idx"": 0, 
+         ""vehicleId"": 22569, 
+         ""type"":""LOADING"", 
+         ""status"":""DONE"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.56822349999999, 
+         ""longitude"":0.2653675, 
+         ""poiId"": 1755991, 
+         ""stopId"": ""LOAD-12345"", 
+         ""plannedRoute"":""c~s`H~wnB`@`E_Iz@eA"", 
+         ""plannedDistance"":145392, 
+         ""plannedDuration"":12367, 
+         ""eta"":""2020-11-17T12:04:46.414"", 
+         ""actualRoute"":""a~s`HbxnBtPuWpAxAn@xD"", 
+         ""actualDistance"":590,",Example,,general,json,
+example_97,response,"200 
+{ 
+   ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""tripNumber"": 007, 
+            ""vehicle"": ""FleetHand-Vehicle"", 
+            ""startedAt"": ""2023-08-07T18:22:00"", 
+            ""doneAt"": ""2023-08-21T08:07:33.476"", 
+            ""fuelLevelAtEnd"": 580.561, 
+            ""fuelConsumed"": 980.670, 
+            ""fuelFilled"": 1562.639, 
+            ""odometerAtStart"": 269382.295, 
+            ""odometerAtEnd"": 273416.505, 
+            ""plannedDistance"": 2261593, 
+            ""actualDistance"": 1112215,",Example,,general,json,
+example_98,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_99,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_100,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":1 
+}",Example,,general,json,
+example_101,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":1 
+}",Example,,general,json,
+example_102,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""internalId"":0, 
+         ""externalId"":0, 
+         ""message"":""Task already marked as DONE and cannot be updated"" 
+      }, 
+      {",Example,,general,json,
+example_103,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""driverName"":""Driver name"", 
+         ""driverCard"":""V100000111111000"", 
+         ""tableNumber"":""Table number"", 
+         ""dayHoursGross"":{ 
+            ""2021-01-01"":0, 
+            ""2021-01-02"":600, 
+            ""2021-01-03"":900, 
+            ""2021-01-04"":250 
+         }, 
+         ""dayHoursAtNight"":{ 
+            ""2021-01-01"":3600, 
+            ""2021-01-02"":3600, 
+            ""2021-01-03"":3600, 
+            ""2021-01-04"":3600 
+         }, 
+         ""days"":4, 
+         ""grossHours"":3600, 
+         ""hoursAtNight"":3600, 
+         ""vehiclesByDay"":{ 
+            ""2021-01-01"":""FLH123"", 
+            ""2021-01-02"":""FLH123"", 
+            ""2021-01-03"":""FLH123"", 
+            ""2021-01-04"":""FLH123"" 
+         } 
+      } 
+   ] 
+}",Example,,general,json,
+example_104,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""deviceKey"":""352600000000000"", 
+         ""driver"":""UAD000000AABB000"",",Example,,general,json,
+example_105,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_106,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""licensePlateNumber"":""LICENSEPLATE 123"", 
+         ""plateNumber"":""PLATE 123"", 
+         ""imei"":""00000000000000"", 
+         ""model"":""FMB640"", 
+         ""simNumber"":""37000000000"", 
+         ""vinCode"":""XXXXXXXXXXXXXXXXX"", 
+         ""type"":""TRUCK_MEGA"", 
+         ""ownerName"":""UAB FLEETHAND"", 
+         ""vehicleId"":14653, 
+         ""fakeVehicle"":true, 
+         ""tabImei"":null, 
+         ""tabSimNo"":null, 
+         ""brand"":null, 
+         ""fuelTankCapacity"":null, 
+         ""adBlueCapacity"":null, 
+         ""payerName"":""UAB FLEETHAND""  
+      }, 
+      {          
+         ""licensePlateNumber"": ""LICENSEPLATE 345"",          
+         ""plateNumber"": ""PLATE 123"",          
+         ""imei"": ""00000000000001"", 
+         ""model"": ""FMB640"", 
+         ""simNumber"": ""37000000000"", 
+         ""vinCode"": ""XXXXXXXXXXXXXXXXX"", 
+         ""type"": ""TRUCK_MEGA, 
+         ""ownerName"": ""UAB FLEETHAND"", 
+         ""vehicleId"":14652, 
+         ""fakeVehicle"":false, 
+         ""tabImei"":""bb34f67c6490cb41"", 
+         ""tabSimNo"":""651651651651"", 
+         ""brand"":""Renault"", 
+         ""fuelTankCapacity"": 1500, 
+         ""adBlueCapacity"":200, 
+         ""payerName"":""UAB OTHER FLEETHAND"" 
+      } 
+   ]",Example,,general,json,
+example_107,response,"200 
+{ 
+   ""status"":200,",Example,,general,json,
+example_108,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",Example,,general,json,
+example_109,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": [ 
+        {  
+            ""groupId"": 1,  
+            ""title"": ""Two vehicles group"",  
+            ""vehiclesIds"": [ 
+                11, 
+                22, 
+            ] 
+        }, 
+        {  
+            ""groupId"": 2,  
+            ""title"": ""Empty group"",  
+            ""vehiclesIds"": [] 
+        }, 
+        {  
+            ""groupId"": 3,  
+            ""title"": ""One vehicle group"",  
+            ""vehiclesIds"": [ 
+                15 
+            ] 
+        }",Example,,general,json,
+example_110,response,"200 
+{ 
+   ""status"": 200, 
+   ""payload"": 1 
+}",Example,,general,json,
+example_111,response,"200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",Example,,general,json,
+example_112,response,"200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",Example,,general,json,
+example_113,response,"200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",Example,,general,json,
+example_114,response,"200 
+{ 
+   ""status"":200, 
+   ""payload"": [ 
+        {  
+            ""email"": ""fleethand@fleethand.com"",  
+            ""ipAddress"": ""00.111.111.111"",  
+            ""occurredAt"": ""2023-08-30T23:20:17.283"",  
+            ""type"": ""LOGIN"",  
+            ""successful"": false 
+        }, 
+        { 
+            ""email"": ""fleethand@fleethand.com"", 
+            ""ipAddress"": ""00.111.111.111"", 
+            ""occurredAt"": ""2023-08-30T23:25:45.124"", 
+            ""type"": ""CHANGE_PASSWORD"", 
+            ""successful"": true 
+        }, 
+        { 
+            ""email"": ""fleethand@fleethand.com"", 
+            ""ipAddress"": ""00.111.111.111"", 
+            ""occurredAt"": ""2023-08-30T23:26:26.751"", 
+            ""type"": ""LOGIN"", 
+            ""successful"": true 
+        } 
+   ] 
+}",Example,,general,json,

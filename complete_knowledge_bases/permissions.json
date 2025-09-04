@@ -1,0 +1,16 @@
+[
+  {
+    "id": "permission_1",
+    "type": "manager",
+    "description": "\":\"manager@email",
+    "level": "user",
+    "scope": "resource"
+  },
+  {
+    "id": "permission_2",
+    "type": "manager",
+    "description": "varchar(255)",
+    "level": "user",
+    "scope": "resource"
+  }
+]

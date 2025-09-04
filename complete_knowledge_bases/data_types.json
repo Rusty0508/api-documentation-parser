@@ -1,0 +1,82 @@
+[
+  {
+    "id": "type_1",
+    "name": "array",
+    "description": "Data type: array",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_2",
+    "name": "boolean",
+    "description": "Data type: boolean",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_3",
+    "name": "datetime",
+    "description": "Data type: datetime",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_4",
+    "name": "email",
+    "description": "Data type: email",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_5",
+    "name": "integer",
+    "description": "Data type: integer",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_6",
+    "name": "object",
+    "description": "Data type: object",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_7",
+    "name": "phone",
+    "description": "Data type: phone",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_8",
+    "name": "string",
+    "description": "Data type: string",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_9",
+    "name": "url",
+    "description": "Data type: url",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  },
+  {
+    "id": "type_10",
+    "name": "uuid",
+    "description": "Data type: uuid",
+    "format": "standard",
+    "validation": [],
+    "examples": []
+  }
+]

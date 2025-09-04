@@ -1,0 +1,83 @@
+{
+  "api_name": "Fleethand API",
+  "version": "v1",
+  "generated_at": "2025-09-04T11:11:21.540838",
+  "total_records": 1395,
+  "knowledge_bases": {
+    "endpoints": {
+      "file": "endpoints.json",
+      "count": 121,
+      "description": "Все API методы с полной информацией"
+    },
+    "models": {
+      "file": "models.json",
+      "count": 445,
+      "description": "Структуры данных и схемы"
+    },
+    "parameters": {
+      "file": "parameters.json",
+      "count": 0,
+      "description": "Детальное описание всех параметров"
+    },
+    "examples": {
+      "file": "examples.json",
+      "count": 114,
+      "description": "Примеры кода и использования"
+    },
+    "errors": {
+      "file": "errors.json",
+      "count": 2,
+      "description": "Коды ошибок и их решения"
+    },
+    "auth": {
+      "file": "auth.json",
+      "count": 436,
+      "description": "Методы авторизации"
+    },
+    "webhooks": {
+      "file": "webhooks.json",
+      "count": 0,
+      "description": "События и уведомления"
+    },
+    "rate_limits": {
+      "file": "rate_limits.json",
+      "count": 26,
+      "description": "Ограничения API"
+    },
+    "business_rules": {
+      "file": "business_rules.json",
+      "count": 20,
+      "description": "Бизнес-логика и правила"
+    },
+    "glossary": {
+      "file": "glossary.json",
+      "count": 51,
+      "description": "Словарь терминов"
+    },
+    "workflows": {
+      "file": "workflows.json",
+      "count": 58,
+      "description": "Сценарии использования"
+    },
+    "integrations": {
+      "file": "integrations.json",
+      "count": 6,
+      "description": "Интеграции"
+    },
+    "permissions": {
+      "file": "permissions.json",
+      "count": 2,
+      "description": "Роли и права"
+    },
+    "data_types": {
+      "file": "data_types.json",
+      "count": 10,
+      "description": "Типы данных"
+    },
+    "validations": {
+      "file": "validations.json",
+      "count": 104,
+      "description": "Правила валидации"
+    }
+  }
+}

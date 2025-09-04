@@ -1,0 +1,730 @@
+[
+  {
+    "id": "validation_1",
+    "type": "Valid",
+    "description": "ation\": \"FUTURE_NOW\"",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_2",
+    "type": "valid",
+    "description": "ation of minimum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_3",
+    "type": "valid",
+    "description": "ation of maximum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_4",
+    "type": "valid",
+    "description": "ation whether",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_5",
+    "type": "valid",
+    "description": "ation can be",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_6",
+    "type": "Valid",
+    "description": "ation\": \"PAST_NOW\"",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_7",
+    "type": "valid",
+    "description": "ation of minimum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_8",
+    "type": "valid",
+    "description": "ation of maximum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_9",
+    "type": "valid",
+    "description": "ation can be",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_10",
+    "type": "Valid",
+    "description": "ation\": \"PAST_NOW\"",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_11",
+    "type": "valid",
+    "description": "ation of minimum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_12",
+    "type": "valid",
+    "description": "ation of maximum",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_13",
+    "type": "valid",
+    "description": "ation can be",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_14",
+    "type": "format",
+    "description": "by provided token",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_15",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_16",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_17",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_18",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_19",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_20",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_21",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_22",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_23",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_24",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_25",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_26",
+    "type": "format",
+    "description": "ion which are assigned to the API key",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_27",
+    "type": "format",
+    "description": "ion for all the drivers that are assigned to the API key",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_28",
+    "type": "format",
+    "description": "ion for all the vehicles that are assigned to the API key",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_29",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_30",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_31",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_32",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_33",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_34",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_35",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_36",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_37",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_38",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_39",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_40",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_41",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_42",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_43",
+    "type": "format",
+    "description": "ion about client drivers",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_44",
+    "type": "format",
+    "description": "ion by vehicle",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_45",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_46",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_47",
+    "type": "format",
+    "description": "ion by driver",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_48",
+    "type": "format",
+    "description": "by provided token",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_49",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_50",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_51",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_52",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_53",
+    "type": "format",
+    "description": "ion (gps position, time, speed, distance, etc",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_54",
+    "type": "format",
+    "description": "ion of tracking objects which are assigned to API key account",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_55",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_56",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_57",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_58",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_59",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_60",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_61",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_62",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_63",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_64",
+    "type": "format",
+    "description": "ion of drivers’ activities for a provided period of time",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_65",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_66",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_67",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_68",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_69",
+    "type": "format",
+    "description": "ion of drivers’ activities by providing the device key of a telemetry device",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_70",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_71",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_72",
+    "type": "format",
+    "description": "ion for a period of time",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_73",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_74",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_75",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_76",
+    "type": "format",
+    "description": "to which the date is translated",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_77",
+    "type": "format",
+    "description": "ion received from",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_78",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_79",
+    "type": "format",
+    "description": "ion into the message",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_80",
+    "type": "format",
+    "description": "ion into the message",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_81",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_82",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_83",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_84",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_85",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_86",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_87",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_88",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_89",
+    "type": "format",
+    "description": "of the file",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_90",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_91",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_92",
+    "type": "format",
+    "description": "to which the date is translated",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_93",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_94",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_95",
+    "type": "format",
+    "description": "ion for a period of time",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_96",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_97",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_98",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_99",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_100",
+    "type": "format",
+    "description": "ion about client vehicles",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_101",
+    "type": "format",
+    "description": "ion about the vehicle",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_102",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_103",
+    "type": "format",
+    "description": "ion is taken",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  },
+  {
+    "id": "validation_104",
+    "type": "range",
+    "description": "for all vehicles",
+    "rule": "unknown",
+    "error_message": "Invalid input"
+  }
+]

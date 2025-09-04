@@ -1,0 +1,4010 @@
+method,description,headers,token_type,expiration,refresh_mechanism,example
+Bearer Token,"- 
+Please contact your sales manager to 
+receive the production environment API 
+key. 
+External 
+id 
+- 
+Please contact your sales manager to 
+receive the production environment 
+External id.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Fleethand vehicle id. 
+ 
+Request body 
+Request body 
+[ 
+    11,  
+    12,  
+    25 
+]",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""activities"": [ 
+   { 
+     ""code"": ""ACTIVITY_BUY"", 
+     ""titleEn"": ""Buy"", 
+     ""idx"": 15, 
+     ""questions"": [ 
+       { 
+         ""code"": ""QUESTION_BUY_WHAT"", 
+         ""idx"": 1, 
+         ""type"": ""SELECTION"", 
+         ""titleEn"": ""What?"", 
+         ""answers"": [ 
+           { 
+             ""code"": ""ANSWER_VIGNETE"", 
+             ""idx"": 1, 
+             ""titleEn"": ""Road Toll Vignette"", 
+             ""questions""",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+lastActivityId 
+Long 
+yes 
+Last biggest received activity id. If it 
+is called the first time 0 should be 
+used. 
+codes 
+Array<String> 
+false 
+If present, only activities with 
+specified codes will be returned. 
+ 
+Response example 
+Status 
+Response 
+200 
+""largestActivityId"": 1, 
+""activities"": [  
+  { 
+   ""id"": 1, 
+   ""vehicleId"": 1225, 
+   ""vinCode"": ""ABC1234567891011"", 
+   ""code"":",{},JWT,3600,,
+Bearer Token,"will 
+be returned. How to get file 
+- check “Get filled 
+activities files” endpoint. 
+      questions: 
+Array<Question>",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+activityId 
+Long 
+yes 
+ 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+ ""id"": 1, 
+ ""vehicleId"": 1225, 
+ ""vinCode"": ""ABC1234567891011"", 
+ ""code"": ""ACTIVITY_BUY"", 
+ ""filledAt"": ""2023-06-19T14:41:00"", 
+ ""questions"": [ 
+   { 
+    ""code"": ""QUESTION_BUY_WHAT"", 
+    ""type"": ""SELECTION"", 
+    ""answer"": { 
+      ""code"": ""ANSWER_VIGNETE"", 
+      ""value"": ""buy_vignette"", 
+      ""questions"":",{},JWT,3600,,
+Bearer Token,"will 
+be returned. How to get file 
+- check “Get filled 
+activities files” endpoint. 
+      questions: 
+Array<Question>",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/activities/file-pdf 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+token 
+String 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+payload 
+byte arra",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+POST 
+/api/activities/files 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+[ 
+   ""812aa122-fe82-43eb-af40-d7350336477c"", 
+   ""a60e261d-9711-4ddd-9c71-4d13d6cf6e07"" 
+] 
+ 
+Request model 
+Attribute 
+Data type 
+Description 
+token 
+List<String> 
+A collection of strings 
+(tokens). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   """,{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+deviceKey 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+n",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+deviceKey 
+String 
+no (if 
+vinCode 
+is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard String 
+yes 
+Parameter by which information is taken. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""Successfully canceled 2 driver .ddd initiations"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+yes 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""Successfully canceled 2 vehicle .ddd initiations"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+fileId 
+String 
+yes 
+ 
+ 
+Response example 
+Sta
+us 
+Response 
+200 { 
+   ""status"":200, 
+   ""payload"":"" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB 
+GckcwR7RYMFtyXPRfsmIwYnJyIIe8h8CH0IgWixDAHMBwwPLH8OU85UDlkOXW51ENFQ1RDoATgAOZfThABB
+CAABAAAAOADhl9jKAEEMCP0AAc5nTm8ufw6DLocRd9F4EX0RgXGVFQHVB1UPFSc1MxX7NhcWGzYfFiM2bAD
+gATmX3hAAQRAIyyADQCcgbwCXIJ8ApyCzALshG8KcAqECpUKpY",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+fileId 
+String 
+yes 
+ 
+ 
+Response example 
+Sta
+us 
+Response 
+200 { 
+   ""status"":200, 
+   ""payload"":"" VwHREFcQ0READQADmXyPgAQQAAAQAAADgBOZfOPgBBBArNAAHDS0NTI28EMyRfB 
+GckcwR7RYMFtyXPRfsmIwYnJyIIe8h8CH0IgWixDAHMBwwPLH8OU85UDlkOXW51ENFQ1RDoATgAOZfThABB
+CAABAAAAOADhl9jKAEEMCP0AAc5nTm8ufw6DLocRd9F4EX0RgXGVFQHVB1UPFSc1MxX7NhcWGzYfFiM2bAD
+gATmX3hAAQRAIyyADQCcgbwCXIJ8ApyCzALshG8KcAqECpUKpY",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/ddd/cards 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""cardNumber"":""1234567891234000"", 
+         ""connected"":null, 
+         ""status"":""NO_CONNECTION_DATA"", 
+         ""client"":{ 
+            ""id"":1, 
+            ""value"":""UAB \""Company 1\"""" 
+         }, 
+",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/ddd/companies 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""title"":""UAB FLEETHAND"", 
+         ""clientId"":-1, 
+         ""country"":""LTU"", 
+      } 
+   ] 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+title 
+varchar(256) 
+ 
+clientId 
+bigint 
+ 
+cou",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+year 
+int 
+yes 
+Requested year. 
+month 
+String 
+yes 
+Requested month: JANUARY, FEBRUARY, MARCH, APRIL, 
+MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, 
+NOVEMBER, DECEMBER. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+    ""status"": 200, 
+    ""payload"": { 
+        ""driverFiles"": [ 
+            { 
+                ""id"": 1, 
+                ""imei"": null, 
+                ""driverCardNumb",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/ddd/drivers-status 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+    ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""downloadTime"": ""2022-05-18T12:47:00"", 
+            ""activitiesFrom"": ""2021-05-07T00:00:00"", 
+            ""activitiesTill"": ""2022-05-18T01:38:00"", 
+            ""driverCard"": ""000000",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/ddd/vehicles-status 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+    ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""vin"": ""YV2RT40C0MB325540"", 
+            ""downloadTime"": ""2021-08-26T14:35:05"", 
+            ""activitiesFrom"": ""2021-05-25T23:59:59"", 
+            ""activitiesTill"": ""2021-08-25T13:",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+year 
+int 
+yes 
+Requested year. 
+month 
+String 
+yes 
+Requested month: JANUARY, FEBRUARY, MARCH, APRIL, 
+MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, 
+NOVEMBER, DECEMBER. 
+companyId 
+Long 
+no 
+If this parameter is provided, only specific 
+company’s DDD files will be downloaded. 
+country 
+String 
+no 
+If this parameter is provided, DDD files will be 
+downloaded only for companies that",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDate 
+yes 
+Time from which files must be downloaded.  Date 
+must be provided ISO 8601 (e.g., 2023-01-21). 
+till 
+LocalDate 
+yes 
+Time till which files must be downloaded.  Date 
+must be provided ISO 8601 (e.g., 2023-05-21). 
+companyId 
+Long 
+no 
+If this parameter is provided, only specific 
+company’s DDD files will be downloaded. 
+country 
+String 
+no 
+If this parameter i",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+year 
+int 
+yes 
+Requested year. 
+month 
+String 
+yes 
+Requested month: JANUARY, FEBRUARY, MARCH, APRIL, 
+MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, 
+NOVEMBER, DECEMBER. 
+companyId 
+Long 
+no 
+If this parameter is provided, only specific 
+company’s DDD files will be downloaded. 
+country 
+String 
+no 
+If this parameter is provided, DDD files will be 
+downloaded only for companies that",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required Description 
+from 
+LocalDateTime yes 
+Time from which files must be downloaded.  Date 
+must be provided ISO 8601 (e.g., 2025-01-
+08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which files must be downloaded.  Date 
+must be provided ISO 8601 (e.g., 2025-01-
+08T11:17:20Z). 
+companyId 
+Long 
+no 
+If this parameter is provided, only specific 
+company’s DDD files will be downloaded. 
+country 
+Stri",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard String 
+yes 
+Parameter by which information is taken. 
+from 
+LocalDateTime 
+no 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+no 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+  ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+no (if 
+vinCode is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+from 
+LocalDateTime 
+no 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+no 
+Time till which period information is tak",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request body 
+Key 
+Value 
+File 
+filedata 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request body 
+Key 
+Value 
+File 
+filedata 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/documents/expenses 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":6, 
+         ""vehicleId"":2701, 
+         ""driverId"":355, 
+         ""clientId"":950, 
+         ""startedFilling"":""2020-09-30T06:35:29.133"", 
+         ""finishedFilling"":""2020",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/documents/trip 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":14, 
+         ""vehicleId"":10605, 
+         ""driverId"":544, 
+         ""clientId"":950, 
+         ""startedFilling"":""2020-11-20T13:19:10.834"", 
+         ""finishedFilling"":""2020-1",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard 
+String 
+yes 
+Parameter by which information is taken. 
+driverClientId 
+Long 
+no 
+Driver client ID, to find specific driver 
+from clients group. If not provided, first 
+found driver by driverCard from group 
+selected. 
+documentId 
+Long 
+no (if 
+inserting new 
+document) 
+Existing document id 
+name",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+no (if 
+vinCode is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+vehicleId is 
+present) 
+Parameter by which information is taken. 
+email 
+String 
+no 
+Document created by. 
+documentId 
+Long 
+No (if 
+inserting new 
+document) 
+Document id 
+important 
+boolean 
+no",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard 
+String 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+    { 
+        ""id"":1, 
+        ""name"":""Scanned passport”, 
+        ""important"":false, 
+        ""showToDriver"":false, 
+        ""type"":""OTHER"", 
+        ""country"":""en"" 
+    }, 
+    { 
+        ""id"":2, 
+        ""name"":""Driver license”, 
+        ""important"":true, 
+        ""showToD",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard 
+String 
+yes 
+ 
+documentsIds List<Long> 
+yes 
+List of documents ids to delete. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+    { 
+        ""id"":1, 
+        ""name"":""Insurance”, 
+        ""important"":false, 
+        ""showToDriver"":false, 
+    }, 
+    { 
+        ""id"":2, 
+        ""name"":""Taxed roads ticket”, 
+        ""important"":true, 
+        ""showToDriver"":true, 
+    }, 
+     ] 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+ 
+documentsIds List<Long> 
+yes 
+List of documents ids to delete. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""driverId"":""1"", 
+         ""driverCard"":""1234567891234000"", 
+         ""fullName"":""name surname"", 
+         ""address"":""EXAMPLE ADDRESS"", 
+         ""email"":""EXAMPLE@EXAMPLE.COM"", 
+         ""language"":""LT"", 
+         ""phoneNumber"":""+37060012345"", 
+         ""department"":""DEPARTMENT EXAMPLE"", 
+         ""tableNumber"":""123"" 
+      }, 
+      { 
+         ""drive",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+    ""groupId"": 1, 
+    ""vinCode"": ""BBBBBBBB11111111"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+groupId 
+Long 
+yes 
+One ECO group ID from “Get eco 
+groups” endpoint. To set 
+default vehicle eco settings 
+groupId should be -1 
+vinCode 
+String 
+yes 
+Vehicle VIN code.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+no (if 
+vinCode is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey is 
+present) 
+Parameter by which information is taken. 
+from 
+LocalDate 
+yes 
+Time from which report is taken.  Date must 
+be provided ISO 8601 (e.g., 2020-01-21). 
+till 
+LocalDate 
+yes 
+Time till which report is taken. Date must 
+be provided ISO 8601 (e.g.,",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driver 
+String 
+no (if fullDriver 
+or tableNumber is 
+present) 
+Parameter by which information is 
+taken. (e.g., 0000000005266000) 
+fullDriver 
+String 
+no (if driver or 
+tableNumber is 
+present) 
+Parameter by which information is 
+taken. (e.g., 0000000005266002) 
+tableNumber 
+String 
+no (if driver or 
+fullDriver is 
+present) 
+Parameter by which information is 
+taken. 
+from 
+LocalDa",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1, 
+         ""title"":""MAN"", 
+         ""vehicleCount"":32 
+      }, 
+      { 
+         ""id"":2, 
+         ""title"":""Volvo"", 
+         ""vehicleCount"":45 
+      } 
+   ] 
+} 
+Response model 
+Attribute 
+Data type 
+Description 
+payload: 
+ 
+ 
+  id 
+Long 
+Group ID. 
+  title 
+String 
+Group title. 
+  vehicleCount 
+Integer 
+Vehicles number in group.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""taskId"": 0, 
+ ""defaultForms"": [ 
+   { 
+     ""status"": ""ARRIVED"", 
+     ""id"": 25662, 
+     ""code"": ""DOCUMENTS"" 
+   } 
+ ], 
+ ""forms"": { 
+   ""DONE"": { 
+     ""formNameEn"": ""Form"", 
+     ""formNameLt"": ""Forma"", 
+     ""formNameRu"": ""Форма"", 
+     ""formNameDe"": ""Formular"", 
+     ""formNamePl"": ""Formularz"", 
+     ""code"": ""DOCUMENTS"", 
+     ""sections"": [ 
+       { 
+         ""sectionNameEn"": ""Section"", 
+         ""sectionName",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""formId"": 0 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+formId 
+Long 
+yes 
+Fleethand filled form id. 
+ 
+Response model 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""formId"": 123, 
+ ""vehicleId"": 456, 
+ ""comment"": ""Please fill this form."" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+formId 
+Long 
+yes 
+Fleethand filled form id. 
+vehicleId 
+Long 
+yes 
+Fleethand vehicle id. 
+comment 
+String 
+no 
+ 
+ 
+Response model 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/documents/forms/file-pdf 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+token 
+String 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""9wRVzG6TGfn4/vhysOZAQ3v7XxC5P9BL5yE99eaO/3v"" 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+payload 
+byte",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+POST 
+/api/documents/forms 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+[ 
+   ""812aa122-fe82-43eb-af40-d7350336477c"", 
+   ""a60e261d-9711-4ddd-9c71-4d13d6cf6e07"" 
+] 
+ 
+Request model 
+Attribute 
+Data type 
+Description 
+token 
+List<String> 
+A collection of strings 
+(tokens). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""s",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+formId 
+Long 
+yes 
+Filled form id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+  ""status"": 200, 
+  ""payload"": { 
+        ""externalId"": 358, 
+        ""taskId"": 3555, 
+        ""code"": ""DOCUMENTS"", 
+        ""nameEn"": ""Keitimosi forma"", 
+        ""nameLt"": ""Keitimosi forma"", 
+        ""nameRu"": ""Акт передачи"", 
+        ""nameDe"": ""Keitimosi forma"", 
+        ""namePl"": ""Keitimosi forma"",",{},JWT,3600,,
+Bearer Token,"will be 
+returned. How to get file - 
+check “Get filled form 
+files” endpoint. 
+      defectId 
+bigint 
+ 
+      choice: 
+ 
+Only when the option type is 
+“SELECTION”, otherwise null. 
+        id 
+bigint 
+ 
+        code 
+varchar(255) 
+ 
+        nameEn 
+varchar(255) 
+ 
+        nameLt 
+varchar(255) 
+ 
+        nameRu 
+varchar(255) 
+ 
+        nameDe 
+varchar(255) 
+ 
+        namePl 
+varchar(255) 
+ 
+        options: 
+Array<Option>",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/documents/forms 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+lastFormId 
+Long 
+yes 
+Last biggest received form id. If it is called 
+the first time null value should be used. 
+codes 
+List<String> 
+no 
+If present, only forms with specified codes will 
+be returned. 
+ 
+Response exa",{},JWT,3600,,
+Bearer Token,"will be 
+returned. How to get file - 
+check “Get filled form 
+files” endpoint. 
+      defectId 
+bigint 
+ 
+      choice: 
+ 
+Only when the option type is 
+“SELECTION”, otherwise null. 
+        id 
+bigint 
+ 
+        code 
+varchar(255)",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""formId"": 0, 
+ ""message"": “Bad image quality” 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+formId 
+Long 
+yes 
+Fleethand filled form id. 
+message 
+String 
+yes 
+ 
+ 
+Response model 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+ ""formId"": 123, 
+ ""options"": [ 
+   10201 
+ ], 
+ ""comment"": ""Blurry picture"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+formId 
+Long 
+yes 
+Fleethand filled form id. 
+options 
+Array<Long> 
+yes 
+Fleethand filled option ids. 
+comment 
+String 
+ 
+ 
+ 
+ 
+ 
+Response model 
+Status 
+Response",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""taskId"":10001, 
+   ""formCode"":""DOCUMENTS"", 
+   ""optionCodes"":[ 
+      ""CMR"" 
+   ], 
+   ""comment"":""Wrong document"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+taskId 
+Long 
+yes 
+Fleethand task id. 
+formCode 
+String 
+yes 
+ 
+optionCodes 
+Array<String> 
+yes 
+ 
+comment 
+String",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""taskId"":0, 
+   ""formCodes"":[ 
+      ""DOCUMENTS"" 
+   ] 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+taskId 
+Long 
+yes 
+ 
+forms: 
+Array<String> 
+yes 
+It can be empty.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+vehicleId 
+Long 
+no 
+Filters results by vehicle id. 
+driverCard 
+String 
+no 
+Filters results by driver card. 
+ 
+Re",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+active 
+boolean 
+yes 
+Activate (true) or deactivate (false) a data 
+sending to SENT. 
+vehicleId 
+Long 
+no (if 
+vinCode is 
+present) 
+Vehicle which needs to be impacted. 
+vinCode 
+String 
+no (if 
+vehicleId 
+is present) 
+Vehicle which needs to be impacted. 
+ 
+Response example 
+ 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"": {",{},JWT,3600,,
+Bearer Token,", within the last 
+hour. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/latest-panic-button 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":105, 
+         ""deviceKey"":""000000000000000"", 
+         ""plateNumber"":""FLH555"", 
+         ""latitude"":54.894500, 
+         ""longitude"":23.909960, 
+         ""issue",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+alarmType 
+String 
+no 
+Type of alarm. Types: GAS_TANK_OPEN, 
+TRAILER_DOORS_OPEN, DISK_ERROR, ALARM_OFF, 
+PANIC_BUT",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":7976, 
+         ""type"":""OFF_ROUTE"", 
+         ""time"":""2020-11-17T12:04:46.414"", 
+         ""plateNumber"":""DDD111"", 
+         ""openedBy"":""Full Name"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.5682234, 
+         ""longitude"":0.2653675, 
+         ""vehicleId"":145392, 
+         ""driver"":""driverCard"" 
+     ",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/latest-doors-info 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""vinCode"":null, 
+         ""plateNumber"":""FLH555"", 
+         ""deviceKey"":""000000000000000"", 
+         ""doorsOpen"":false 
+      }, 
+      { 
+         ""vinCode"":null, 
+         ""plateNumber"":""FL",{},JWT,3600,,
+Bearer Token,"accounts. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/latest-info 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""time"":""2020-01-21T09:12:54"", 
+         ""deviceKey"":""000000000000000"", 
+         ""vehicleId"":9999, 
+         ""latitude"":45.4147833, 
+         ""longitude"":10.9198083, 
+         ""speed"":0, 
+ ",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/latest-position 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""deviceKey"":""000000000000000"", 
+         ""plateNumber"":""EXAMPLE 000"", 
+         ""latitude"":54.651907, 
+         ""longitude"":25.306837, 
+         ""country"":""lt"", 
+         ""address"":""Gatv",{},JWT,3600,,
+Bearer Token,"account. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/latest-tacho 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""time"":""2020-01-21T09:12:54"", 
+         ""deviceKey"":""000000000000000"", 
+         ""driver1CardPresent"":true, 
+         ""driver2CardPresent"":true, 
+         ""distance"":null, 
+         ""fullFi",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""orderInfo"":{ 
+      ""orderId"": null, 
+      ""orderNumber"":""ABC123"", 
+      ""clientId"":123, 
+      ""clientOrderNumber"":""abc123"", 
+      ""manager"":""manager@email.com"", 
+      ""status"":""PENDING"", 
+      ""freight"":800.99, 
+      ""currency"":""EUR"", 
+      ""vat"":""VAT_NULL"", 
+      ""distance"":513.5, 
+      ""customerFullName"":""Full customer name"", 
+      ""customerEmail"":""client@customer.com"", 
+      ""customerPhone"":""+37",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+lastId 
+Long 
+yes 
+Last biggest received action id. If it is 
+called the first time, a null value 
+should be used. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1,        
+         ""taskId"":-1, 
+         ""vehicleId"":-1 
+         ""action"":""ADDED"" 
+         ""orderNumber"":""ORD#123"", 
+         ""createdAt"":""2020-09-03T11:15:10.101""",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+orderId 
+Long 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"": ""PENDING"" 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+data: 
+ 
+ 
+  payload 
+String 
+Possible values: 
+UNCONFIRMED, PENDING, 
+EXECUTING, FINISHED, 
+REJECTED, DELETED.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""data"":[ 
+      { 
+         ""taskId"":1, 
+    ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+orderId 
+Long 
+yes 
+Order ID to delete. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""title"":""Fleethand"", 
+   ""companyCode"":""F12345"", 
+   ""vatCode"":""V123456"", 
+   ""countryIso"":""lt"", 
+   ""address"":""Naugarduko g. 102, LT-02121 Vilnius"", 
+   ""correspondenceAddress"":""Naugarduko g. 102, LT-02121 Vilnius"", 
+   ""fullName"":""UAB Fleethand"", 
+   ""phoneNumber"":""+37060058558"", 
+   ""email"":""sales@fleethand.com"", 
+   ""zoneId"":""Europe/Vilnius"", 
+   ""locale"":""lt"", 
+   ""usageLimit"":5, 
+   ""heavyTrackModule"":fals",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+[ 
+   { 
+      ""partnerId"":1, 
+      ""fullName"":""Partner employee"", 
+      ""email"":""partner.employee@fleethand.com"", 
+      ""phoneNumber"":""+3700000000"" 
+   }, 
+   { 
+      ""partnerId"":1, 
+      ""fullName"":""Partner employee"", 
+      ""email"":""partner.partner@fleethand.com"", 
+      ""phoneNumber"":""+3700000000"" 
+   } 
+] 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+partnerId 
+String 
+yes 
+ 
+fullName 
+Strin",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""partnerId"":1, 
+   ""vehiclesVinCodes"":[ 
+      ""VEHICLEVINCODE1"", 
+      ""VEHICLEVINCODE2"" 
+   ], 
+   ""from"":""2020-01-01T11:17:20Z"", 
+   ""till"":""2020-01-08T11:17:20Z"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+partnerId 
+String 
+yes 
+ 
+vehiclesVinCodes 
+Array<String> 
+yes 
+Not empty. 
+from 
+String 
+yes 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+String 
+yes 
+Date",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+partnerId 
+Long 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+employeeId 
+Long 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+ids 
+List<Long> 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+partnerId 
+Long 
+no 
+If provided only specified client vehicles will 
+be returned. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":{ 
+      ""1"":[ 
+         { 
+            ""id"":1351, 
+            ""vinCode"":""VINCODE1"", 
+            ""partnerTitle"":""Partner1"", 
+            ""activeFrom"":""2019-02-04T22:00:00"", 
+            ""activeTill"":""2019-02-05T21:59:00"" ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":111, 
+         ""vehicleId"":12345, 
+         ""title"":""payment card"", 
+         ""cardNumber"":""ABCDEFG"", 
+         ""expiryDate"":""20250828"", 
+         ""type"":""SHELL"" 
+      } 
+   ] 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+payload: 
+ 
+ 
+  id 
+Long 
+ 
+  vehicleId 
+Long",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+{ 
+    ""vehicleId"":12345, 
+    ""title"":""payment card"", 
+    ""cardNumber"":""ABCDEFG"", 
+    ""expiryDate"":""20250828"", 
+    ""type"":""SHELL"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+Yes 
+ 
+title 
+String 
+No 
+Max length 255. 
+cardNumber 
+String 
+Yes 
+Max length 50. 
+expiryDate 
+String 
+Yes, if type is 
+SHELL 
+For SHELL type format should 
+be yyyyMMdd. 
+Max length 20. 
+type 
+String 
+Yes ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+{ 
+    ""id"":111, 
+    ""vehicleId"":12345, 
+    ""title"":""payment card"", 
+    ""cardNumber"":""ABCDEFG"", 
+    ""expiryDate"":""20250828"", 
+    ""type"":""SHELL"" 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+id 
+Long 
+Yes 
+Payment card ID. 
+vehicleId 
+Long 
+Yes 
+ 
+title 
+String 
+No 
+Max length 255. 
+cardNumber 
+String 
+Yes 
+Max length 50. 
+expiryDate 
+String 
+Yes, if type is 
+SHELL 
+For SHELL type format should 
+",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+cardId 
+Long 
+yes 
+Payment card ID. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""id"":null, 
+   ""poiGroupId"":100, 
+   ""name"":""Name"", 
+   ""quantity"":1, 
+   ""address"":""Minsko pl. 3, Vilnius, LT-02121, Vilniaus m. sav."", 
+   ""postCode"":""02121"", 
+   ""city"":""Vilnius"", 
+   ""country"":""lt"", 
+   ""coordinates"":""54.6519300, 25.3058750"", 
+   ""comment"":""Comment"", 
+   ""emails"":""email@email.com"", 
+   ""favorite"":false, 
+   ""stationPrice"":1.5, 
+   ""fuelDiscount"":10, 
+   ""stationGroup"":""LOW"" 
+} 
+ 
+Request mod",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""id"":null, 
+   ""name"":""Postman"", 
+   ""important"":false, 
+   ""color"":""#000000"", 
+   ""privateOwner"":true, 
+   ""type"":""FERRYBOAT"", 
+   ""department"":100, 
+   ""secureOwner"":true 
+} 
+ 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+id 
+Long 
+no (if creating 
+new POI group) 
+If not provided, a new POI 
+group will be created. 
+name 
+String 
+ 
+ 
+important 
+boolean 
+ 
+ 
+color 
+String 
+ 
+ 
+privateOwner 
+boolea",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+vehicleId 
+Long 
+yes 
+Fleethand vehicle id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""p",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+deviceKey 
+String 
+yes 
+Parameter by which information is taken. 
+groupType 
+String 
+yes 
+Grouping type. Available",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime yes 
+Time from which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time till which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+deviceKey 
+String 
+no (if vinCode 
+is present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+no (if 
+vinCode 
+is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken.  
+Date must be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+no (if 
+vinCode 
+is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""driverCard"":""V100000075665000"", 
+         ""latestActivityType"":""DRIVE"", 
+         ""latestActivityStar",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDate 
+yes 
+Time from which period information is taken.  
+Date must be provided ISO 8601  
+(e.g., 2020-01-21). 
+till 
+LocalDate 
+yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-21). 
+driverCard 
+String 
+yes 
+Parameter by which information is taken. 
+zoneId 
+ZoneId 
+yes 
+The format to which the date is translated 
+(e.g., ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driver 
+String 
+no (if fullDriver or 
+tableNumber is present) 
+Parameter by which information is 
+taken. (e.g., 0000000005266000) 
+fullDriver 
+String 
+no (if driver or 
+tableNumber is present) 
+Parameter by which information is 
+taken. (e.g., 0000000005266002) 
+tableNumber String 
+no (if driver or 
+fullDriver is present) 
+Parameter by which information is 
+taken. 
+from 
+LocalDate 
+",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""vehicleId"":10617, 
+   ""lat"":54.651837, 
+   ""lng"":25.305864, 
+   ""waypoints"":""51.23759,17.4935223|53.1962775,23.1556143|54.6820828,23.5816274"", 
+   ""locationName"":""Minsko pl. 3"", 
+   ""locationAddress"":""Minsko pl. 3, Vilnius 02121, Lithuania"", 
+   ""comment"":""2"", 
+   ""type"":""LOADING"", 
+   ""dateTime"":""2020-11-03 12:30"", 
+   ""sendMessage"":true, 
+   ""polyline"":""g{~tHgejmA|L|YdG~KlDhFvEzFxAxA`F|EXVbRd"", 
+   ""duration""",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request body 
+Key 
+Value 
+file filedata 
+form { 
+   ""vehicleId"":10617, 
+   ""lat"":54.651837, 
+   ""lng"":25.305864, 
+   ""waypoints"":""51.23759,17.4935223|53.1962775,23.1556143|54.6820828,23.5816274"", 
+   ""locationName"":""Minsko pl. 3"", 
+   ""locationAddress"":""Minsko pl. 3, Vilnius 02121, Lithuania"", 
+   ""comment"":""2"", 
+   ""type"":""LOADING"", 
+   ""dateTime"":""2020-11-03 12:30"", 
+ ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+[ 
+  { 
+     ""taskId"": 1, 
+     ""tripId"": 2023, 
+     ""internalId"": 19527 
+  }, 
+  { 
+     ""taskId"": 2, 
+     ""tripId"": 2024, 
+     ""internalId"": 19528 
+  }, 
+] 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+} 
+Request model 
+Attribute 
+Data type 
+Required 
+Description 
+taskId 
+Long 
+yes",{},JWT,3600,,
+Bearer Token,"/ taskId / vehicleId. 
+ 
+Request 
+Method 
+URL             
+POST 
+/api/tasks/confirm-task 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+long 
+yes 
+Vehicles id which executing task. 
+taskId 
+long 
+yes 
+The id of the task you want to approve. 
+copy 
+Boolean 
+no 
+Add additional task information into the message 
+for the driver",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+POST 
+/api/tasks/confirm-all 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Vehicles id which executing task. 
+copy 
+Boolean 
+no 
+Add additional task information into the message 
+for the driver. 
+email 
+String 
+no 
+Email that is registered in fleethand and assigned 
+to the ",{},JWT,3600,,
+Bearer Token,". 
+ 
+Request 
+Method 
+URL             
+POST 
+/api/tasks/delete-all 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Vehicle’s id which executing task. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+taskId 
+long 
+yes 
+External task id to delete. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+tripId 
+Long 
+yes 
+External trip id to delete. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""Id"":-1, 
+         ""option"":""TEMPERATURE"", 
+         ""type"":""LONG"", 
+         ""enName"":""Freezer temperature"", 
+         ""deName"":""Gefriertemperatur"", 
+         ""plName"":""Temperatura zamrażarki"", 
+         ""ruName"":""Температура морозильной камеры"", 
+         ""ltName"":""Šaldiklio temperatūra"", 
+         ""frName"":""Température du congélateur"", 
+         ""l",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Fleethand vehicle id. 
+from 
+LocalDateTime 
+yes 
+Time from which period information is 
+taken. Date must be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+pdfDocuments 
+boolean 
+no 
+Returns task documents as PDF file. 
+ 
+Re",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Vehicles id which executing task. 
+duration 
+Long 
+yes 
+Duration to the destination (seconds). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""2022-02-28 12:59"" 
+} 
+ 
+Response model 
+Attribute 
+Data type 
+Description 
+payload 
+String 
+Estimated time of arrival.",{},JWT,3600,,
+Bearer Token,".  
+NOTE: The maximum days period for this call is 30 days. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/external-tasks/external-orders 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken.  
+Date must be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDate",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+tasks 
+List<Long> 
+yes 
+List of external task ids. 
+pdfDocuments 
+boolean 
+no 
+Returns task documents as PDF file. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":2915, 
+         ""idx"":0, 
+         ""vehicleId"": 22569, 
+         ""orderNumber"":""ORDER123"" 
+         ""type"":""LOADING"", 
+         ""status"":""DONE"", 
+         ""a",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+long 
+yes 
+Fleethand vehicle id.",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+deviceKey 
+String 
+no (if 
+vinCode 
+is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (if 
+deviceKey 
+is 
+present) 
+Parameter by which information is taken. 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken.  
+Date must be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""id"":1275924, 
+         ""status"":""EXECUTING"", 
+         ""time"":""2020-09-03T11:15:10.101"", 
+         ""latitude"":54.89522055, 
+         ""longitude"":23.98839632, 
+         ""driverId"":8614, 
+         ""vehicleId"":6302, 
+         ""vinCode"":null, 
+         ""taskId"":168968, 
+         ""odometer"":1050205 
+      } 
+   ] 
+} 
+ 
+Response model 
+Attribute 
+Data type",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+tripId 
+Long 
+yes 
+Trip id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""externalId"":2915, 
+         ""idx"": 0, 
+         ""vehicleId"": 22569, 
+         ""type"":""LOADING"", 
+         ""status"":""DONE"", 
+         ""address"":""27 Allée du Lac, 86580 Vouneuil-sous-Biard"", 
+         ""latitude"":46.56822349999999, 
+         ""longitude"":0.265",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period 
+information is taken.  Date must 
+be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period 
+information is taken. Date must 
+be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"": 200, 
+    ""payload"": [ 
+        { 
+            ""tri",{},JWT,3600,,
+Bearer Token,"/ taskId / vehicleId. 
+ 
+Request 
+Method 
+URL             
+PUT 
+/api/tasks/mark-as-done 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+long 
+yes 
+Vehicles id which executing task. 
+taskId 
+long 
+yes 
+The id of the task you want to approve. 
+email 
+String 
+no 
+Email that is registered in fleethand and assigned 
+to the API ke",{},JWT,3600,,
+Bearer Token,"/ taskId / vehicleId. 
+ 
+Request 
+Method 
+URL             
+PUT 
+/api/tasks/mark-as-executing 
+ 
+Request headers 
+Key 
+Data type 
+Required 
+Description 
+apiKey 
+String 
+yes 
+Encoded api key. 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+long 
+yes 
+Vehicles id which executing task. 
+taskId 
+long 
+yes 
+The id of the task you want to approve. 
+email 
+String 
+no 
+Email that is registered in fleethand and assigned 
+to the A",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""taskId"":2859, 
+   ""vehicleId"":10617, 
+   ""lat"":54.651837, 
+   ""lng"":25.305864, 
+   ""waypoints"":""51.23759,17.4935223|53.1962775,23.1556143|54.6820828,23.5816274"", 
+   ""locationName"":""Minsko pl. 3"", 
+   ""locationAddress"":""Minsko pl. 3, Vilnius 02121, Lithuania"", 
+   ""comment"":""2"", 
+   ""type"":""LOADING"", 
+   ""dateTime"":""2020-11-03 12:30"", 
+   ""sendMessage"":true, 
+   ""polyline"":""g{~tHgejmA|L|YdG~KlDhFvEzFxAxA`F|EXVb",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Content-Type 
+multipart/form-data 
+yes 
+Indicates the format 
+of the file. 
+ 
+Request body 
+Key 
+Value 
+File filedata 
+Text { 
+   ""taskId"":2859, 
+   ""vehicleId"":10617, 
+   ""lat"":54.651837, 
+   ""lng"":25.305864, 
+   ""waypoints"":""51.23759,17.4935223|53.1962775,23.1556143|54.6820828,23.5816274"", 
+   ""locationName"":""Minsko pl. 3"", 
+   ""locationAddress"":""Minsko pl. 3, Vilnius 02121, Lithuania"", 
+   ""comment"":""2"", 
+   ""type"":""LOADING"", 
+   ""dateTime"":""20",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Request body 
+{ 
+   ""tripId"":0, 
+   ""vehicleId"":0, 
+   ""email"":""fleethand@fleethand.com"", 
+   ""tripNumber"":""string"", 
+   ""orderNumber"":""string"", 
+   ""tripHeader"":""string"", 
+   ""smartUpsert"":false, 
+   ""executionDateTime"":2023-05-01T11:17:20Z, 
+   ""tasks"":[ 
+      { 
+         ""idx"":0, 
+         ""internalId"":0, 
+         ""type"":""LOADING"", 
+         ""lat"":25.236566, 
+         ""lng"":53.165161, 
+         ""waypoints"":""25.236566,53.165161",{},JWT,3600,,
+Bearer Token,". 
+tripNumber 
+String 
+no 
+ 
+orderNumber 
+String 
+no 
+ 
+tripHeader 
+String 
+no 
+ 
+smartUpsert 
+boolean 
+yes 
+If the value is true, 
+then the system will be 
+checking which tasks 
+are needed to update, 
+delete and insert. 
+TaskId in tasks object 
+is required if smart 
+upsert is activated. 
+executionDateTime 
+LocalDateTime 
+no 
+If present, all trips 
+will be grouped by 
+execution date time 
+field. 
+tasks: 
+ 
+ 
+ 
+  idx 
+Long 
+yes 
+ 
+  taskId 
+Long 
+Yes if 
+smartUpsert 
+If smartUpsert is used 
+and t",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+87 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+driverCard 
+String 
+yes if table 
+number does 
+not exist 
+Parameter by which information is taken. 
+tableNumber 
+String 
+yes if driver 
+card does not 
+exist 
+Parameter by which information is taken. 
+from 
+LocalDateTime yes 
+Time from which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime yes 
+Time from which peri",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is 
+taken. Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+driver 
+String 
+yes if 
+tableNumber 
+not provided 
+Parameter by which information is taken. 
+tableNumber 
+String",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period information is taken. 
+Date must be provided ISO 8601  
+(e.g., 2020-01-09T11:17:20Z). 
+deviceKey 
+String 
+no (if 
+vinCode is 
+present) 
+Parameter by which information is taken. 
+vinCode 
+String 
+no (",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vinCode 
+String 
+yes 
+Vehicle’s VIN code. 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+} 
+ 
+Get vehicles 
+This method returns information about client vehicles. 
+ 
+Request 
+Method 
+URL             
+GET 
+/api/vehicle 
+ 
+Request headers",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":[ 
+      { 
+         ""licensePlateNumber"":""LICENSEPLATE 123"", 
+         ""plateNumber"":""PLATE 123"", 
+         ""imei"":""00000000000000"", 
+         ""model"":""FMB640"", 
+         ""simNumber"":""37000000000"", 
+         ""vinCode"":""XXXXXXXXXXXXXXXXX"", 
+         ""type"":""TRUCK_MEGA"", 
+         ""ownerName"":""UAB FLEETHAND"", 
+         ""vehicleId"":14653, 
+         ""fakeVehicle"":true, 
+    ",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request body 
+Parameter 
+Data type 
+Required 
+Description 
+vinCode 
+String 
+yes 
+Vehicle’s VIN code. 
+plateNumber 
+String 
+yes 
+Vehicle’s name. 
+licensePlateNumber 
+String 
+no 
+Vehicle’s license plate number. 
+tabImei 
+String 
+no 
+Vehicle’s tab imei. 
+fhTabImei 
+String 
+no 
+Vehicle’s fleethand tab imei. 
+tabSimNo 
+String 
+no 
+Vehicle’s tab phone number. 
+truckBrand 
+String 
+no 
+Vehicle’s brand. 
+fuelTank 
+Integer 
+no 
+Vehicle’s fuel tank capacit",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+vehicleId 
+Long 
+yes 
+Fleethand vehicle id. 
+vinCode 
+String 
+no 
+Vehicle’s VIN code. 
+plateNumber 
+String 
+no 
+Vehicle’s name. 
+licensePlateNumber 
+String 
+no 
+Vehicle’s license plate number. 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"":""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"":200, 
+   ""payload"": [ 
+        {  
+            ""groupId"": 1,  
+            ""title"": ""Two vehicles group"",  
+            ""vehiclesIds"": [ 
+                11, 
+                22, 
+            ] 
+        }, 
+        {  
+            ""groupId"": 2,  
+            ""title"": ""Empty group"",  
+            ""vehiclesIds"": [] 
+        }, 
+        {  
+            ""groupId"": 3,  
+            ""title"": ""One",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+{ 
+   ""groupId"": 1, 
+   ""title"": ""Group to update"" 
+} 
+ 
+Request model 
+Key 
+Data type 
+Required 
+Description 
+groupId 
+Long 
+no 
+If ID is provided, 
+group will be 
+updated, if ID is 
+null, group will be 
+created. 
+title 
+String 
+yes 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"": 200, 
+   ""payload"": 1 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+{ 
+   ""groupId"": 1, 
+   ""vehicleIds"": [100, 1200] 
+} 
+ 
+Request model 
+Key 
+Data type 
+Required 
+Description 
+groupId 
+Long 
+yes 
+ 
+vehicleIds 
+List<Long> 
+yes 
+Vehicles to add. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request body 
+Request body 
+{ 
+   ""groupId"": 1, 
+   ""vehicleIds"": [50, 1800] 
+} 
+ 
+Request model 
+Key 
+Data type 
+Required 
+Description 
+groupId 
+Long 
+yes 
+ 
+vehicleIds 
+List<Long> 
+yes 
+Vehicles to romove. 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+groupId 
+Long 
+yes 
+ 
+ 
+ 
+Response example 
+Status 
+Response 
+200 
+{ 
+   ""status"": 200, 
+   ""payload"": ""OK"" 
+}",{},JWT,3600,,
+Bearer Token,". 
+externalId 
+Long 
+yes 
+Provided external id. 
+ 
+Request parameters 
+Parameter 
+Data type 
+Required 
+Description 
+from 
+LocalDateTime 
+yes 
+Time from which period 
+information is taken.  Date must 
+be provided ISO 8601 
+(e.g., 2020-01-08T11:17:20Z). 
+till 
+LocalDateTime 
+yes 
+Time till which period 
+information is taken. Date must 
+be provided ISO 8601  
+(e.g., 2020-01-08T11:17:20Z).",{},JWT,3600,,

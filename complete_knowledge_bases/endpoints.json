@@ -1,0 +1,2301 @@
+[
+  {
+    "id": "POST__api_activities_assign",
+    "method": "POST",
+    "path": "/api/activities/assign",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_activities",
+    "method": "POST",
+    "path": "/api/activities",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_activities",
+    "method": "GET",
+    "path": "/api/activities",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_activities_activity",
+    "method": "GET",
+    "path": "/api/activities/activity",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_activities_file_pdf",
+    "method": "GET",
+    "path": "/api/activities/file-pdf",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_activities_files",
+    "method": "POST",
+    "path": "/api/activities/files",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_country_change_crossings",
+    "method": "GET",
+    "path": "/api/country-change/crossings",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_country_change",
+    "method": "GET",
+    "path": "/api/country-change",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_ddd_cancel_driver",
+    "method": "PUT",
+    "path": "/api/ddd/cancel-driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_ddd_cancel_vehicle",
+    "method": "PUT",
+    "path": "/api/ddd/cancel-vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_driver_file_download",
+    "method": "GET",
+    "path": "/api/ddd/driver-file/download",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_vehicle_file_download",
+    "method": "GET",
+    "path": "/api/ddd/vehicle-file/download",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_cards",
+    "method": "GET",
+    "path": "/api/ddd/cards",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_companies",
+    "method": "GET",
+    "path": "/api/ddd/companies",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_info",
+    "method": "GET",
+    "path": "/api/ddd/info",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_drivers_status",
+    "method": "GET",
+    "path": "/api/ddd/drivers-status",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_vehicles_status",
+    "method": "GET",
+    "path": "/api/ddd/vehicles-status",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_all_drivers_download",
+    "method": "GET",
+    "path": "/api/ddd/all-drivers/download",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_all_drivers_download_period",
+    "method": "GET",
+    "path": "/api/ddd/all-drivers/download-period",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_all_vehicles_download",
+    "method": "GET",
+    "path": "/api/ddd/all-vehicles/download",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_ddd_all_vehicles_download_period",
+    "method": "GET",
+    "path": "/api/ddd/all-vehicles/download-period",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_ddd_init_driver",
+    "method": "PUT",
+    "path": "/api/ddd/init-driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_ddd_init_vehicle",
+    "method": "PUT",
+    "path": "/api/ddd/init-vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_ddd_upload_drivers",
+    "method": "POST",
+    "path": "/api/ddd/upload-drivers",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_ddd_upload_vehicles",
+    "method": "POST",
+    "path": "/api/ddd/upload-vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_documents_expenses",
+    "method": "GET",
+    "path": "/api/documents/expenses",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_documents_trip",
+    "method": "GET",
+    "path": "/api/documents/trip",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_document_driver",
+    "method": "POST",
+    "path": "/api/document/driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_document_vehicle",
+    "method": "POST",
+    "path": "/api/document/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_document_driver",
+    "method": "GET",
+    "path": "/api/document/driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_document_driver",
+    "method": "DELETE",
+    "path": "/api/document/driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_document_vehicle",
+    "method": "GET",
+    "path": "/api/document/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_document_vehicle",
+    "method": "DELETE",
+    "path": "/api/document/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_driver",
+    "method": "GET",
+    "path": "/api/driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_eco_append_to_group",
+    "method": "POST",
+    "path": "/api/eco/append-to-group",
+    "category": "reports",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "reports"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_eco_vehicle",
+    "method": "GET",
+    "path": "/api/eco/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_eco_driver",
+    "method": "GET",
+    "path": "/api/eco/driver",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_eco_groups",
+    "method": "GET",
+    "path": "/api/eco/groups",
+    "category": "reports",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "reports"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_task_form",
+    "method": "POST",
+    "path": "/api/documents/task-form",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms_confirm",
+    "method": "POST",
+    "path": "/api/documents/forms/confirm",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms_fill_form",
+    "method": "POST",
+    "path": "/api/documents/forms/fill-form",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_documents_forms_file_pdf",
+    "method": "GET",
+    "path": "/api/documents/forms/file-pdf",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms",
+    "method": "POST",
+    "path": "/api/documents/forms",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_documents_forms_form",
+    "method": "GET",
+    "path": "/api/documents/forms/form",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_documents_forms",
+    "method": "GET",
+    "path": "/api/documents/forms",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms_reject",
+    "method": "POST",
+    "path": "/api/documents/forms/reject",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms_reject_documents",
+    "method": "POST",
+    "path": "/api/documents/forms/reject-documents",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_documents_forms_reject_documents_by_codes",
+    "method": "POST",
+    "path": "/api/documents/forms/reject-documents-by-codes",
+    "category": "documents",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "documents"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_documents_task_form",
+    "method": "DELETE",
+    "path": "/api/documents/task-form",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_geo_zones_crossing",
+    "method": "POST",
+    "path": "/api/geo-zones/crossing",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_integrations_sent_state",
+    "method": "POST",
+    "path": "/api/integrations/sent-state",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_panic_button",
+    "method": "GET",
+    "path": "/api/latest-panic-button",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_alarms",
+    "method": "GET",
+    "path": "/api/alarms",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_alarms",
+    "method": "GET",
+    "path": "/api/latest-alarms",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_doors_info",
+    "method": "GET",
+    "path": "/api/latest-doors-info",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_info",
+    "method": "GET",
+    "path": "/api/latest-info",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_position",
+    "method": "GET",
+    "path": "/api/latest-position",
+    "category": "locations",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "locations"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_latest_tacho",
+    "method": "GET",
+    "path": "/api/latest-tacho",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_orders",
+    "method": "POST",
+    "path": "/api/orders",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_orders_actions",
+    "method": "GET",
+    "path": "/api/orders/actions",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_orders_status",
+    "method": "GET",
+    "path": "/api/orders/status",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_orders",
+    "method": "GET",
+    "path": "/api/orders",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_orders",
+    "method": "DELETE",
+    "path": "/api/orders",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_partner",
+    "method": "POST",
+    "path": "/api/partner",
+    "category": "partners",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "partners"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_partner_employee",
+    "method": "POST",
+    "path": "/api/partner/employee",
+    "category": "partners",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "partners"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_partner_vehicles",
+    "method": "POST",
+    "path": "/api/partner/vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_partner",
+    "method": "DELETE",
+    "path": "/api/partner",
+    "category": "partners",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "partners"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_partner_employee",
+    "method": "DELETE",
+    "path": "/api/partner/employee",
+    "category": "partners",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "partners"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_partner_vehicles",
+    "method": "DELETE",
+    "path": "/api/partner/vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_partner_vehicles",
+    "method": "GET",
+    "path": "/api/partner/vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_payment_card_vehicle",
+    "method": "GET",
+    "path": "/api/payment-card/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_payment_card_vehicle",
+    "method": "POST",
+    "path": "/api/payment-card/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_payment_card_vehicle",
+    "method": "PUT",
+    "path": "/api/payment-card/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_payment_card_vehicle",
+    "method": "DELETE",
+    "path": "/api/payment-card/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_poi_poiId",
+    "method": "DELETE",
+    "path": "/api/poi/poiId",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_poi_group_poiGroupId",
+    "method": "DELETE",
+    "path": "/api/poi-group/poiGroupId",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_pois",
+    "method": "POST",
+    "path": "/api/pois",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_poi_group",
+    "method": "POST",
+    "path": "/api/poi-group",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_report_day_country",
+    "method": "GET",
+    "path": "/api/report/day-country",
+    "category": "reports",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "reports"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_report_period_summary",
+    "method": "GET",
+    "path": "/api/report/period-summary",
+    "category": "reports",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "reports"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_report_period_tolls",
+    "method": "GET",
+    "path": "/api/report/period-tolls",
+    "category": "reports",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "reports"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tacho_driver_activities",
+    "method": "GET",
+    "path": "/api/tacho/driver-activities",
+    "category": "activities",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "activities"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tacho_current",
+    "method": "GET",
+    "path": "/api/tacho/current",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_period_tacho",
+    "method": "GET",
+    "path": "/api/period-tacho",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tacho_driver_faults",
+    "method": "GET",
+    "path": "/api/tacho/driver-faults",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks",
+    "method": "POST",
+    "path": "/api/tasks",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_file",
+    "method": "POST",
+    "path": "/api/tasks/file",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_assign_trips",
+    "method": "POST",
+    "path": "/api/tasks/assign-trips",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_confirm_task",
+    "method": "POST",
+    "path": "/api/tasks/confirm-task",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_confirm_all",
+    "method": "POST",
+    "path": "/api/tasks/confirm-all",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_delete_all",
+    "method": "POST",
+    "path": "/api/tasks/delete-all",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_tasks",
+    "method": "DELETE",
+    "path": "/api/tasks",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_tasks_trip",
+    "method": "DELETE",
+    "path": "/api/tasks/trip",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_additional_info",
+    "method": "GET",
+    "path": "/api/tasks/additional-info",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_done",
+    "method": "GET",
+    "path": "/api/tasks/done",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_eta",
+    "method": "GET",
+    "path": "/api/tasks/eta",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_external_tasks_external_orders",
+    "method": "GET",
+    "path": "/api/external-tasks/external-orders",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_information",
+    "method": "GET",
+    "path": "/api/tasks/information",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_queue",
+    "method": "GET",
+    "path": "/api/tasks/queue",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_status_intervals",
+    "method": "GET",
+    "path": "/api/tasks/status-intervals",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_status",
+    "method": "GET",
+    "path": "/api/tasks/status",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_tasks_trip",
+    "method": "GET",
+    "path": "/api/tasks/trip",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_trips_statistics",
+    "method": "GET",
+    "path": "/api/trips/statistics",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_tasks_mark_as_done",
+    "method": "PUT",
+    "path": "/api/tasks/mark-as-done",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_tasks_mark_as_executing",
+    "method": "PUT",
+    "path": "/api/tasks/mark-as-executing",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_tasks",
+    "method": "PUT",
+    "path": "/api/tasks",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_update_file",
+    "method": "POST",
+    "path": "/api/tasks/update/file",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_tasks_trip",
+    "method": "POST",
+    "path": "/api/tasks/trip",
+    "category": "tasks",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": true,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "tasks"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_driver_driver_hours",
+    "method": "GET",
+    "path": "/api/driver/driver-hours",
+    "category": "drivers",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "drivers"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_country_change_presence",
+    "method": "GET",
+    "path": "/api/country-change/presence",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_period_info",
+    "method": "GET",
+    "path": "/api/period-info",
+    "category": "general",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "general"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_vehicle_deactivate",
+    "method": "PUT",
+    "path": "/api/vehicle/deactivate",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_vehicle",
+    "method": "GET",
+    "path": "/api/vehicle",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_vehicle_update_vehicle_info",
+    "method": "PUT",
+    "path": "/api/vehicle/update-vehicle-info",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_vehicle_simple_update_vehicle_info",
+    "method": "PUT",
+    "path": "/api/vehicle/simple-update-vehicle-info",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_vehicles_group",
+    "method": "GET",
+    "path": "/api/vehicles-group",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "POST__api_vehicles_group",
+    "method": "POST",
+    "path": "/api/vehicles-group",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_vehicles_group_add_vehicles",
+    "method": "PUT",
+    "path": "/api/vehicles-group/add-vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "PUT__api_vehicles_group_remove_vehicles",
+    "method": "PUT",
+    "path": "/api/vehicles-group/remove-vehicles",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "DELETE__api_vehicles_group",
+    "method": "DELETE",
+    "path": "/api/vehicles-group",
+    "category": "vehicles",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "vehicles"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  },
+  {
+    "id": "GET__api_user_actions",
+    "method": "GET",
+    "path": "/api/user-actions",
+    "category": "users",
+    "description": "API endpoint",
+    "summary": "API method",
+    "auth_required": true,
+    "deprecated": false,
+    "request_content_type": "application/json",
+    "response_content_type": "application/json",
+    "tags": [
+      "users"
+    ],
+    "complexity": "medium",
+    "parameters": [],
+    "request_body": null,
+    "response_example": null
+  }
+]

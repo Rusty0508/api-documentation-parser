@@ -1,0 +1,105 @@
+id,type,description,rule,error_message
+validation_1,Valid,"ation"": ""FUTURE_NOW""",unknown,Invalid input
+validation_2,valid,ation of minimum,unknown,Invalid input
+validation_3,valid,ation of maximum,unknown,Invalid input
+validation_4,valid,ation whether,unknown,Invalid input
+validation_5,valid,ation can be,unknown,Invalid input
+validation_6,Valid,"ation"": ""PAST_NOW""",unknown,Invalid input
+validation_7,valid,ation of minimum,unknown,Invalid input
+validation_8,valid,ation of maximum,unknown,Invalid input
+validation_9,valid,ation can be,unknown,Invalid input
+validation_10,Valid,"ation"": ""PAST_NOW""",unknown,Invalid input
+validation_11,valid,ation of minimum,unknown,Invalid input
+validation_12,valid,ation of maximum,unknown,Invalid input
+validation_13,valid,ation can be,unknown,Invalid input
+validation_14,format,by provided token,unknown,Invalid input
+validation_15,format,ion is taken,unknown,Invalid input
+validation_16,format,ion is taken,unknown,Invalid input
+validation_17,format,ion is taken,unknown,Invalid input
+validation_18,format,ion is taken,unknown,Invalid input
+validation_19,format,ion is taken,unknown,Invalid input
+validation_20,format,ion is taken,unknown,Invalid input
+validation_21,format,ion is taken,unknown,Invalid input
+validation_22,format,ion is taken,unknown,Invalid input
+validation_23,format,ion is taken,unknown,Invalid input
+validation_24,format,ion is taken,unknown,Invalid input
+validation_25,format,ion is taken,unknown,Invalid input
+validation_26,format,ion which are assigned to the API key,unknown,Invalid input
+validation_27,format,ion for all the drivers that are assigned to the API key,unknown,Invalid input
+validation_28,format,ion for all the vehicles that are assigned to the API key,unknown,Invalid input
+validation_29,format,ion is taken,unknown,Invalid input
+validation_30,format,ion is taken,unknown,Invalid input
+validation_31,format,ion is taken,unknown,Invalid input
+validation_32,format,ion is taken,unknown,Invalid input
+validation_33,format,ion is taken,unknown,Invalid input
+validation_34,format,ion is taken,unknown,Invalid input
+validation_35,format,ion is taken,unknown,Invalid input
+validation_36,format,of the file,unknown,Invalid input
+validation_37,format,of the file,unknown,Invalid input
+validation_38,format,of the file,unknown,Invalid input
+validation_39,format,ion is taken,unknown,Invalid input
+validation_40,format,of the file,unknown,Invalid input
+validation_41,format,ion is taken,unknown,Invalid input
+validation_42,format,ion is taken,unknown,Invalid input
+validation_43,format,ion about client drivers,unknown,Invalid input
+validation_44,format,ion by vehicle,unknown,Invalid input
+validation_45,format,ion is taken,unknown,Invalid input
+validation_46,format,ion is taken,unknown,Invalid input
+validation_47,format,ion by driver,unknown,Invalid input
+validation_48,format,by provided token,unknown,Invalid input
+validation_49,format,ion is taken,unknown,Invalid input
+validation_50,format,ion is taken,unknown,Invalid input
+validation_51,format,ion is taken,unknown,Invalid input
+validation_52,format,ion is taken,unknown,Invalid input
+validation_53,format,"ion (gps position, time, speed, distance, etc",unknown,Invalid input
+validation_54,format,ion of tracking objects which are assigned to API key account,unknown,Invalid input
+validation_55,format,ion is taken,unknown,Invalid input
+validation_56,format,ion is taken,unknown,Invalid input
+validation_57,format,ion is taken,unknown,Invalid input
+validation_58,format,ion is taken,unknown,Invalid input
+validation_59,format,ion is taken,unknown,Invalid input
+validation_60,format,ion is taken,unknown,Invalid input
+validation_61,format,ion is taken,unknown,Invalid input
+validation_62,format,ion is taken,unknown,Invalid input
+validation_63,format,ion is taken,unknown,Invalid input
+validation_64,format,ion of drivers’ activities for a provided period of time,unknown,Invalid input
+validation_65,format,ion is taken,unknown,Invalid input
+validation_66,format,ion is taken,unknown,Invalid input
+validation_67,format,ion is taken,unknown,Invalid input
+validation_68,format,ion is taken,unknown,Invalid input
+validation_69,format,ion of drivers’ activities by providing the device key of a telemetry device,unknown,Invalid input
+validation_70,format,ion is taken,unknown,Invalid input
+validation_71,format,ion is taken,unknown,Invalid input
+validation_72,format,ion for a period of time,unknown,Invalid input
+validation_73,format,ion is taken,unknown,Invalid input
+validation_74,format,ion is taken,unknown,Invalid input
+validation_75,format,ion is taken,unknown,Invalid input
+validation_76,format,to which the date is translated,unknown,Invalid input
+validation_77,format,ion received from,unknown,Invalid input
+validation_78,format,of the file,unknown,Invalid input
+validation_79,format,ion into the message,unknown,Invalid input
+validation_80,format,ion into the message,unknown,Invalid input
+validation_81,format,ion is taken,unknown,Invalid input
+validation_82,format,ion is taken,unknown,Invalid input
+validation_83,format,ion is taken,unknown,Invalid input
+validation_84,format,ion is taken,unknown,Invalid input
+validation_85,format,ion is taken,unknown,Invalid input
+validation_86,format,ion is taken,unknown,Invalid input
+validation_87,format,ion is taken,unknown,Invalid input
+validation_88,format,ion is taken,unknown,Invalid input
+validation_89,format,of the file,unknown,Invalid input
+validation_90,format,ion is taken,unknown,Invalid input
+validation_91,format,ion is taken,unknown,Invalid input
+validation_92,format,to which the date is translated,unknown,Invalid input
+validation_93,format,ion is taken,unknown,Invalid input
+validation_94,format,ion is taken,unknown,Invalid input
+validation_95,format,ion for a period of time,unknown,Invalid input
+validation_96,format,ion is taken,unknown,Invalid input
+validation_97,format,ion is taken,unknown,Invalid input
+validation_98,format,ion is taken,unknown,Invalid input
+validation_99,format,ion is taken,unknown,Invalid input
+validation_100,format,ion about client vehicles,unknown,Invalid input
+validation_101,format,ion about the vehicle,unknown,Invalid input
+validation_102,format,ion is taken,unknown,Invalid input
+validation_103,format,ion is taken,unknown,Invalid input
+validation_104,range,for all vehicles,unknown,Invalid input

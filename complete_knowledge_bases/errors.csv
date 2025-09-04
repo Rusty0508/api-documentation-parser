@@ -1,0 +1,3 @@
+id,code,description,type,severity,retryable,solution,category
+error_1,ERR_001,", ALARM_OFF,",unknown,medium,False,,general
+error_2,ERR_002,", ALARM_OFF,",unknown,medium,False,,general

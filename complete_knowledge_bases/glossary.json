@@ -1,0 +1,410 @@
+[
+  {
+    "id": "term_1",
+    "term": "actions",
+    "definition": "actions ",
+    "category": "general",
+    "usage_count": 7,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_2",
+    "term": "activities",
+    "definition": "Activities ",
+    "category": "general",
+    "usage_count": 35,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_3",
+    "term": "activity",
+    "definition": "Activity ",
+    "category": "general",
+    "usage_count": 28,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_4",
+    "term": "alarms",
+    "definition": "alarms ",
+    "category": "general",
+    "usage_count": 10,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_5",
+    "term": "assign",
+    "definition": "Assign activities ",
+    "category": "general",
+    "usage_count": 6,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_6",
+    "term": "cards",
+    "definition": "cards status ",
+    "category": "general",
+    "usage_count": 8,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_7",
+    "term": "companies",
+    "definition": "companies that are assigned to the API key",
+    "category": "general",
+    "usage_count": 6,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_8",
+    "term": "confirm",
+    "definition": "Confirm form ",
+    "category": "general",
+    "usage_count": 9,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_9",
+    "term": "crossing",
+    "definition": "crossing intervals ",
+    "category": "general",
+    "usage_count": 6,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_10",
+    "term": "crossings",
+    "definition": "crossings ",
+    "category": "general",
+    "usage_count": 8,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_11",
+    "term": "current",
+    "definition": "current info ",
+    "category": "general",
+    "usage_count": 4,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_12",
+    "term": "deactivate",
+    "definition": "Deactivate vehicle ",
+    "category": "general",
+    "usage_count": 4,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_13",
+    "term": "document",
+    "definition": "document ",
+    "category": "general",
+    "usage_count": 38,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_14",
+    "term": "documents",
+    "definition": "Documents ",
+    "category": "general",
+    "usage_count": 49,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_15",
+    "term": "done",
+    "definition": "done tasks ",
+    "category": "general",
+    "usage_count": 20,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_16",
+    "term": "download",
+    "definition": "download ",
+    "category": "general",
+    "usage_count": 22,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_17",
+    "term": "driver",
+    "definition": "driver ",
+    "category": "general",
+    "usage_count": 120,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_18",
+    "term": "employee",
+    "definition": "employee ",
+    "category": "general",
+    "usage_count": 15,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_19",
+    "term": "expenses",
+    "definition": "expenses sheets ",
+    "category": "general",
+    "usage_count": 6,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_20",
+    "term": "file",
+    "definition": "file ",
+    "category": "general",
+    "usage_count": 69,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_21",
+    "term": "files",
+    "definition": "files ",
+    "category": "general",
+    "usage_count": 57,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_22",
+    "term": "form",
+    "definition": "form to task ",
+    "category": "general",
+    "usage_count": 52,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_23",
+    "term": "forms",
+    "definition": "Forms ",
+    "category": "general",
+    "usage_count": 25,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_24",
+    "term": "fuel",
+    "definition": "Fuel level in liters",
+    "category": "general",
+    "usage_count": 10,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_25",
+    "term": "groups",
+    "definition": "groups ",
+    "category": "general",
+    "usage_count": 10,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_26",
+    "term": "info",
+    "definition": "info ",
+    "category": "general",
+    "usage_count": 37,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_27",
+    "term": "information",
+    "definition": "information is taken",
+    "category": "general",
+    "usage_count": 102,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_28",
+    "term": "integrations",
+    "definition": "Integrations ",
+    "category": "general",
+    "usage_count": 3,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_29",
+    "term": "location",
+    "definition": "Location ",
+    "category": "general",
+    "usage_count": 3,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_30",
+    "term": "orders",
+    "definition": "Orders ",
+    "category": "general",
+    "usage_count": 17,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_31",
+    "term": "partner",
+    "definition": "partner ",
+    "category": "general",
+    "usage_count": 39,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_32",
+    "term": "poiGroupId",
+    "definition": "poiGroupId ",
+    "category": "general",
+    "usage_count": 5,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_33",
+    "term": "poiId",
+    "definition": "poiId ",
+    "category": "general",
+    "usage_count": 9,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_34",
+    "term": "pois",
+    "definition": "pois ",
+    "category": "general",
+    "usage_count": 1,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_35",
+    "term": "position",
+    "definition": "position ",
+    "category": "general",
+    "usage_count": 5,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_36",
+    "term": "presence",
+    "definition": "presence in country ",
+    "category": "general",
+    "usage_count": 3,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_37",
+    "term": "queue",
+    "definition": "queue ",
+    "category": "general",
+    "usage_count": 6,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_38",
+    "term": "reject",
+    "definition": "Reject form ",
+    "category": "general",
+    "usage_count": 11,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_39",
+    "term": "report",
+    "definition": "report by vehicle, ",
+    "category": "general",
+    "usage_count": 15,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_40",
+    "term": "route",
+    "definition": "route in specified period",
+    "category": "general",
+    "usage_count": 1,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_41",
+    "term": "statistics",
+    "definition": "statistics",
+    "category": "general",
+    "usage_count": 2,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_42",
+    "term": "status",
+    "definition": "status ",
+    "category": "general",
+    "usage_count": 280,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_43",
+    "term": "tacho",
+    "definition": "tacho info ",
+    "category": "general",
+    "usage_count": 17,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_44",
+    "term": "task",
+    "definition": "task ",
+    "category": "general",
+    "usage_count": 112,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_45",
+    "term": "tasks",
+    "definition": "tasks ",
+    "category": "general",
+    "usage_count": 64,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_46",
+    "term": "trip",
+    "definition": "trip tasks ",
+    "category": "general",
+    "usage_count": 27,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_47",
+    "term": "trips",
+    "definition": "trips to tasks ",
+    "category": "general",
+    "usage_count": 7,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_48",
+    "term": "update",
+    "definition": "UPDATE ",
+    "category": "general",
+    "usage_count": 40,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_49",
+    "term": "user",
+    "definition": "USER\", ",
+    "category": "general",
+    "usage_count": 8,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_50",
+    "term": "vehicle",
+    "definition": "vehicle, ",
+    "category": "general",
+    "usage_count": 169,
+    "related_endpoints": []
+  },
+  {
+    "id": "term_51",
+    "term": "vehicles",
+    "definition": "vehicles files info ",
+    "category": "general",
+    "usage_count": 57,
+    "related_endpoints": []
+  }
+]

@@ -1,0 +1,122 @@
+id,method,path,category,description,parameters
+POST__api_activities_assign,POST,/api/activities/assign,activities,API endpoint,"[{""name"": ""https"", ""description"": ""//api-preprod.fleethand.com Please contact your sales manager to"", ""type"": ""string"", ""required"": false}, {""name"": ""key"", ""description"": ""Please contact your sales manager to"", ""type"": ""string"", ""required"": false}, {""name"": ""id"", ""description"": ""Please contact your sales manager to"", ""type"": ""string"", ""required"": false}]"
+POST__api_activities,POST,/api/activities,activities,API endpoint,[]
+GET__api_activities,GET,/api/activities,activities,activities:,[]
+GET__api_activities_activity,GET,/api/activities/activity,activities,largestActivityId,[]
+GET__api_activities_file-pdf,GET,/api/activities/file-pdf,activities,API endpoint,[]
+POST__api_activities_files,POST,/api/activities/files,activities,API endpoint,[]
+GET__api_country-change_crossings,GET,/api/country-change/crossings,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_country-change,GET,/api/country-change,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+PUT__api_ddd_cancel-driver,PUT,/api/ddd/cancel-driver,drivers,API endpoint,[]
+PUT__api_ddd_cancel-vehicle,PUT,/api/ddd/cancel-vehicle,vehicles,API endpoint,[]
+GET__api_ddd_driver-file_download,GET,/api/ddd/driver-file/download,drivers,API endpoint,[]
+GET__api_ddd_vehicle-file_download,GET,/api/ddd/vehicle-file/download,vehicles,API endpoint,[]
+GET__api_ddd_cards,GET,/api/ddd/cards,general,API endpoint,[]
+GET__api_ddd_companies,GET,/api/ddd/companies,general,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_info,GET,/api/ddd/info,general,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_drivers-status,GET,/api/ddd/drivers-status,drivers,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_vehicles-status,GET,/api/ddd/vehicles-status,vehicles,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_all-drivers_download,GET,/api/ddd/all-drivers/download,drivers,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_all-drivers_download-period,GET,/api/ddd/all-drivers/download-period,drivers,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_all-vehicles_download,GET,/api/ddd/all-vehicles/download,vehicles,API endpoint,"[{""name"": ""2023"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2023"", ""description"": ""05-21)."", ""type"": ""string"", ""required"": false}]"
+GET__api_ddd_all-vehicles_download-period,GET,/api/ddd/all-vehicles/download-period,vehicles,API endpoint,"[{""name"": ""month"", ""description"": ""JANUARY, FEBRUARY, MARCH, APRIL,"", ""type"": ""string"", ""required"": false}]"
+PUT__api_ddd_init-driver,PUT,/api/ddd/init-driver,drivers,API endpoint,"[{""name"": ""2025"", ""description"": ""01-"", ""type"": ""string"", ""required"": false}, {""name"": ""08T11"", ""description"": ""17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2025"", ""description"": ""01-"", ""type"": ""string"", ""required"": false}, {""name"": ""08T11"", ""description"": ""17:20Z)."", ""type"": ""string"", ""required"": false}]"
+PUT__api_ddd_init-vehicle,PUT,/api/ddd/init-vehicle,vehicles,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+POST__api_ddd_upload-drivers,POST,/api/ddd/upload-drivers,drivers,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+POST__api_ddd_upload-vehicles,POST,/api/ddd/upload-vehicles,vehicles,API endpoint,[]
+GET__api_documents_expenses,GET,/api/documents/expenses,documents,API endpoint,[]
+GET__api_documents_trip,GET,/api/documents/trip,documents,API endpoint,[]
+POST__api_document_driver,POST,/api/document/driver,drivers,API endpoint,"[{""name"": ""values"", ""description"": ""DECLARATION,"", ""type"": ""string"", ""required"": false}, {""name"": ""Alpha"", ""description"": ""2 code)"", ""type"": ""string"", ""required"": false}]"
+POST__api_document_vehicle,POST,/api/document/vehicle,vehicles,API endpoint,[]
+GET__api_document_driver,GET,/api/document/driver,drivers,API endpoint,[]
+DELETE__api_document_driver,DELETE,/api/document/driver,drivers,API endpoint,[]
+GET__api_document_vehicle,GET,/api/document/vehicle,vehicles,API endpoint,[]
+DELETE__api_document_vehicle,DELETE,/api/document/vehicle,vehicles,API endpoint,[]
+GET__api_driver,GET,/api/driver,drivers,API endpoint,[]
+POST__api_eco_append-to-group,POST,/api/eco/append-to-group,reports,API endpoint,"[{""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}]"
+GET__api_eco_vehicle,GET,/api/eco/vehicle,vehicles,API endpoint,"[{""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}]"
+GET__api_eco_driver,GET,/api/eco/driver,drivers,API endpoint,"[{""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}]"
+GET__api_eco_groups,GET,/api/eco/groups,reports,API endpoint,[]
+POST__api_documents_task-form,POST,/api/documents/task-form,tasks,API endpoint,[]
+POST__api_documents_forms_confirm,POST,/api/documents/forms/confirm,documents,API endpoint,[]
+POST__api_documents_forms_fill-form,POST,/api/documents/forms/fill-form,documents,API endpoint,[]
+GET__api_documents_forms_file-pdf,GET,/api/documents/forms/file-pdf,documents,API endpoint,[]
+POST__api_documents_forms,POST,/api/documents/forms,documents,API endpoint,[]
+GET__api_documents_forms_form,GET,/api/documents/forms/form,documents,API endpoint,[]
+GET__api_documents_forms,GET,/api/documents/forms,documents,API endpoint,[]
+POST__api_documents_forms_reject,POST,/api/documents/forms/reject,documents,API endpoint,[]
+POST__api_documents_forms_reject-documents,POST,/api/documents/forms/reject-documents,documents,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+POST__api_documents_forms_reject-documents-by-codes,POST,/api/documents/forms/reject-documents-by-codes,documents,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+DELETE__api_documents_task-form,DELETE,/api/documents/task-form,tasks,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+POST__api_geo-zones_crossing,POST,/api/geo-zones/crossing,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+POST__api_integrations_sent-state,POST,/api/integrations/sent-state,general,API endpoint,[]
+GET__api_latest-panic-button,GET,/api/latest-panic-button,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""Types"", ""description"": ""GAS_TANK_OPEN,"", ""type"": ""string"", ""required"": false}, {""name"": ""types"", ""description"": ""ENGINE_OIL, ENGINE_OIL_TEMPERATURE,"", ""type"": ""string"", ""required"": false}]"
+GET__api_alarms,GET,/api/alarms,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""Types"", ""description"": ""GAS_TANK_OPEN,"", ""type"": ""string"", ""required"": false}, {""name"": ""types"", ""description"": ""ENGINE_OIL, ENGINE_OIL_TEMPERATURE,"", ""type"": ""string"", ""required"": false}]"
+GET__api_latest-alarms,GET,/api/latest-alarms,general,API endpoint,[]
+GET__api_latest-doors-info,GET,/api/latest-doors-info,general,API endpoint,[]
+GET__api_latest-info,GET,/api/latest-info,general,API endpoint,[]
+GET__api_latest-position,GET,/api/latest-position,locations,API endpoint,[]
+GET__api_latest-tacho,GET,/api/latest-tacho,general,API endpoint,[]
+POST__api_orders,POST,/api/orders,general,API endpoint,[]
+GET__api_orders_actions,GET,/api/orders/actions,general,API endpoint,[]
+GET__api_orders_status,GET,/api/orders/status,general,API endpoint,[]
+GET__api_orders,GET,/api/orders,general,API endpoint,[]
+DELETE__api_orders,DELETE,/api/orders,general,API endpoint,[]
+POST__api_partner,POST,/api/partner,partners,API endpoint,[]
+POST__api_partner_employee,POST,/api/partner/employee,partners,API endpoint,[]
+POST__api_partner_vehicles,POST,/api/partner/vehicles,vehicles,API endpoint,[]
+DELETE__api_partner,DELETE,/api/partner,partners,API endpoint,[]
+DELETE__api_partner_employee,DELETE,/api/partner/employee,partners,API endpoint,[]
+DELETE__api_partner_vehicles,DELETE,/api/partner/vehicles,vehicles,API endpoint,[]
+GET__api_partner_vehicles,GET,/api/partner/vehicles,vehicles,API endpoint,[]
+GET__api_payment-card_vehicle,GET,/api/payment-card/vehicle,vehicles,API endpoint,[]
+POST__api_payment-card_vehicle,POST,/api/payment-card/vehicle,vehicles,API endpoint,[]
+PUT__api_payment-card_vehicle,PUT,/api/payment-card/vehicle,vehicles,API endpoint,[]
+DELETE__api_payment-card_vehicle,DELETE,/api/payment-card/vehicle,vehicles,API endpoint,[]
+DELETE__api_poi_poiId,DELETE,/api/poi/poiId,general,API endpoint,[]
+DELETE__api_poi-group_poiGroupId,DELETE,/api/poi-group/poiGroupId,general,API endpoint,[]
+POST__api_pois,POST,/api/pois,general,API endpoint,[]
+POST__api_poi-group,POST,/api/poi-group,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_report_day-country,GET,/api/report/day-country,reports,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_report_period-summary,GET,/api/report/period-summary,reports,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""options"", ""description"": ""DAY, COUNTRY,"", ""type"": ""string"", ""required"": false}]"
+GET__api_report_period-tolls,GET,/api/report/period-tolls,reports,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tacho_driver-activities,GET,/api/tacho/driver-activities,activities,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tacho_current,GET,/api/tacho/current,general,activityType,[]
+GET__api_period-tacho,GET,/api/period-tacho,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tacho_driver-faults,GET,/api/tacho/driver-faults,drivers,API endpoint,"[{""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-21)."", ""type"": ""string"", ""required"": false}]"
+POST__api_tasks,POST,/api/tasks,tasks,API endpoint,[]
+POST__api_tasks_file,POST,/api/tasks/file,tasks,API endpoint,[]
+POST__api_tasks_assign-trips,POST,/api/tasks/assign-trips,tasks,API endpoint,[]
+POST__api_tasks_confirm-task,POST,/api/tasks/confirm-task,tasks,API endpoint,[]
+POST__api_tasks_confirm-all,POST,/api/tasks/confirm-all,tasks,API endpoint,[]
+POST__api_tasks_delete-all,POST,/api/tasks/delete-all,tasks,API endpoint,[]
+DELETE__api_tasks,DELETE,/api/tasks,tasks,API endpoint,[]
+DELETE__api_tasks_trip,DELETE,/api/tasks/trip,tasks,API endpoint,[]
+GET__api_tasks_additional-info,GET,/api/tasks/additional-info,tasks,API endpoint,[]
+GET__api_tasks_done,GET,/api/tasks/done,tasks,=== Страница 232 ===,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tasks_eta,GET,/api/tasks/eta,tasks,API endpoint,[]
+GET__api_external-tasks_external-orders,GET,/api/external-tasks/external-orders,tasks,API endpoint,[]
+GET__api_tasks_information,GET,/api/tasks/information,tasks,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tasks_queue,GET,/api/tasks/queue,tasks,API endpoint,[]
+GET__api_tasks_status-intervals,GET,/api/tasks/status-intervals,tasks,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_tasks_status,GET,/api/tasks/status,tasks,API endpoint,[]
+GET__api_tasks_trip,GET,/api/tasks/trip,tasks,API endpoint,[]
+GET__api_trips_statistics,GET,/api/trips/statistics,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+PUT__api_tasks_mark-as-done,PUT,/api/tasks/mark-as-done,tasks,API endpoint,[]
+PUT__api_tasks_mark-as-executing,PUT,/api/tasks/mark-as-executing,tasks,API endpoint,[]
+PUT__api_tasks,PUT,/api/tasks,tasks,API endpoint,[]
+POST__api_tasks_update_file,POST,/api/tasks/update/file,tasks,API endpoint,[]
+POST__api_tasks_trip,POST,/api/tasks/trip,tasks,API endpoint,[]
+GET__api_driver_driver-hours,GET,/api/driver/driver-hours,drivers,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""01"", ""description"": ""30:00.000)."", ""type"": ""string"", ""required"": false}]"
+GET__api_country-change_presence,GET,/api/country-change/presence,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+GET__api_period-info,GET,/api/period-info,general,API endpoint,"[{""name"": ""2020"", ""description"": ""01-08T11:17:20Z)."", ""type"": ""string"", ""required"": false}, {""name"": ""2020"", ""description"": ""01-09T11:17:20Z)."", ""type"": ""string"", ""required"": false}]"
+PUT__api_vehicle_deactivate,PUT,/api/vehicle/deactivate,vehicles,API endpoint,[]
+GET__api_vehicle,GET,/api/vehicle,vehicles,API endpoint,[]
+PUT__api_vehicle_update-vehicle-info,PUT,/api/vehicle/update-vehicle-info,vehicles,API endpoint,[]
+PUT__api_vehicle_simple-update-vehicle-info,PUT,/api/vehicle/simple-update-vehicle-info,vehicles,API endpoint,[]
+GET__api_vehicles-group,GET,/api/vehicles-group,vehicles,API endpoint,[]
+POST__api_vehicles-group,POST,/api/vehicles-group,vehicles,API endpoint,[]
+PUT__api_vehicles-group_add-vehicles,PUT,/api/vehicles-group/add-vehicles,vehicles,API endpoint,[]
+PUT__api_vehicles-group_remove-vehicles,PUT,/api/vehicles-group/remove-vehicles,vehicles,API endpoint,[]
+DELETE__api_vehicles-group,DELETE,/api/vehicles-group,vehicles,API endpoint,[]
+GET__api_user-actions,GET,/api/user-actions,users,API endpoint,[]

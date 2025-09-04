@@ -1,0 +1,31 @@
+{
+  "api_name": "Fleethand API",
+  "version": "v1",
+  "base_url": "https://api.fleethand.com",
+  "generated_at": "2025-09-04T11:06:08.559771",
+  "statistics": {
+    "total_endpoints": 0,
+    "total_models": 90,
+    "total_parameters": 0,
+    "total_examples": 0,
+    "total_errors": 0,
+    "categories": []
+  },
+  "knowledge_bases": {
+    "endpoints": "endpoints.json",
+    "models": "models.json",
+    "parameters": "parameters.json",
+    "examples": "examples.json",
+    "errors": "errors.json",
+    "auth": "auth.json",
+    "webhooks": "webhooks.json",
+    "rate_limits": "rate_limits.json",
+    "business_rules": "business_rules.json",
+    "glossary": "glossary.json",
+    "workflows": "workflows.json",
+    "integrations": "integrations.json",
+    "permissions": "permissions.json",
+    "data_types": "data_types.json",
+    "validations": "validations.json"
+  }
+}

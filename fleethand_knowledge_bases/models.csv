@@ -1,0 +1,962 @@
+model_name,structure,fields,required_fields,relationships,validation_rules
+Model,"{ 
+         ""code"": ""ANSWER_VIGNETE"", 
+         ""value"": ""buy_vignette"", 
+
+=== Страница 17 ===
+ 
+17 
+         ""questions"": [ 
+           { 
+             ""code"": ""QUESTION_COUNTRY"", 
+             ""type"": ""SELECTION"", 
+             ""answer"": { 
+               ""code"": ""ANSWER_LUX"", 
+               ""value"": ""buy_vignette_lux"", 
+               ""questions"": [] 
+             }",[],[],[],[]
+Model,"{ 
+               ""code"": ""ANSWER_SEVEN"", 
+               ""value"": ""buy_vignette_seven_days"", 
+               ""questions"": [ 
+                 { 
+                   ""code"": ""QUESTION_DATE"", 
+                   ""type"": ""DAY_PICKER"", 
+                   ""answer"": { 
+                     ""code"": ""DAY_PICKER"", 
+                     ""value"": ""2022-09-12"", 
+                     ""questions"": [] 
+                   }",[],[],[],[]
+Model,"{ 
+      ""code"": ""ANSWER_VIGNETE"", 
+      ""value"": ""buy_vignette"", 
+      ""questions"": [ 
+         { 
+          ""code"": ""QUESTION_COUNTRY"", 
+          ""type"": ""SELECTION"", 
+          ""answer"": { 
+             ""code"": ""ANSWER_LUX"", 
+
+=== Страница 20 ===
+ 
+20 
+             ""value"": ""buy_vignette_lux"", 
+             ""questions"": [] 
+            }",[],[],[],[]
+Model,"{ 
+               ""code"": ""ANSWER_SEVEN"", 
+               ""value"": ""buy_vignette_seven_days"", 
+               ""questions"": [ 
+                 { 
+                  ""code"": ""QUESTION_DATE"", 
+                  ""type"": ""DAY_PICKER"", 
+                  ""answer"": { 
+                    ""code"": ""DAY_PICKER"", 
+                    ""value"": ""2022-09-12"", 
+                    ""questions"": [] 
+                   }",[],[],[],[]
+Model,"{ 
+            ""id"":1, 
+            ""value"":""UAB \""Company 1\"""" 
+         }",[],[],[],[]
+Model,"{ 
+            ""id"":2, 
+            ""value"":""UAB \""Company 2\"""" 
+         }",[],[],[],[]
+Model,"{ 
+        ""driverFiles"": [ 
+            { 
+                ""id"": 1, 
+                ""imei"": null, 
+                ""driverCardNumber"": ""1234567891234000"", 
+                ""downloadDate"": ""2023-07-04T08:24:51.472"", 
+                ""dateFrom"": ""2022-08-14T00:00:00"", 
+                ""dateTill"": ""2023-05-31T20:30:00"" 
+            }",[],[],[],[]
+Model,"{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""OK"" 
+    }",[],[],[],[]
+Model,"{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""Group ID does not exist"" 
+    }",[],[],[],[]
+Model,"{ 
+        ""vinCode"":""BBBBBBBB11111111"" 
+        ""message"":""Vehicle already belongs to this group"" 
+    }",[],[],[],[]
+Model,"{ 
+        ""deviceKey"": ""352094089272196"", 
+
+=== Страница 77 ===
+ 
+77 
+        ""totalData"": { 
+            ""distance"": ""8938.57"", 
+            ""gpsDistance"": ""8943.36"", 
+            ""fuelUsed"": 2556.32, 
+            ""fuelUsedIdling"": 39.31, 
+            ""fuelUsage"": ""28.6"", 
+            ""fuelUsageDriving"": ""28.16"", 
+            ""noCargo"": ""12.89"", 
+            ""lightCargo"": ""29.57"", 
+            ""mediumCargo"": ""8.36"", 
+            ""heavyCargo"": ""49.18"", 
+            ""parkingBrake"": ""0"", 
+            ""harshBraking"": ""0"", 
+            ""freeRolling"": ""9.58"", 
+            ""braking"": ""38.99"", 
+            ""brakingDistance"": ""235.69"", 
+            ""stopping"": ""12.64"", 
+            ""numberOfStops"": 1130, 
+            ""brakingStoppingScore"": 64, 
+            ""rolling"": ""23.34"", 
+            ""rollingScore"": 89, 
+            ""economy"": ""0.19"", 
+            ""economyScore"": 87, 
+            ""engineLoad"": ""4"", 
+            ""engineLoadScore"": 72, 
+            ""overspeeding"": ""13.34"", 
+            ""overspeedingScore"": 56, 
+            ""cruiseControlDistance"": ""62.16"", 
+            ""cruiseControlDistanceScore"": 49, 
+            ""cruiseControlFuel"": ""25.8"", 
+            ""cruiseControlInterruption"": ""4.15"", 
+            ""cruiseControlFuelUsage"": ""6.94"", 
+            ""cruiseControlFuelUsageScore"": 100, 
+            ""idling"": ""6.5"", 
+            ""idlingTime"": ""9h 13m"", 
+            ""idlingScore"": 77, 
+            ""averageScore"": 74, 
+            ""averageWeight"": ""18319.94"", 
+            ""speedData"": { 
+                ""distanceTill80"": ""34.92"", 
+                ""distance80To81"": ""11.05"", 
+                ""distance82To83"": ""21.3"", 
+                ""distance84To85"": ""26.48"", 
+                ""distanceOver85"": ""6.26"", 
+                ""speeds"": [ 
+                    { 
+                        ""type"": ""SPEED_1_5"", 
+                        ""distancePercentage"": ""0.22"", 
+                        ""fuelUsage"": ""118.16"" 
+                    }",[],[],[],[]
+Model,"{ 
+                ""chartRpms"": [ 
+                    { 
+                        ""type"": ""RPM_500_900"", 
+                        ""distancePercentage"": ""19.2"", 
+                        ""fuelUsage"": ""18.25"" 
+                    }",[],[],[],[]
+Model,"{ 
+            ""braking"": { 
+                ""best"": 2.0, 
+                ""worst"": 5.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 25.0, 
+                ""worst"": 10.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 0.0, 
+                ""worst"": 1.5, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 2.1, 
+                ""worst"": 8.8, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 0.0, 
+                ""worst"": 30.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 75.0, 
+                ""worst"": 50.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 4.0, 
+                ""worst"": 0.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 4.0, 
+                ""worst"": 15.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+        ""driver"": ""0000000005266000"", 
+        ""totalData"": { 
+            ""distance"": ""2480.01"", 
+            ""gpsDistance"": ""2484.9"", 
+            ""fuelUsed"": 682.5, 
+            ""fuelUsedIdling"": 16.0, 
+            ""fuelUsage"": ""27.52"", 
+            ""fuelUsageDriving"": ""26.87"", 
+            ""noCargo"": ""10.17"", 
+            ""lightCargo"": ""22.53"", 
+            ""mediumCargo"": ""24.26"", 
+            ""heavyCargo"": ""43.05"", 
+            ""parkingBrake"": ""0"", 
+            ""harshBraking"": ""0"", 
+            ""freeRolling"": ""10.89"", 
+            ""braking"": ""13.95"", 
+            ""brakingDistance"": ""14.26"", 
+            ""stopping"": ""8.35"", 
+            ""numberOfStops"": 207, 
+            ""brakingStoppingScore"": 100, 
+            ""rolling"": ""27.19"", 
+            ""rollingScore"": 100, 
+            ""economy"": ""0.03"", 
+            ""economyScore"": 100, 
+            ""engineLoad"": ""5.59"", 
+            ""engineLoadScore"": 48, 
+            ""overspeeding"": ""26.01"", 
+            ""overspeedingScore"": 48, 
+            ""cruiseControlDistance"": ""75.2"", 
+            ""cruiseControlDistanceScore"": 100, 
+            ""cruiseControlFuel"": ""31.37"", 
+            ""cruiseControlInterruption"": ""0.15"", 
+            ""cruiseControlFuelUsage"": ""-16.71"", 
+            ""cruiseControlFuelUsageScore"": 0, 
+            ""idling"": ""11.83"", 
+            ""idlingTime"": ""6h 34m"", 
+            ""idlingScore"": 61, 
+            ""averageScore"": 70, 
+            ""averageWeight"": ""26455.76"", 
+            ""speedData"": { 
+                ""distanceTill80"": ""34.85"", 
+                ""distance80To81"": ""7.43"", 
+                ""distance82To83"": ""8.85"", 
+                ""distance84To85"": ""44.49"", 
+
+=== Страница 89 ===
+ 
+89 
+                ""distanceOver85"": ""4.38"", 
+                ""speeds"": [ 
+                    { 
+                        ""type"": ""SPEED_1_5"", 
+                        ""distancePercentage"": ""0.16"", 
+                        ""fuelUsage"": ""124.69"" 
+                    }",[],[],[],[]
+Model,"{ 
+                ""chartRpms"": [ 
+                    { 
+                        ""type"": ""RPM_500_900"", 
+                        ""distancePercentage"": ""13.27"", 
+                        ""fuelUsage"": ""27.05"" 
+                    }",[],[],[],[]
+Model,"{ 
+            ""braking"": { 
+                ""best"": 4.0, 
+                ""worst"": 44.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 18.0, 
+                ""worst"": 0.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 0.5, 
+                ""worst"": 3.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 2.1, 
+                ""worst"": 8.8, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 0.0, 
+                ""worst"": 50.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 71.4, 
+                ""worst"": 4.7, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 4.0, 
+                ""worst"": 0.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+                ""best"": 4.0, 
+                ""worst"": 24.0, 
+                ""pct"": 12.5 
+            }",[],[],[],[]
+Model,"{ 
+   ""DONE"": { 
+     ""formNameEn"": ""Form"", 
+     ""formNameLt"": ""Forma"", 
+     ""formNameRu"": ""Форма"", 
+     ""formNameDe"": ""Formular"", 
+     ""formNamePl"": ""Formularz"", 
+     ""code"": ""DOCUMENTS"", 
+     ""sections"": [ 
+       { 
+         ""sectionNameEn"": ""Section"", 
+         ""sectionNameLt"": ""Sekcija"", 
+         ""sectionNameRu"": ""Раздел"", 
+
+=== Страница 100 ===
+ 
+100 
+         ""sectionNameDe"": ""Abschnitt"", 
+         ""sectionNamePl"": ""Sekcja"", 
+         ""options"": [ 
+           { 
+             ""type"": ""DOCUMENT"", 
+             ""code"": ""CMR"", 
+             ""optionNameEn"": ""Amazon request"", 
+             ""optionNameLt"": ""Skaičių parinktis"", 
+             ""optionNameRu"": ""CMR (VIlnius - Kaunas)"", 
+             ""optionNameDe"": ""Zahlenoption"", 
+             ""optionNamePl"": ""Opcja numeryczna"", 
+             ""mandatory"": true 
+           }",[],[],[],[]
+Model,"{ 
+     ""formNameLt"": ""Forma 2"", 
+     ""formNamePl"": ""Formularz 2"", 
+     ""code"": ""STARTUP_FORM"", 
+     ""sections"": [ 
+       { 
+         ""sectionNameLt"": ""Sekcija 2"", 
+         ""sectionNamePl"": ""Sekcja 2"", 
+         ""options"": [ 
+           { 
+             ""type"": ""CHECKBOX"", 
+             ""code"": ""APPROVAL"", 
+             ""optionNameLt"": ""Žymėjimo laukelio parinktis"", 
+             ""optionNamePl"": ""Opcja pola wyboru"", 
+             ""mandatory"": true 
+           }",[],[],[],[]
+Model,"{ 
+        ""externalId"": 358, 
+        ""taskId"": 3555, 
+        ""code"": ""DOCUMENTS"", 
+        ""nameEn"": ""Keitimosi forma"", 
+        ""nameLt"": ""Keitimosi forma"", 
+        ""nameRu"": ""Акт передачи"", 
+        ""nameDe"": ""Keitimosi forma"", 
+        ""namePl"": ""Keitimosi forma"", 
+        ""filledAt"": ""2020-08-03T17:14:13.195"", 
+        ""vehicleType"": ""TRUCK_STANDARD"", 
+        ""driverId"": 355, 
+        ""vehicleId"": 2701, 
+        ""plateNumber"": ""JSU270"", 
+        ""sections"": [ 
+            { 
+                ""id"": 1437, 
+                ""idx"": 0, 
+
+=== Страница 112 ===
+ 
+112 
+                ""nameEn"": ""Kelių aparatai"", 
+                ""nameLt"": ""Kelių aparatai"", 
+                ""nameRu"": ""Дорожные аппараты"", 
+                ""nameDe"": ""Kelių aparatai"", 
+                ""namePl"": ""Kelių aparatai"", 
+                ""type"": ""USER"", 
+                ""options"": [ 
+                    { 
+                        ""id"": 4805, 
+                        ""filledSectionId"": 4805, 
+                        ""type"": ""CHECKBOX"", 
+                        ""code"": ""APROVAL"", 
+                        ""nameEn"": ""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                        ""nameLt"": ""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                        ""nameRu"": ""TOLL COLLECT - Немецкий дарожный аппарат"", 
+                        ""nameDe"": ""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                        ""namePl"": ""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                        ""values"": [ 
+                            { 
+                                ""text"": ""CHECKBOX"", 
+                                ""value"": ""true"" 
+                            }",[],[],[],[]
+Model,"{ 
+                            ""id"": 9, 
+                            ""code"": ""HOLIDAYS_ANSWER_YES"", 
+                            ""nameEn"": ""Yes"", 
+                            ""nameLt"": ""Taip"", 
+                            ""nameRu"": ""Yes"", 
+                            ""nameDe"": ""Yes"", 
+                            ""namePl"": ""Yes"", 
+                            ""options"": [ 
+                                { 
+                                    ""id"": 4805, 
+
+=== Страница 113 ===
+ 
+113 
+                                    ""filledSectionId"": 888, 
+                                    ""type"": ""CHECKBOX"", 
+                                    ""code"": ""HOLIDAY_INTERVAL"", 
+                                    ""nameEn"": ""Pick dates"", 
+                                    ""nameLt"": ""Pasirink datas"", 
+                                    ""nameRu"": ""Pick dates"", 
+                                    ""nameDe"": ""Pick dates"", 
+                                    ""namePl"": ""Pick dates"", 
+                                    ""values"": [ 
+                                        { 
+                                            ""text"": ""DATE_FROM"", 
+                                            ""value"": ""2023-07-01"" 
+                                        }",[],[],[],[]
+Model,"{ 
+     ""largestFormId"": 358, 
+     ""forms"": [ 
+       { 
+         ""externalId"":358, 
+         ""taskId"":3555, 
+         ""code"":""DOCUMENTS"", 
+         ""nameEn"":""Keitimosi forma"", 
+         ""nameLt"":""Keitimosi forma"", 
+         ""nameRu"":""Акт передачи"", 
+         ""nameDe"":""Keitimosi forma"", 
+         ""namePl"":""Keitimosi forma"", 
+         ""filledAt"":""2020-08-03T17:14:13.195"", 
+         ""vehicleType"":""TRUCK_STANDARD"", 
+
+=== Страница 117 ===
+ 
+117 
+         ""driverId"":355, 
+         ""vehicleId"":2701, 
+         ""plateNumber"":""JSU270"", 
+         ""sections"":[ 
+            { 
+               ""id"":1437, 
+               ""idx"":0, 
+               ""nameEn"":""Kelių aparatai"", 
+               ""nameLt"":""Kelių aparatai"", 
+               ""nameRu"":""Дорожные аппараты"", 
+               ""nameDe"":""Kelių aparatai"", 
+               ""namePl"":""Kelių aparatai"", 
+               ""type"":""USER"", 
+               ""options"":[ 
+                  { 
+                     ""id"":4805, 
+                     ""type"":""CHECKBOX"", 
+                     ""code"":""APROVAL"", 
+                     ""nameEn"":""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                     ""nameLt"":""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                     ""nameRu"":""TOLL COLLECT - Немецкий дарожный аппарат"", 
+                     ""nameDe"":""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                     ""namePl"":""TOLL COLLECT - Vokietijos kelių aparatas"", 
+                     ""values"":[ 
+                        { 
+                           ""text"":""CHECKBOX"", 
+                           ""value"":""true"" 
+                        }",[],[],[],[]
+Model,"{ 
+                         ""id"": 9, 
+                         ""code"":""HOLIDAYS_ANSWER_YES"", 
+                         ""nameEn"":""Yes"", 
+                         ""nameLt"":""Taip"", 
+                         ""nameRu"":""Yes"", 
+                         ""nameDe"":""Yes"", 
+                         ""namePl"":""Yes"", 
+
+=== Страница 118 ===
+ 
+118 
+                         ""options"": [ 
+                            { 
+                              ""id"":4805, 
+                              ""type"":""CHECKBOX"", 
+                              ""code"":""HOLIDAY_INTERVAL"", 
+                              ""nameEn"":""Pick dates"", 
+                              ""nameLt"":""Pasirink datas"", 
+                              ""nameRu"":""Pick dates"", 
+                              ""nameDe"":""Pick dates"", 
+                              ""namePl"":""Pick dates"", 
+                              ""values"":[ 
+                                 { 
+                                   ""text"":""DATE_FROM"", 
+                                   ""value"":""2023-07-01"" 
+                                 }",[],[],[],[]
+Model,"{ 
+
+=== Страница 132 ===
+ 
+132 
+         ""vehicleId"":12345, 
+         ""vinCode"":""W1T4565125554588"", 
+         ""active"": true, 
+         ""zslCode"":""Z23-654652-P"" 
+      }",[],[],[],[]
+Model,"{ 
+      ""orderId"": null, 
+      ""orderNumber"":""ABC123"", 
+      ""clientId"":123, 
+      ""clientOrderNumber"":""abc123"", 
+      ""manager"":""manager@email.com"", 
+      ""status"":""PENDING"", 
+      ""freight"":800.99, 
+      ""currency"":""EUR"", 
+      ""vat"":""VAT_NULL"", 
+      ""distance"":513.5, 
+      ""customerFullName"":""Full customer name"", 
+      ""customerEmail"":""client@customer.com"", 
+      ""customerPhone"":""+37060000000"", 
+      ""hazardousType"":""B"", 
+      ""paidKm"":1503.0, 
+      ""emptyKm"":31.5, 
+      ""loadedKm"":1225.8, 
+      ""tripRoute"":""g{~tHgejmA|L|YdG~KlDhFvEzFxAxA`F|EXVbRd"", 
+      ""docsReceivedByEmail"":false, 
+
+=== Страница 154 ===
+ 
+154 
+      ""plannerFullName"":""Full planner name"", 
+      ""plannerEmail"":""planner@customer.com"", 
+      ""plannerPhone "":""+37060000000"", 
+      ""comment"":""Order comment"", 
+      ""showCommentToDriver"":false, 
+      ""link"":"" https://www.fleethand.com/en/"" 
+   }",[],[],[],[]
+Model,"{ 
+      ""responsibleEmployee"":""responsible.manager@email.com"", 
+      ""carrierId"":null, 
+      ""price"":800.99, 
+      ""currency"":""EUR"", 
+      ""vehicleId"":12345, 
+      ""trailerId"":null, 
+      ""trailerRequired"":false 
+   }",[],[],[],[]
+Model,"{ 
+            ""type"":""LOADING"", 
+            ""date"":""2023-06-11 08:10"", 
+            ""participant"":""UAB Client"", 
+            ""coordinates"":""56.9516296, 24.2060855"", 
+            ""point"":""Rīga, Latvia"", 
+            ""address"":""Zvaigznāja gatve 8, LV-1082, Rīga, Latvia"", 
+            ""postalCode"":""ANSWER_VIGNETE"", 
+            ""country"":""LV-1082"", 
+            ""city"":""Rīga"", 
+            ""stopId"":""LOAD-012345"", 
+            ""eta"":""2023-06-11 08:00"", 
+            ""comment"":""Loading comment"", 
+            ""workHours"":""8:00-18:00"" 
+         }",[],[],[],[]
+Model,"{ 
+            ""type"":""UNLOADING"", 
+            ""date"":""2023-06-11 16:30"", 
+            ""participant"":""AB Partner"", 
+            ""coordinates"":""54.7101600, 25.2634556"", 
+            ""point"":""Vilnius, Vilnius City Municipality"", 
+
+=== Страница 155 ===
+ 
+155 
+            ""address"":""Ozo g. 25, 08217 Vilnius"", 
+            ""postalCode"":""08217"", 
+            ""country"":""Lithuania"", 
+            ""city"":""Vilnius"", 
+            ""stopId"":""UNLOAD-012345"", 
+            ""eta"":""2023-06-11 16:15"", 
+            ""comment"":""Unloading comment"", 
+            ""workHours"":""8:00-18:00"" 
+         }",[],[],[],[]
+Model,"{ 
+            ""date"":""2023-06-11 11:15"", 
+            ""coordinates"":""56.2744961, 24.3655892"", 
+            ""point"":""Bajorėliai, Lithuania"", 
+            ""address"":"" Bajorėliai, Pasvalio r. sav. Saločių sen"", 
+            ""postalCode"":""LT-39421"", 
+            ""country"":""Lithuania"", 
+            ""city"":""Bajorėliai"" 
+         }",[],[],[],[]
+Model,"{ 
+        ""orderId"": 1111, 
+        ""tripId"": 111 
+    }",[],[],[],[]
+Model,"{ 
+      ""employees"":[ 
+         { 
+            ""id"":8218, 
+            ""email"":""partner.employee@fleethand.com"" 
+         }",[],[],[],[]
+Model,"{ 
+      ""1"":[ 
+         { 
+            ""id"":1351, 
+            ""vinCode"":""VINCODE1"", 
+            ""partnerTitle"":""Partner1"", 
+            ""activeFrom"":""2019-02-04T22:00:00"", 
+            ""activeTill"":""2019-02-05T21:59:00"" 
+         }",[],[],[],[]
+Model,"{ 
+      ""deviceKey"":""123456789"", 
+      ""entries"":[ 
+         { 
+            ""group"":""de"", 
+            ""gpsMoved"":41.38, 
+            ""gpsStopped"":191.29, 
+
+=== Страница 194 ===
+ 
+194 
+            ""gpsTotal"":232.67, 
+            ""gpsDistance"":2619.15, 
+            ""gpsFuelUsage"":24.49, 
+            ""tachoMoved"":40.43, 
+            ""tachoStopped"":192.24, 
+            ""tachoTotal"":232.67, 
+            ""odometerDistance"":2640.33, 
+            ""fuelUsage"":24.3, 
+            ""consumedFuel"":641.5, 
+            ""counterFuelUsage"":0.0, 
+            ""consumedCounterFuel"":0.0, 
+            ""odometerAtStart"":426709.89, 
+            ""odometerAtEnd"":430330.57, 
+            ""fuelLevelAtStart"":960, 
+            ""fuelLevelAtEnd"":737, 
+            ""fuelFilled"":798.98 
+         }",[],[],[],[]
+Model,"{ 
+         ""totalGpsMoved"":63.39, 
+         ""totalGpsStopped"":255.49, 
+         ""totalGpsTotal"":318.88, 
+         ""totalGpsDistance"":3962.29, 
+         ""totalGpsFuelUsage"":23.51, 
+         ""totalTachoMoved"":61.52, 
+         ""totalTachoStopped"":257.36, 
+         ""totalTachoTotal"":318.88, 
+         ""totalOdometerDistance"":3989.41, 
+         ""totalOdometerFuelUsage"":23.35, 
+         ""totalConsumedFuel"":931.5, 
+         ""totalOdometerCounterFuelUsage"":0.0, 
+         ""totalConsumedCounterFuel"":0.0, 
+         ""firstOdometerAtStart"":426341.16, 
+         ""lastOdometerAtEnd"":430330.57, 
+         ""fuelLevelAtStart"":null, 
+         ""fuelLevelAtEnd"":null, 
+         ""totalfuelFilled"":798.98 
+      }",[],[],[],[]
+Model,"{ 
+      ""vehicleId"": 123456, 
+      ""vinCode"": ""vinCode"", 
+      ""totalDistance"": 2951.29, 
+      ""tolls"": { 
+
+=== Страница 198 ===
+ 
+198 
+         ""countryTolls"": [ 
+            { 
+               ""country"": ""FRA"", 
+                             ""cost"": 342.0, 
+                             ""distance"": 1397.36 
+            }",[],[],[],[]
+Model,"{ 
+                  ""year"":""2022"", 
+                  ""month"":""06"", 
+                  ""day"":""01"", 
+                  ""hours"":""05"", 
+                  ""minutes"":""20"" 
+               }",[],[],[],[]
+Model,"{ 
+                  ""year"":""2022"", 
+                  ""month"":""06"", 
+                  ""day"":""01"", 
+                  ""hours"":""07"", 
+                  ""minutes"":""30"" 
+               }",[],[],[],[]
+Model,"{ 
+                  ""year"":""2022"", 
+                  ""month"":""06"", 
+                  ""day"":""01"", 
+                  ""hours"":""07"", 
+                  ""minutes"":""30"" 
+               }",[],[],[],[]
+Model,"{ 
+                  ""year"":""2022"", 
+                  ""month"":""06"", 
+                  ""day"":""01"", 
+                  ""hours"":""07"", 
+                  ""minutes"":""53"" 
+               }",[],[],[],[]
+Model,"{ 
+      ""driver"":""V100000112119000"", 
+      ""dayDrivingExceeded"":{ 
+
+=== Страница 210 ===
+ 
+210 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":1, 
+         ""violations"":[ 
+            { 
+               ""violation"":""VERY_SERIOUS"", 
+               ""date"":""2023-06-19"", 
+               ""country"":""lt"", 
+               ""vehicle"":""MDY319"" 
+            }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+
+=== Страница 211 ===
+ 
+211 
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+         ""count"":0, 
+         ""violations"":[ 
+             
+         ] 
+      }",[],[],[],[]
+Model,"{ 
+      ""countryTolls"":[ 
+         { 
+            ""country"":""LTU"", 
+            ""amountInTargetCurrency"":12.45 
+         }",[],[],[],[]
+Model,"{ 
+      ""countryTolls"":[ 
+         { 
+            ""country"":""LTU"", 
+            ""amountInTargetCurrency"":12.45 
+         }",[],[],[],[]
+Model,"{ 
+               ""countryTolls"":[ 
+                  { 
+                     ""country"":""LTU"", 
+                     ""amountInTargetCurrency"":12.45 
+                  }",[],[],[],[]
+Model,"{ 
+               ""countryTolls"":[ 
+                  { 
+                     ""country"":""LTU"", 
+                     ""amountInTargetCurrency"":12.45 
+                  }",[],[],[],[]
+Model,"{ 
+               ""countryTolls"":[ 
+                  { 
+                     ""country"":""LTU"", 
+                     ""amountInTargetCurrency"":16.21 
+                  }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":12.45 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":12.45 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":16.21 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""FRA"", 
+                  ""amountInTargetCurrency"":15.64 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""FRA"", 
+                  ""amountInTargetCurrency"":20.50 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""FRA"", 
+                  ""amountInTargetCurrency"":20.21 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":15.80 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":12.45 
+               }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":16.21 
+               }",[],[],[],[]
+Model,"{ 
+                ""orderNumber"": ""order19"", 
+                ""clientId"": 1234, 
+                ""origin"": ""Lithuania"", 
+                ""destination"": ""France"", 
+                ""freight"": 21300.0, 
+                ""actualAmount"": 382.688, 
+                ""employee"": ""FleetHand"" 
+            }",[],[],[],[]
+Model,"{ 
+      ""countryTolls"":[ 
+         { 
+            ""country"":""LTU"", 
+            ""amountInTargetCurrency"":12.45 
+         }",[],[],[],[]
+Model,"{ 
+      ""countryTolls"":[ 
+         { 
+            ""country"":""LTU"", 
+            ""amountInTargetCurrency"":12.45 
+         }",[],[],[],[]
+Model,"{ 
+            ""countryTolls"":[ 
+               { 
+                  ""country"":""LTU"", 
+                  ""amountInTargetCurrency"":12.45 
+               }",[],[],[],[]
+Model,"{ 
+            ""address"": ""Train station ABC, Vilnius"", 
+            ""lat"":54.670298, 
+            ""lng"":25.284262 
+         }",[],[],[],[]
+Model,"{ 
+           ""DONE"": { 
+             ""formNameEn"": ""Form"", 
+             ""formNameLt"": ""Forma"", 
+             ""formNameRu"": ""Форма"", 
+             ""formNameDe"": ""Formular"", 
+             ""formNamePl"": ""Formularz"", 
+             ""code"": ""DOCUMENTS"", 
+             ""sections"": [ 
+               { 
+                 ""sectionNameEn"": ""Section"", 
+                 ""sectionNameLt"": ""Sekcija"", 
+                 ""sectionNameRu"": ""Раздел"", 
+                 ""sectionNameDe"": ""Abschnitt"", 
+                 ""sectionNamePl"": ""Sekcja"", 
+                 ""options"": [ 
+                   { 
+                     ""type"": ""DOCUMENT"", 
+                     ""code"": ""CMR"", 
+                     ""optionNameEn"": ""Amazon request"", 
+                     ""optionNameLt"": ""Skaičių parinktis"", 
+                     ""optionNameRu"": ""CMR (VIlnius - Kaunas)"", 
+                     ""optionNameDe"": ""Zahlenoption"", 
+                    ""optionNamePl"": ""Opcja numeryczna"", 
+                     ""mandatory"": true 
+                   }",[],[],[],[]
+Model,"{ 
+             ""formNameLt"": ""Forma 2"", 
+             ""formNamePl"": ""Formularz 2"", 
+             ""code"": ""STARTUP_FORM"", 
+             ""sections"": [ 
+               { 
+                 ""sectionNameLt"": ""Sekcija 2"", 
+                 ""sectionNamePl"": ""Sekcja 2"", 
+                 ""options"": [ 
+                   { 
+                     ""type"": ""CHECKBOX"", 
+                     ""code"": ""APPROVAL"", 
+                     ""optionNameLt"": ""Žymėjimo laukelio parinktis"", 
+                     ""optionNamePl"": ""Opcja pola wyboru"", 
+                     ""mandatory"": true 
+                   }",[],[],[],[]
+Model,"{ 
+            ""2021-01-01"":0, 
+            ""2021-01-02"":600, 
+            ""2021-01-03"":900, 
+            ""2021-01-04"":250 
+         }",[],[],[],[]
+Model,"{ 
+            ""2021-01-01"":3600, 
+            ""2021-01-02"":3600, 
+            ""2021-01-03"":3600, 
+            ""2021-01-04"":3600 
+         }",[],[],[],[]
+Model,"{ 
+            ""2021-01-01"":""FLH123"", 
+            ""2021-01-02"":""FLH123"", 
+            ""2021-01-03"":""FLH123"", 
+            ""2021-01-04"":""FLH123"" 
+         }",[],[],[],[]

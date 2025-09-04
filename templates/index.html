@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 API Documentation Parser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            background: #f7fafc;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .feature-title {
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .feature-desc {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .upload-area {
+            border: 3px dashed #cbd5e0;
+            border-radius: 12px;
+            padding: 60px 20px;
+            margin-bottom: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #f9f9f9;
+        }
+
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: #667eea;
+            background: #eef2ff;
+        }
+
+        .upload-icon {
+            font-size: 4rem;
+            color: #cbd5e0;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .upload-area:hover .upload-icon,
+        .upload-area.dragover .upload-icon {
+            color: #667eea;
+        }
+
+        .upload-text {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .upload-subtext {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .progress-container {
+            display: none;
+            margin: 30px 0;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            width: 0%;
+            transition: width 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .status {
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .status.success {
+            background: #f0fff4;
+            color: #38a169;
+            border: 1px solid #9ae6b4;
+        }
+
+        .status.error {
+            background: #fed7d7;
+            color: #e53e3e;
+            border: 1px solid #feb2b2;
+        }
+
+        .results-container {
+            display: none;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .results-header {
+            background: #eef2ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-top: 5px;
+        }
+
+        .download-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f7fafc;
+            border-radius: 8px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🚀 API Documentation Parser</h1>
+            <p class="subtitle">Интеллектуальный парсер PDF документации для создания MCP серверов</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-title">📄 PDF Парсинг</div>
+                <div class="feature-desc">Автоматическое извлечение данных из PDF документации</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">🎯 HIGH Качество</div>
+                <div class="feature-desc">85%+ MCP готовности с детальной валидацией</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">🧠 ИИ Анализ</div>
+                <div class="feature-desc">Интеллектуальная категоризация и обработка</div>
+            </div>
+            <div class="feature">
+                <div class="feature-title">⚡ Быстро</div>
+                <div class="feature-desc">Обработка за считанные минуты</div>
+            </div>
+        </div>
+
+        <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+            <div class="upload-icon">📁</div>
+            <div class="upload-text">Выберите PDF файл или перетащите сюда</div>
+            <div class="upload-subtext">Поддерживаются PDF файлы до 50MB</div>
+        </div>
+
+        <input type="file" id="fileInput" class="file-input" accept=".pdf" onchange="handleFileSelect(this)">
+
+        <div class="progress-container" id="progressContainer">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div id="statusMessage" class="status">Загрузка файла...</div>
+        </div>
+
+        <div class="results-container" id="resultsContainer">
+            <div class="results-header">
+                <h3>📊 Результаты парсинга</h3>
+                <div class="stats-grid" id="statsGrid">
+                    <!-- Статистика будет добавлена динамически -->
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h4>💾 Скачать результаты</h4>
+                <button class="btn" id="downloadBtn" onclick="downloadResults()">
+                    📥 Скачать JSON данные
+                </button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✨ Создано с помощью интеллектуальных алгоритмов парсинга</p>
+            <p>🔗 <a href="https://github.com/your-username/api-doc-parser" target="_blank">GitHub проект</a></p>
+        </div>
+    </div>
+
+    <script>
+        let uploadUrl = null;
+        let downloadUrl = null;
+
+        // Drag & Drop функциональность
+        const uploadArea = document.querySelector('.upload-area');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+
+        function handleFileSelect(input) {
+            if (input.files.length > 0) {
+                handleFile(input.files[0]);
+            }
+        }
+
+        function handleFile(file) {
+            if (!file.type.includes('pdf')) {
+                showStatus('error', 'Пожалуйста, выберите PDF файл');
+                return;
+            }
+
+            if (file.size > 50 * 1024 * 1024) {
+                showStatus('error', 'Файл слишком большой. Максимальный размер: 50MB');
+                return;
+            }
+
+            uploadFile(file);
+        }
+
+        function uploadFile(file) {
+            const formData = new FormData();
+            formData.append('file', file);
+
+            // Показываем прогресс
+            document.getElementById('progressContainer').style.display = 'block';
+            document.getElementById('resultsContainer').style.display = 'none';
+            
+            showProgress(20, 'Загрузка файла...');
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showProgress(50, 'Файл загружен, начинаем парсинг...');
+                    processFile(data.processing_url);
+                } else {
+                    showStatus('error', data.message || 'Ошибка загрузки файла');
+                }
+            })
+            .catch(error => {
+                showStatus('error', 'Ошибка загрузки: ' + error.message);
+            });
+        }
+
+        function processFile(processingUrl) {
+            showProgress(70, 'Обработка PDF документации...');
+
+            fetch(processingUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showProgress(100, 'Обработка завершена успешно!');
+                    setTimeout(() => {
+                        showResults(data.results);
+                        downloadUrl = data.download_url;
+                    }, 1000);
+                } else {
+                    showStatus('error', data.error || 'Ошибка обработки файла');
+                }
+            })
+            .catch(error => {
+                showStatus('error', 'Ошибка обработки: ' + error.message);
+            });
+        }
+
+        function showProgress(percent, message) {
+            document.getElementById('progressFill').style.width = percent + '%';
+            showStatus('', message);
+        }
+
+        function showStatus(type, message) {
+            const statusEl = document.getElementById('statusMessage');
+            statusEl.textContent = message;
+            statusEl.className = 'status ' + type;
+        }
+
+        function showResults(results) {
+            document.getElementById('progressContainer').style.display = 'none';
+            document.getElementById('resultsContainer').style.display = 'block';
+
+            // Извлекаем статистику из quality report
+            const qualityReport = results.quality_report_ultimate_final;
+            if (qualityReport && qualityReport.statistics) {
+                const stats = qualityReport.statistics;
+                const quality = qualityReport.quality_metrics;
+
+                const statsGrid = document.getElementById('statsGrid');
+                statsGrid.innerHTML = `
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.endpoints || 0}</div>
+                        <div class="stat-label">Endpoints</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.headers || 0}</div>
+                        <div class="stat-label">Headers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.parameters || 0}</div>
+                        <div class="stat-label">Parameters</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${stats.responses || 0}</div>
+                        <div class="stat-label">Responses</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${quality.mcp_readiness_score || '0%'}</div>
+                        <div class="stat-label">MCP готовность</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">${quality.professional_quality || 'N/A'}</div>
+                        <div class="stat-label">Качество</div>
+                    </div>
+                `;
+            }
+        }
+
+        function downloadResults() {
+            if (downloadUrl) {
+                window.open(downloadUrl, '_blank');
+            } else {
+                alert('Результаты не готовы для скачивания');
+            }
+        }
+    </script>
+</body>
+</html>
